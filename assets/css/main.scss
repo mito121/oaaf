@@ -72,11 +72,22 @@ h1,h2,h3,h4{
    margin-top:50px;
    margin-bottom:13px;
 }
+.required{
+   color:$red;
+}
+.line-height{
+   line-height: 20px !important;
+}
+.pw-validator{
+   color:$red;
+   padding: 10px 0px 0px 3px;
+}
 
 /* Teh b0x */
 .box{
    width:275px;
    padding:15px;
+   margin:0 auto;
    background-color:white;
    border-radius:17px;
    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.18); 
@@ -92,13 +103,14 @@ h1,h2,h3,h4{
 }
 
 form{
+   padding: 12px 0px;
 
    input{
       font-family: open-sans;
       font-family: sans-serif;
    }
 
-   input[type=text],input[type=password]{
+   input[type=text],input[type=password],input[type=email]{
       display:block;
       width:100%;
       height:33px;
