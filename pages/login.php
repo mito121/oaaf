@@ -57,7 +57,7 @@ if ($_GET['login'] == 'false') { // login error
                   </div>
 
                   <div class="padding-row">
-                     <a href="#">Glemt password?</a>
+                     <a href="#">Glemt adgangskode?</a>
                   </div>
 
                   <hr class="padding-row">
