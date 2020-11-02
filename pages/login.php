@@ -1,4 +1,13 @@
-<?php ?>
+<?php
+session_start();
+
+if($_GET['signup'] == 'false'){ // signup error
+   echo '<script>localStorage.setItem("signup", "false");</script>';
+}else{
+   echo '<script>localStorage.setItem("signup", "true");</script>';
+}
+
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -76,6 +85,7 @@
                   <input v-model="passwordRepeat" v-on:keyup="validatePw" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Gentag adgangskode" required>
                   
                   <p v-if="validPw === false" class="pw-validator">Dine adganskoder er ikke ens!</p>
+                  <p v-if="signup === false" class="pw-validator">Den valgte email er allerede i brug.</p>
                </div>
 
                <div class="padding">

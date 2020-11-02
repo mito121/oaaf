@@ -12,7 +12,17 @@ new Vue({
       tab: 1,
       password: '',
       passwordRepeat: '',
-      validPw: true
+      validPw: true,
+      signup: true
+   },
+   mounted() {
+      if (localStorage.getItem("signup") == 'false') {
+         this.tab = 2;
+         this.signup = false;
+      } else {
+         this.tab = 1;
+         this.signup = true;
+      }
    },
    methods: {
       switchTab(e) {
@@ -24,11 +34,11 @@ new Vue({
             this.tab = 1;
          }
       },
-      
-      validatePw(){
-         if((this.password !== '' && this.passwordRepeat !== '') && this.password !== this.passwordRepeat){
+
+      validatePw() {
+         if ((this.password !== '' && this.passwordRepeat !== '') && this.password !== this.passwordRepeat) {
             this.validPw = false;
-         }else{
+         } else {
             this.validPw = true;
          }
       }
