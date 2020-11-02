@@ -1,7 +1,7 @@
    <footer>
       <div id="footer-nav">
          <nav class="footer-nav">
-            
+            <a href="handlers/logoff.php" style="color:white;">Log ud</a>
          </nav>
       </div>
    </footer>

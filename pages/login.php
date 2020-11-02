@@ -29,7 +29,7 @@ if($_GET['signup'] == 'false'){ // signup error
          <div v-if="tab === 1" class="global-wrapper text-center">
             <h1 class="mt-50">Log ind</h1>
 
-            <form class="d-inline text-left">
+            <form method="POST" action="../handlers/logon.php" class="d-inline text-left">
                <div class="box">
                   <label for="email">Email</label>
                   <input type="text" name="email" id="email" placeholder="Indtast email">
