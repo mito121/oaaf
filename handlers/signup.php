@@ -18,9 +18,21 @@ if (isset($_POST)) {
    $result = $conn->query($sql);
 
    if ($result === true) {
-      die("Whalecum $name");
+      $sql = "SELECT `id`, `password`, `name`, `time_at_sea`, `trips`, `fb_id` FROM `oaaf_users` WHERE email = '$email'";
+      $result = $conn->query($sql);
+
+      if (mysqli_num_rows($result) > 0) {
+         while ($obj = $result->fetch_object()) {
+            $_SESSION['logged'] = true;
+            $_SESSION['id'] = $obj->id;
+            $_SESSION['name'] = $obj->name;
+            $_SESSION['time_at_sea'] = $obj->time_at_sea;
+            $_SESSION['trips'] = $obj->trips;
+            $_SESSION['fb_id'] = $obj->fb_id;
+            header("location: ../index.php");
+         }
+      }
    } else {
-      $output = "Den valgte email addresse er allerede i brug.";
       $_SESSION['newName'] = $name;
       $_SESSION['newEmail'] = $email;
       header("location: ../pages/login.php?signup=false");

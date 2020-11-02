@@ -14,16 +14,14 @@ new Vue({
       passwordRepeat: '',
       validPw: true,
       signup: true,
-      login: true
+      logon: true
    },
    mounted() {
       // Check if user tried to login, but failed
-      if (localStorage.getItem("signup") == 'false') {
-         this.tab = 2;
-         this.signup = false;
+      if (localStorage.getItem("logon") == 'false') {
+         this.logon = false;
       } else {
-         this.tab = 1;
-         this.signup = true;
+         this.logon = true;
       }
       // Check if user tried to sign up, but failed
       if (localStorage.getItem("signup") == 'false') {

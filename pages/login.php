@@ -1,12 +1,17 @@
 <?php
 session_start();
 
-if($_GET['signup'] == 'false'){ // signup error
+if ($_GET['signup'] == 'false') { // signup error
    echo '<script>localStorage.setItem("signup", "false");</script>';
-}else{
+} else {
    echo '<script>localStorage.setItem("signup", "true");</script>';
 }
 
+if ($_GET['login'] == 'false') { // login error
+   echo '<script>localStorage.setItem("logon", "false");</script>';
+} else {
+   echo '<script>localStorage.setItem("logon", "true");</script>';
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,9 +24,9 @@ if($_GET['signup'] == 'false'){ // signup error
    </head>
    <body>
       <header class="login-header">
-<!--         <div class="logo-big">
-            <img src="https://aafart.dk/wp-content/uploads/2019/02/logo.svg" alt="">
-         </div>-->
+         <!--         <div class="logo-big">
+                     <img src="https://aafart.dk/wp-content/uploads/2019/02/logo.svg" alt="">
+                  </div>-->
       </header>
 
       <div id="loginModule">
@@ -33,9 +38,11 @@ if($_GET['signup'] == 'false'){ // signup error
                <div class="box">
                   <label for="email">Email</label>
                   <input type="text" name="email" id="email" placeholder="Indtast email">
-                  
+
                   <label for="password">Adgangskode</label>
                   <input type="password" name="password" id="password" placeholder="Indtast adgangskode">
+
+                  <p v-if="logon === false" class="pw-validator">Forkert email eller adgangskode</p>
                </div>
 
                <div class="padding">
@@ -74,16 +81,16 @@ if($_GET['signup'] == 'false'){ // signup error
                <div class="box">
                   <label for="newName">Navn</label>
                   <input type="text" name="newName" id="newName" placeholder="Indtast navn">
-                  
+
                   <label for="newEmail">Email <span class="required">*</span></label>
                   <input type="email" name="newEmail" id="newEmail" placeholder="Indtast email" required>
-                  
+
                   <label for="newPassword">Adgangskode <span class="required">*</span></label>
                   <input v-model="password" v-on:keyup="validatePw" type="password" name="newPassword" id="newPassword" placeholder="Indtast adgangskode" required>
-                  
+
                   <label for="passwordRepeat">Bekræft adgangskode <span class="required">*</span></label>
                   <input v-model="passwordRepeat" v-on:keyup="validatePw" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Gentag adgangskode" required>
-                  
+
                   <p v-if="validPw === false" class="pw-validator">Dine adganskoder er ikke ens!</p>
                   <p v-if="signup === false" class="pw-validator">Den valgte email er allerede i brug.</p>
                </div>
