@@ -1,6 +1,8 @@
    <footer>
       <div id="footer-nav">
-         
+         <nav class="footer-nav">
+            
+         </nav>
       </div>
    </footer>
       <!-- axios -->

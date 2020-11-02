@@ -1,8 +1,36 @@
+/* Variables */
+/* Fonts */
+@import url("https://use.typekit.net/obn2knn.css");
 /* GLOBAL */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: museo-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+
+body {
+  background-color: #B7D9E1; }
+
+h1, h2, h3, h4 {
+  color: #2B6D85; }
+
+.global-wrapper {
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto; }
+
+.background {
+  background-image: url(../img/tmp_bg.svg);
+  width: 100%;
+  height: 185px;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  position: fixed;
+  top: 87%;
+  z-index: -1; }
 
 .flex {
   display: flex; }
@@ -20,7 +48,109 @@
   justify-content: center;
   align-items: center; }
 
+.d-inline {
+  display: inline-block; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.mt-50 {
+  margin-top: 50px;
+  margin-bottom: 13px; }
+
+/* Teh b0x */
+.box {
+  width: 275px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 17px;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.18); }
+
+.padding {
+  padding: 0px 15px; }
+  .padding .padding-row {
+    margin-top: 16px; }
+
+form input {
+  font-family: open-sans;
+  font-family: sans-serif; }
+form input[type=text], form input[type=password] {
+  display: block;
+  width: 100%;
+  height: 33px;
+  background-color: #E9E9E9;
+  border-radius: 8px;
+  border: none;
+  padding: 13px 10px;
+  margin-bottom: 16px; }
+  form input[type=text]:focus, form input[type=password]:focus {
+    outline: none; }
+  form input[type=text]::placeholder, form input[type=password]::placeholder {
+    color: #64A0BA;
+    opacity: .6; }
+  form input[type=text]:last-of-type, form input[type=password]:last-of-type {
+    margin-bottom: 0; }
+form button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 33px;
+  line-height: 0px; }
+  form button:focus {
+    outline: none; }
+  form button[type=submit] {
+    background-color: #93BD59; }
+form label {
+  display: block;
+  margin-left: 4px;
+  margin-bottom: 6px;
+  color: #2B6D85; }
+form .checkboxes input[type=checkbox] {
+  height: 15px;
+  width: 15px;
+  border: 2px solid #2B6D85; }
+form .checkboxes label {
+  line-height: 14px; }
+form a {
+  color: #2B6D85; }
+form hr {
+  border: none;
+  background: #2B6D85;
+  height: 2px; }
+
+.signup {
+  background-color: #2B6D85; }
+
+.fb_login {
+  background-color: #385898; }
+
+/* HEADER */
+.login-header {
+  padding-top: 25px; }
+
 /* LOG IND */
+.logo-big {
+  background-color: #2B6D85;
+  height: 235px;
+  width: 235px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  border-radius: 50%; }
+  .logo-big img {
+    margin-top: -30px;
+    width: 230px; }
+
 /* Scanner Footer */
 footer {
   position: fixed;
