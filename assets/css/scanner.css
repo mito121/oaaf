@@ -13,8 +13,6 @@ html, body{
 #qr-video{
    z-index:2;
    height:100vh;
-   /*    width:100%;*/
-
    position:fixed;
    top: 0;
    left: 0;
@@ -24,11 +22,11 @@ html, body{
 #scan-region{
    position: absolute;
    top: 0;
-   background-image: url(../img/qr-overlay.png);
+   background-image: url(../img/qr-overlay.svg);
    width: 100%;
    height: 100vh;
-   background-size: 100%;
-   background-position: 50% 50%;
+   background-size: 200%;
+   background-position: 50%;
    background-repeat: no-repeat;
    z-index: 3;
 }
