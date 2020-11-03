@@ -2,15 +2,15 @@
 session_start();
 
 if ($_GET['signup'] == 'false') { // signup error
-   echo '<script>localStorage.setItem("signup", "false");</script>';
+   echo '<script>sessionStorage.setItem("signup", "false");</script>';
 } else {
-   echo '<script>localStorage.setItem("signup", "true");</script>';
+   echo '<script>sessionStorage.setItem("signup", "true");</script>';
 }
 
 if ($_GET['login'] == 'false') { // login error
-   echo '<script>localStorage.setItem("logon", "false");</script>';
+   echo '<script>sessionStorage.setItem("logon", "false");</script>';
 } else {
-   echo '<script>localStorage.setItem("logon", "true");</script>';
+   echo '<script>sessionStorage.setItem("logon", "true");</script>';
 }
 ?>
 <!DOCTYPE html>

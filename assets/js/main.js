@@ -18,13 +18,13 @@ new Vue({
    },
    mounted() {
       // Check if user tried to login, but failed
-      if (localStorage.getItem("logon") == 'false') {
+      if (sessionStorage.getItem("logon") == 'false') {
          this.logon = false;
       } else {
          this.logon = true;
       }
       // Check if user tried to sign up, but failed
-      if (localStorage.getItem("signup") == 'false') {
+      if (sessionStorage.getItem("signup") == 'false') {
          this.tab = 2;
          this.signup = false;
       } else {
