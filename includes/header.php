@@ -24,4 +24,3 @@ require_once 'includes/protect.php';
                 
             </nav>
         </header>
-

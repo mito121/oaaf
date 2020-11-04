@@ -31,22 +31,20 @@ html, body{
    z-index: 3;
 }
 
-#qr-text{
+#qr-info{
    width:100%;
    position:absolute;
-   top: 25%;
+   top: 28%;
    text-align:center;
    color:white;
    z-index:4;
 }
 
 @media only screen and (max-width: 414px) {
-   #qr-text{
-      top: 23%;
-   }
+
 }
 
-#qr-text h1, #qr-text h2, #qr-text p, #qr-text span {
+#qr-info h1, #qr-info h2, #qr-info p, #qr-info span {
    color:white;
    z-index:4;
 }

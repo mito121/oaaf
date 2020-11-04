@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2126.23 4604"><defs><style>.cls-1{opacity:0.5;}.cls-2{fill:none;stroke:#2b6d85;stroke-miterlimit:10;stroke-width:11px;}</style></defs><g id="cutout"><path class="cls-1" d="M3101.63,26.93V4576.52a27.22,27.22,0,0,0,27.21,27.21H5200.66a27.22,27.22,0,0,0,27.21-27.21V26.93a27.21,27.21,0,0,0-27.21-27.2H3128.84A27.21,27.21,0,0,0,3101.63,26.93ZM4541.25,2583.35a93.38,93.38,0,0,1-93.37,93.38H3881.62a93.38,93.38,0,0,1-93.37-93.38V2017.1a93.37,93.37,0,0,1,93.37-93.37h566.26a93.37,93.37,0,0,1,93.37,93.37Z" transform="translate(-3101.63 0.27)"/></g><g id="Layer_3" data-name="Layer 3"><path class="cls-2" d="M4518,2144V2023.33a74.6,74.6,0,0,0-74.6-74.6H4316.92" transform="translate(-3101.63 0.27)"/><path class="cls-2" d="M4012.58,1948.73H3886.1a74.6,74.6,0,0,0-74.6,74.6V2144" transform="translate(-3101.63 0.27)"/><path class="cls-2" d="M4316.92,2655.23H4443.4a74.6,74.6,0,0,0,74.6-74.61V2448.35" transform="translate(-3101.63 0.27)"/><path class="cls-2" d="M3811.5,2448.35v132.27a74.6,74.6,0,0,0,74.6,74.61h126.48" transform="translate(-3101.63 0.27)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2126.23 4604">
+   <defs>
+      <style>.cls-1{opacity:0.5;}.cls-2{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:11px;}</style>
+   </defs>
+   <g id="cutout">
+      <path class="cls-1" d="M3101.63,26.93V4576.52a27.22,27.22,0,0,0,27.21,27.21H5200.66a27.22,27.22,0,0,0,27.21-27.21V26.93a27.21,27.21,0,0,0-27.21-27.2H3128.84A27.21,27.21,0,0,0,3101.63,26.93ZM4541.25,2583.35a93.38,93.38,0,0,1-93.37,93.38H3881.62a93.38,93.38,0,0,1-93.37-93.38V2017.1a93.37,93.37,0,0,1,93.37-93.37h566.26a93.37,93.37,0,0,1,93.37,93.37Z" transform="translate(-3101.63 0.27)"/>
+   </g>
+   <g id="Layer_3" data-name="Layer 3">
+      <path class="cls-2" d="M4518,2144V2023.33a74.6,74.6,0,0,0-74.6-74.6H4316.92" transform="translate(-3101.63 0.27)"/>
+      <path class="cls-2" d="M4012.58,1948.73H3886.1a74.6,74.6,0,0,0-74.6,74.6V2144" transform="translate(-3101.63 0.27)"/>
+      <path class="cls-2" d="M4316.92,2655.23H4443.4a74.6,74.6,0,0,0,74.6-74.61V2448.35" transform="translate(-3101.63 0.27)"/>
+      <path class="cls-2" d="M3811.5,2448.35v132.27a74.6,74.6,0,0,0,74.6,74.61h126.48" transform="translate(-3101.63 0.27)"/>
+   </g>
+</svg>

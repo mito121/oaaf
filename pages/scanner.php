@@ -1,6 +1,6 @@
 <div class="qr-wrapper">
 
-   <div id="qr-text">
+   <div id="qr-info">
       <h1>Scan QR-kode</h1>
    </div>
    
