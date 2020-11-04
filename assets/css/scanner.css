@@ -30,3 +30,23 @@ html, body{
    background-repeat: no-repeat;
    z-index: 3;
 }
+
+#qr-text{
+   width:100%;
+   position:absolute;
+   top: 25%;
+   text-align:center;
+   color:white;
+   z-index:4;
+}
+
+@media only screen and (max-width: 414px) {
+   #qr-text{
+      top: 23%;
+   }
+}
+
+#qr-text h1, #qr-text h2, #qr-text p, #qr-text span {
+   color:white;
+   z-index:4;
+}

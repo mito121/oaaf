@@ -1,9 +1,12 @@
 <div class="qr-wrapper">
 
+   <div id="qr-text">
+      <h1>Scan QR-kode</h1>
+   </div>
+   
    <video id="qr-video"></video>
 
    <div id="scan-region"></div>
-   <!--<div id="scan-area"></div>-->
 
 </div>
 
@@ -16,19 +19,19 @@
 
    let scanned = false;
    function redir(url){
-   if(scanned === false){
-   scanner.stop();
-   if(confirm("Vil du bru' den bå' dér?")){
-   window.location.href = url;
-   }else{
-   scanner.start();
-   }
-   }
+      if(scanned === false){
+         scanner.stop();
+         if(confirm("Vil du bru' den bå' dér?")){
+            window.location.href = url;
+         }else{
+            scanner.start();
+         }
+      }
    }
 
    const scanner = new QrScanner(video, result => {
-   redir(result);
-   scanned = true;
+      redir(result);
+      scanned = true;
    }, error => {});
 
    scanner.start().then(() => {

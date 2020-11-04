@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+/* ### Check if user failed to sign up or log in ### */
 if ($_GET['signup'] == 'false') { // signup error
    echo '<script>sessionStorage.setItem("signup", "false");</script>';
 } else {
