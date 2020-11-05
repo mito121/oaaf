@@ -1,6 +1,7 @@
    <footer>
       <div id="footer-menu">
-         <div class="nav-toggle"></div>
+         <div class="nav-toggle footer-btn"></div>
+         <div class="footer-btn"></div>
          <!--<a href="handlers/logoff.php" style="color:white;">Log ud</a>-->
       </div>
    </footer>

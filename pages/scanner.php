@@ -1,14 +1,18 @@
-<div class="qr-wrapper">
 
-   <div id="qr-info">
-      <h1>Scan QR-kode</h1>
-   </div>
-   
-   <video id="qr-video"></video>
 
-   <div id="scan-region"></div>
-
+<div id="qr-info">
+   <img alt="QR-koden sidder på pælen" src="assets/img/paelikon.svg"/>
+   <h1>Scan QR-kode</h1>
 </div>
+
+<video id="qr-video"></video>
+
+<div id="qr-code">
+   <button>... eller indtast kode</button>
+</div>
+
+<div id="scan-region"></div>
+
 
 <!-- https://github.com/nimiq/qr-scanner -->
 <script type="module">

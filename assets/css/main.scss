@@ -17,6 +17,10 @@ $red: #FF3030;
    font-style: normal;
 }
 
+button:focus, input[type=submit]:focus, a:focus{
+   outline: none;
+}
+
 body{
    background-color:$lightblue;
 }
@@ -202,7 +206,22 @@ form{
 
 /* HEADER */
 header{
-
+   #main-nav{
+      height:100vh;
+      width:80%;
+      position:fixed;
+      left:0;
+      top:0;
+      
+      #nav-header{
+         background-color:$darkblue;
+         padding-top:35px;
+         
+         img{
+            
+         }
+      }
+   }
 }
 .login-header{
    padding-top: 25px;
@@ -247,11 +266,21 @@ footer{
    }
 }
 
-.nav-toggle{
+.footer-btn{
    height:60px;
    width:60px;
    border-radius:50%;
    background-color:#fff;
+}
+
+@media only screen and (max-width: 320px) {
+   .footer-btn{
+      height:50px;
+      width:50px;
+   }
+}
+
+.nav-toggle{
    background-image: url(../img/menu-waves.svg);
    background-repeat:no-repeat;
    background-size:70%;

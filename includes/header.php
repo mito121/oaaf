@@ -20,7 +20,9 @@ require_once 'includes/protect.php';
     </head>
     <body>
         <header>
-            <nav>
-                
+            <nav id="main-nav">
+               <div class="nav-header">
+                  
+               </div>
             </nav>
         </header>
