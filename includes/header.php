@@ -37,7 +37,7 @@ require_once 'includes/protect.php';
                      <li><a href="#">Pung</a></li>
                      <li><a href="#">Historik</a></li>
                      <li><a href="#">Hjælp</a></li>
-                     <li><a href="#">Hvordan?</a></li>
+                     <li><a href="#">Hvordan</a></li>
                   </ul>
                </div>
 
