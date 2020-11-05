@@ -21,16 +21,16 @@ require_once 'includes/protect.php';
    <body>
       <header>
          <nav id="main-nav">
-            <div>
-               <div id="nav-header">
-                  <img src="https://placekitten.com/g/200/200" alt="Din rang"/>
+            <div id="nav-header">
+               <img src="https://placekitten.com/g/200/200" alt="Din rang"/>
 
-                  <div>
-                     <h2>Ohøj, Hannemann!</h2>
-                     <a href="#">Vis profil ></a>
-                  </div>
+               <div>
+                  <h2>Ohøj Hannemann!</h2>
+                  <a href="#">Vis profil ></a>
                </div>
+            </div>
 
+            <div id="nav-content">
                <div id="nav-body">
                   <ul>
                      <li><a href="#">Statistik</a></li>
@@ -40,10 +40,11 @@ require_once 'includes/protect.php';
                      <li><a href="#">Hvordan?</a></li>
                   </ul>
                </div>
-            </div>
-            
-            <div id="nav-footer">
-               8/12 våde hester klar til sadling
+
+
+               <div id="nav-footer">
+                  8/12 våde hester klar til sadling
+               </div>
             </div>
          </nav>
       </header>

@@ -155,20 +155,14 @@ form {
 /* HEADER */
 header #main-nav {
   height: 100vh;
-  width: 80%;
+  width: 75%;
   position: fixed;
   left: 0;
   top: 0;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   z-index: 999;
   /* nav-header */
-  /* /nav-header */
-  /* nav-body */
-  /* /nav-body */
-  /* nav-footer */ }
+  /* /nav-header */ }
   header #main-nav #nav-header {
     background-color: #2B6D85;
     padding-top: 35px;
@@ -190,58 +184,72 @@ header #main-nav {
       width: 150px;
       display: block;
       margin: 0 auto; }
-  header #main-nav #nav-body ul {
-    margin-top: 10px; }
-    header #main-nav #nav-body ul li {
-      list-style-type: none;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      margin-bottom: 10px; }
-      header #main-nav #nav-body ul li a {
-        width: 100%;
-        height: 100%;
+  header #main-nav #nav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 275px);
+    overflow-y: auto;
+    /* nav-body */
+    /* /nav-body */
+    /* nav-footer */ }
+    header #main-nav #nav-content #nav-body {
+      margin-top: 10px; }
+      header #main-nav #nav-content #nav-body ul li {
+        list-style-type: none;
+        height: 45px;
         display: flex;
         align-items: center;
-        font-size: 18px;
-        padding-left: 3.3em;
-        color: #444;
-        text-decoration: none; }
-      header #main-nav #nav-body ul li:nth-of-type(1) a::before {
-        content: url(../img/statistik.svg);
-        position: absolute;
-        width: 26px;
-        top: .4em;
-        left: 1em; }
-      header #main-nav #nav-body ul li:nth-of-type(2) a::before {
-        content: url(../img/moenter.svg);
-        position: absolute;
-        width: 26px;
-        top: .55em;
-        left: 1em; }
-      header #main-nav #nav-body ul li:nth-of-type(3) a::before {
-        content: url(../img/historik.svg);
-        position: absolute;
-        width: 26px;
-        top: .55em;
-        left: 1em; }
-      header #main-nav #nav-body ul li:nth-of-type(4) a::before {
-        content: url(../img/hjaelp.svg);
-        position: absolute;
-        width: 26px;
-        top: .66em;
-        left: 1em; }
-      header #main-nav #nav-body ul li:nth-of-type(5) a::before {
-        content: url(../img/hvordan.svg);
-        position: absolute;
-        width: 26px;
-        top: .55em;
-        left: 1em; }
-  header #main-nav #nav-footer {
-    width: 100%;
-    padding-bottom: 20px;
-    padding-left: 10px; }
+        position: relative;
+        margin-bottom: 10px; }
+        header #main-nav #nav-content #nav-body ul li a {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          padding-left: calc(3.3em + 10px);
+          color: #444;
+          text-decoration: none; }
+          header #main-nav #nav-content #nav-body ul li a::after {
+            content: url(../img/arrow.svg);
+            width: 10px;
+            position: absolute;
+            right: 25px; }
+        header #main-nav #nav-content #nav-body ul li:nth-of-type(1) a::before {
+          content: url(../img/statistik.svg);
+          position: absolute;
+          width: 26px;
+          top: .4em;
+          left: 1em; }
+        header #main-nav #nav-content #nav-body ul li:nth-of-type(2) a::before {
+          content: url(../img/moenter.svg);
+          position: absolute;
+          width: 26px;
+          top: .55em;
+          left: 1em; }
+        header #main-nav #nav-content #nav-body ul li:nth-of-type(3) a::before {
+          content: url(../img/historik.svg);
+          position: absolute;
+          width: 26px;
+          top: .55em;
+          left: 1em; }
+        header #main-nav #nav-content #nav-body ul li:nth-of-type(4) a::before {
+          content: url(../img/hjaelp.svg);
+          position: absolute;
+          width: 26px;
+          top: .66em;
+          left: 1em; }
+        header #main-nav #nav-content #nav-body ul li:nth-of-type(5) a::before {
+          content: url(../img/hvordan.svg);
+          position: absolute;
+          width: 26px;
+          top: .55em;
+          left: 1em; }
+    header #main-nav #nav-content #nav-footer {
+      width: 100%;
+      padding-bottom: 20px;
+      padding-left: 10px; }
 
 .login-header {
   padding-top: 25px; }
