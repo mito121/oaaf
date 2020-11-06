@@ -32,7 +32,7 @@ h1,h2,h3,h4{
 
 .global-wrapper{
    width:100%;
-   padding:0 50px;
+   /*padding:0 50px;*/
    margin:0 auto;
 }
 @media only screen and (max-width: 375px) {
@@ -407,7 +407,24 @@ header{
 }
 
 /* Sub pages */
-.sub-head{
+.row{
+   display:block;
+   width: 275px;
+   margin:0 auto 13px auto;
+
+   .label{
+      color: #2B6D85;
+      font-size: 18px;
+      margin-left:3px;
+      margin-bottom:10px;
+   }
+}
+
+.logoff-row{
+   margin: 25px auto 0 auto;
+}
+
+.sub-header{
    width:100%;
    height:50px;
    background-color:#2B6D85;
@@ -415,16 +432,79 @@ header{
    align-items:center;
    justify-content:space-between;
    padding:0 10px;
+   margin-bottom:35px;
+
+   .back{
+      background:url('../img/tilbage_pil.svg');
+      background-position:50%;
+      background-repeat:no-repeat;
+      background-size:100%;
+      height:30px;
+      width:30px;
+   }
 
    h1{
       color:#fff;
       font-size:30px;
    }
-   
-   .spooky-ghost{}
+
+   .spooky-ghost{
+      height:30px;
+      width:30px;
+   }
 }
 
+.rank-img{
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   display: block;
+   margin: 0 auto;
+}
 
+.sub-box{
+   background-color:#fff;
+   border-radius:17px;
+   height:50px;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+   padding:0 13px;
+   font-size:17px;
+
+   .expand{
+      background-image: url('../img/arrow.svg');
+      background-size:100%;
+      background-position:50%;
+      background-repeat:no-repeat;
+      width: 10px;
+      height: 10px;
+   }
+}
+
+a.button {
+   -webkit-appearance: button;
+   -moz-appearance: button;
+   appearance: button;
+   text-decoration: none;
+   color: initial;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logoff{
+   width: 275px;
+   border-radius: 8px;
+   padding: 10px;
+   border: none;
+   color: white;
+   font-size: 16px;
+   height: 33px;
+   line-height: 0px;
+   background-color:$darkblue;
+}
 
 
 

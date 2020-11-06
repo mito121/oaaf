@@ -33,14 +33,14 @@ html, body{
 #qr-info{
    width:100%;
    position:absolute;
-   top: 4%;
+   top: 11%;
    text-align:center;
    color:white;
    z-index:4;
 }
 
 #qr-info img{
-   width:50%;
+   width:33%;
    margin-bottom:12px;
 }
 

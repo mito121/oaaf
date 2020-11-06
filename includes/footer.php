@@ -1,10 +1,10 @@
 <?php
-if ($_GET['page'] == 'scanner') {
+/* ## Show footer nav if page is scanner ## */
+if ($_GET['page'] == 'scanner' || empty($_GET['page'])) {
    $footer_menu = "   
       <div id=\"footer-menu\">
-         <div class=\"nav-toggle footer-btn\"></div>
+         <div id=\"footer-nav-toggle\" class=\"nav-toggle footer-btn\"></div>
          <div class=\"footer-btn\"></div>
-         <!--<a href=\"handlers/logoff.php\" style=\"color:white;\">Log ud</a>-->
       </div>";
 } else {
    $footer_menu = "";
