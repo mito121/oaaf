@@ -1,4 +1,4 @@
-<div class="global-wrapper" id="profile">
+<div class="global-wrapper" id="help">
     <div class="sub-header">
         <div class="back"></div>
         <h1>Hjælp</h1>
@@ -11,7 +11,7 @@
                 <p>FAQ</p><div class="expand rotate"></div>
             </div>
 
-            <div class="collapsible">
+            <div class="collapsible"> 
                 <ol>
                     <li><a href="#">Spørgsmål?</a></li>
                     <li><a href="#">Spørgsmål?</a></li>
