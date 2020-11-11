@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 require_once 'includes/protect.php';
 ?>
 <!DOCTYPE html>
