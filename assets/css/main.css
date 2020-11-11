@@ -14,9 +14,13 @@ button:focus, input[type=submit]:focus, a:focus {
   outline: none; }
 
 body {
-  background-color: #B7D9E1; }
+  background-color: #B7D9E1;
+  color: #444; }
 
 h1, h2, h3, h4 {
+  color: #2B6D85; }
+
+a {
   color: #2B6D85; }
 
 .global-wrapper {
@@ -27,6 +31,17 @@ h1, h2, h3, h4 {
 @media only screen and (max-width: 375px) {
   .global-wrapper {
     padding: 0; } }
+.wrapper {
+  padding: 0 15px; }
+
+@media only screen and (max-width: 320px) {
+  .wrapper {
+    padding: 0; } }
+.warning {
+  background-color: #FF3030;
+  padding: 6px;
+  border-radius: 5px; }
+
 .background {
   background-image: url(../img/tmp_bg.svg);
   width: 100%;
@@ -43,11 +58,13 @@ h1, h2, h3, h4 {
 
 .flex-a {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
 
 .flex-b {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .flex-c {
   display: flex;
@@ -101,13 +118,22 @@ form {
   form input {
     font-family: open-sans;
     font-family: sans-serif; }
+  form textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    background-color: #E9E9E9;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 13px 10px;
+    margin-bottom: 16px; }
   form input[type=text], form input[type=password], form input[type=email] {
     display: block;
     width: 100%;
     height: 33px;
     background-color: #E9E9E9;
     border-radius: 8px;
-    border: none;
+    border: 1px solid transparent;
     padding: 13px 10px;
     margin-bottom: 16px; }
     form input[type=text]:focus, form input[type=password]:focus, form input[type=email]:focus {
@@ -148,6 +174,9 @@ form {
     border: none;
     background: #2B6D85;
     height: 2px; }
+
+.password {
+  -webkit-text-security: disc; }
 
 .signup {
   background-color: #2B6D85; }
@@ -297,12 +326,12 @@ header #nav-overlay {
 .row {
   display: block;
   width: 275px;
-  margin: 0 auto 13px auto; }
+  margin: 0 auto 20px auto; }
   .row .label {
     color: #2B6D85;
     font-size: 18px;
     margin-left: 3px;
-    margin-bottom: 10px; }
+    margin-bottom: 8px; }
 
 .logoff-row {
   margin: 25px auto 0 auto; }
@@ -335,25 +364,67 @@ header #nav-overlay {
   height: 150px;
   width: 150px;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 6px auto; }
+
+.rank-label {
+  font-size: 20px; }
 
 .sub-box {
   background-color: #fff;
   border-radius: 17px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  max-height: 50px;
   padding: 0 13px;
-  font-size: 17px; }
+  font-size: 17px;
+  overflow: hidden;
+  transition: max-height 420ms ease-in-out; }
+  .sub-box .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px; }
+    .sub-box .flex p {
+      transition: color 250ms ease-in-out; }
   .sub-box .expand {
     background-image: url("../img/arrow.svg");
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
     width: 10px;
-    height: 10px; }
+    height: 100%;
+    transition: transform 250ms ease-in-out; }
+  .sub-box .collapsible {
+    display: block;
+    transition: max-height 420ms ease-in-out; }
+    .sub-box .collapsible .collapse-wrapper {
+      padding: 8px 0 13px 0; }
+    .sub-box .collapsible form {
+      width: auto; }
+      .sub-box .collapsible form .flex-b {
+        margin-top: 20px;
+        align-items: center; }
+      .sub-box .collapsible form button {
+        width: auto; }
+    .sub-box .collapsible ol {
+      padding: 10px 0 13px 0;
+      counter-reset: faq; }
+      .sub-box .collapsible ol li {
+        list-style-type: none; }
+        .sub-box .collapsible ol li a {
+          font-size: 16px;
+          color: #2B6D85;
+          text-decoration: underline; }
+          .sub-box .collapsible ol li a::before {
+            counter-increment: faq;
+            content: counter(faq) ". "; }
 
+.open .rotate {
+  transform: rotate(90deg); }
+
+.open .flex p {
+  color: #848484;
+  transition: color 250ms ease-in-out; }
+
+/* ## Profile ## */
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -375,6 +446,76 @@ a.button {
   height: 33px;
   line-height: 0px;
   background-color: #2B6D85; }
+
+/* ## Stats ## */
+.stat-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .stat-grid .stat-grid-item {
+    width: 45%;
+    margin: 5px;
+    background: orange;
+    height: 60px; }
+
+/* ### History ### */
+#history {
+  padding: 0 35px; }
+  #history .year {
+    color: #2B6D85;
+    font-size: 20px;
+    padding: 25px 0 10px 15px; }
+  #history .history-item {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 17px;
+    position: relative;
+    max-height: 65px;
+    margin-bottom: 15px;
+    transition: max-height 420ms ease-in-out; }
+    #history .history-item .flex-b {
+      width: 100%;
+      align-items: center; }
+    #history .history-item h1 {
+      color: #444;
+      font-size: 20px; }
+    #history .history-item p {
+      color: #444;
+      font-size: 10px; }
+    #history .history-item span {
+      margin-right: 18px; }
+    #history .history-item .expand {
+      content: url("../img/arrow.svg");
+      position: absolute;
+      width: 10px;
+      top: 27px;
+      right: 10px;
+      transition: transform 250ms ease-in-out; }
+    #history .history-item .collapsible {
+      padding-top: 25px; }
+      #history .history-item .collapsible table {
+        width: 100%; }
+        #history .history-item .collapsible table td {
+          height: 35px; }
+          #history .history-item .collapsible table td:last-of-type {
+            text-align: right; }
+      #history .history-item .collapsible button {
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        color: white;
+        font-size: 16px;
+        height: 33px;
+        line-height: 0px;
+        background: #93BD59;
+        margin-top: 5px; }
+        #history .history-item .collapsible button:focus {
+          outline: none; }
 
 /* Footer */
 footer {
@@ -403,7 +544,7 @@ footer {
 .nav-toggle {
   background-image: url(../img/menu-waves.svg);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
   background-position: 50%; }
 
 /*** iPhone and iOS Form Input Zoom Fixes ***/

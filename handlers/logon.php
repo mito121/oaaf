@@ -18,6 +18,7 @@ if (isset($_POST)) {
             $_SESSION['logged'] = true;
             $_SESSION['id'] = $obj->id;
             $_SESSION['name'] = $obj->name;
+            $_SESSION['email'] = $email;
             $_SESSION['time_at_sea'] = $obj->time_at_sea;
             $_SESSION['trips'] = $obj->trips;
             $_SESSION['fb_id'] = $obj->fb_id;

@@ -28,18 +28,18 @@ require_once 'includes/protect.php';
 
                      <div>
                         <h2>Ohøj Hannemann!</h2>
-                        <a href="index.php?page=profil">Vis profil ></a>
+                        <a href="index.php?page=profile">Vis profil ></a>
                      </div>
                   </div>
 
                   <div id="nav-content">
                      <div id="nav-body">
                         <ul>
-                           <li><a href="#">Statistik</a></li>
-                           <li><a href="#">Pung</a></li>
-                           <li><a href="#">Historik</a></li>
-                           <li><a href="#">Hjælp</a></li>
-                           <li><a href="#">Hvordan</a></li>
+                           <li><a href="index.php?page=stats">Statistik</a></li>
+                           <li><a href="index.php?page=wallet">Pung</a></li>
+                           <li><a href="index.php?page=history">Historik</a></li>
+                           <li><a href="index.php?page=help">Hjælp</a></li>
+                           <li><a href="index.php?page=how">Hvordan</a></li>
                         </ul>
                      </div>
 
