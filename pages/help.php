@@ -1,10 +1,23 @@
-<div class="global-wrapper" id="profile">
+
+
+
+<div class="overlay_rapporter_problem">
+
+  <div class="overlay_rapporter_box">
+    <p class"pop_up_text">Tak for din indsendelse!
+Vi fikser problemet snarest muligt.</p>
+    <a href="#" class="btn"></a>
+  </div>
+</div>
+
+
+
+<div class="global-wrapper">
     <div class="sub-header">
         <div class="back"></div>
         <h1>Hjælp</h1>
         <div class="spooky-ghost"></div>
     </div>
-
     <div class="row">
         <div class="sub-box toggle-collapse">
             <div class="flex">
@@ -29,7 +42,6 @@
             <div class="flex">
                 <p>Rapportér et problem</p><div class="expand rotate"></div>
             </div>
-
             <div class="collapsible">
                 <form method="POST" action="handlers/.php" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
