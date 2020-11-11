@@ -10,7 +10,7 @@
             <div class="year">2020</div>
 
             <div class="history-item">
-                <div class="flex-b">
+                <div class="flex-b toggle-history">
                     <div>
                         <h1>August</h1>
                         <p>Tirsdag 27/8-20</p>
