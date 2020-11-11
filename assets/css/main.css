@@ -510,7 +510,8 @@ a.button {
       right: 10px;
       transition: transform 250ms ease-in-out; }
     #history .history-item .collapsible {
-      padding-top: 25px; }
+      padding-bottom: 20px;
+      margin-top: 20px; }
       #history .history-item .collapsible table {
         width: 100%; }
         #history .history-item .collapsible table td {
@@ -558,6 +559,12 @@ footer {
     width: 50px; } }
 .nav-toggle {
   background-image: url(../img/menu-waves.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 50%; }
+
+.help-icon {
+  background-image: url(../img/hvordan.svg);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50%; }
