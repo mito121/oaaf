@@ -390,7 +390,8 @@ header #nav-overlay {
   padding: 0 13px;
   font-size: 17px;
   overflow: hidden;
-  transition: max-height 420ms ease-in-out; }
+  transition: max-height 420ms ease-in-out;
+  filter: drop-shadow(0px 2px 2px #444); }
   .sub-box .flex {
     display: flex;
     align-items: center;
