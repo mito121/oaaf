@@ -754,6 +754,13 @@ footer {
   background-position: 50%;
 }
 
+.help-icon {
+  background-image: url(../img/hvordan.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 50%;
+}
+
 /*** iPhone and iOS Form Input Zoom Fixes ***/
 /* Fix Input Zoom on devices older than iPhone 5: */
 @media screen and (device-aspect-ratio: 2/3) {
