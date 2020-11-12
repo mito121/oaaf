@@ -1,7 +1,7 @@
 
 
 
-<div class="overlay_rapporter_problem">
+<div id="overlay_rapporter_problem">
   <div class="overlay_rapporter_box">
     <p class"pop_up_text">Tak for din indsendelse!
       Vi fikser problemet snarest muligt.</p>
@@ -43,7 +43,7 @@
                 <p>Rapportér et problem</p><div class="expand rotate"></div>
             </div>
             <div class="collapsible">
-                <form method="POST" action="handlers/.php" autocomplete="off">
+                <form autocomplete="off" onsubmit="preventDefault(); overlayToggle();">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
                     <label for="issue">Beskriv problemet</label>
                     <textarea name="issue" id="issue" placeholder="Beskriv dit problem her"></textarea>

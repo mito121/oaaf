@@ -7,6 +7,20 @@ if (location.protocol !== "https:") {
 
 //help overlay
 
+function overlayToggle() {
+  alert("lol");
+  let overlayHelp = getElementById("overlay_rapporter_problem");
+  let overlayOpen = false;
+
+  if (overlayOpen == true) {
+    overlayHelp.style.display = "block";
+    overlayOpen = false;
+  } else {
+    overlayHelp.style.display = "none";
+    overlayOpen = true;
+  }
+}
+
 // Toggle navigation
 $(".nav-toggle").on("click", function () {
   $("#nav-overlay").toggleClass("d-none");
