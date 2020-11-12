@@ -9,6 +9,9 @@ require_once 'includes/protect.php';
       <title>QR Scanner Demo</title>
 
       <!-- ### CSS ### -->
+      <!-- slick -->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <!-- custom -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
       <?php
       if ($_GET['page'] == 'scanner.php' || empty($_GET['page'])) {

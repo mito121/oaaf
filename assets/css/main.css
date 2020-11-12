@@ -492,17 +492,20 @@ a.button {
   background-color: #2b6d85; }
 
 /* ## Stats ## */
-.stat-grid {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .stat-grid .stat-grid-item {
-    width: 45%;
-    margin: 5px;
-    background: orange;
-    height: 60px; }
+#stat-carousel {
+  width: 100%; }
+  #stat-carousel .stat div {
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+    transform: scale(0.8);
+    opacity: .5; }
+  #stat-carousel .slick-current div {
+    transform: scale(1);
+    opacity: 1; }
 
 /* ### History ### */
 #history {

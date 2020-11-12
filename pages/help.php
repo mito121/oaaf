@@ -3,7 +3,7 @@
 
 <div class="overlay_rapporter_problem">
   <div class="overlay_rapporter_box">
-    <p class"pop_up_text">Tak for din indsendelse!
+    <p class="pop_up_text">Tak for din indsendelse!
       Vi fikser problemet snarest muligt.</p>
     <a href="#" class="btn"></a>
     <button type="button" class="overlay_rapporter_btn">Tilbage</button>

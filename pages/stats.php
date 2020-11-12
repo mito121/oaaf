@@ -1,4 +1,6 @@
+
 <div class="global-wrapper">
+
     <div class="sub-header">
         <div class="back"></div>
         <h1>Statistik</h1>
@@ -10,11 +12,17 @@
         <span class="rank-label">Kaptajn</span>
     </div>
 
-    <div class="row stat-grid">
-        <div class="stat-grid-item"></div>
-        <div class="stat-grid-item"></div>
-        <div class="stat-grid-item"></div>
-        <div class="stat-grid-item"></div>
+    <div class="row" id="stat-carousel">
+        <div class="stat">
+            <div>Stat 1</div>
+        </div>
+        <div class="stat">
+            <div>Stat 2</div>
+        </div>
+        <div class="stat">
+            <div>Stat 3</div>
+        </div>
     </div>
 
+    <div id="stat-carousel-arrows"></div>
 </div>

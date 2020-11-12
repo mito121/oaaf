@@ -19,6 +19,8 @@ if ($_GET['page'] == 'scanner' || empty($_GET['page'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
 <!-- vue -->
 <script src="assets/js/vue.js"></script>
+<!-- slick -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- custom -->
 <script src="assets/js/main.js"></script>
 </body>
