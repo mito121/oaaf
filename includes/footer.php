@@ -21,6 +21,13 @@ if ($_GET['page'] == 'scanner' || empty($_GET['page'])) {
 <script src="assets/js/vue.js"></script>
 <!-- slick -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<?php
+if (!isset($_GET['page'])) {
+    echo "<script src=\"assets/js/modules/scanner.js\"></script>";
+} else {
+    echo "<script src=\"assets/js/modules/$pageName.js\"></script>";
+}
+?>
 <!-- custom -->
 <script src="assets/js/main.js"></script>
 </body>

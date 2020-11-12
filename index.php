@@ -1,10 +1,12 @@
 <?php
+
 session_start();
 
 require_once "includes/protect.php";
 require_once "includes/header.php";
 
 $page = '';
+$pageName = $_GET['page'];
 
 $page = (isset($_GET['page'])) ? "pages/" . $_GET['page'] . '.php' : 'pages/scanner.php';
 

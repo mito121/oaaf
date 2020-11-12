@@ -1,17 +1,3 @@
-
-
-
-<div id="overlay_rapporter_problem">
-  <div class="overlay_rapporter_box">
-    <p class="pop_up_text">Tak for din indsendelse!
-      Vi fikser problemet snarest muligt.</p>
-    <a href="#" class="btn"></a>
-    <button type="button" class="overlay_rapporter_btn">Tilbage</button>
-  </div>
-</div>
-
-
-
 <div class="global-wrapper">
     <div class="sub-header">
         <div class="back"></div>
@@ -43,7 +29,7 @@
                 <p>Rapportér et problem</p><div class="expand rotate"></div>
             </div>
             <div class="collapsible">
-                <form autocomplete="off" onsubmit="preventDefault(); overlayToggle();">
+                <form id="helpForm" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
                     <label for="issue">Beskriv problemet</label>
                     <textarea name="issue" id="issue" placeholder="Beskriv dit problem her"></textarea>
@@ -83,6 +69,16 @@
                     <a href="#" class="warning button">Slet profil</a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- help submit overlay -->
+    <div id="helpOverlay">
+        <div class="overlay_rapporter_box">
+            <p class="pop_up_text">Tak for din indsendelse!
+                Vi fikser problemet snarest muligt.</p>
+            <a href="#" class="btn"></a>
+            <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Tilbage</button>
         </div>
     </div>
 </div>

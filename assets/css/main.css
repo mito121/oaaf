@@ -373,7 +373,7 @@ header #nav-overlay {
     height: 30px;
     width: 30px; }
 
-#overlay_rapporter_problem {
+#helpOverlay {
   display: none;
   position: absolute;
   background-color: rgba(68, 68, 68, 0.75);
@@ -382,17 +382,17 @@ header #nav-overlay {
   top: 0;
   left: 0;
   z-index: 10; }
-  #overlay_rapporter_problem .overlay_rapporter_box {
+  #helpOverlay .overlay_rapporter_box {
     background-color: white;
     position: absolute;
     top: 200px;
     height: 200px; }
-    #overlay_rapporter_problem .overlay_rapporter_box p {
+    #helpOverlay .overlay_rapporter_box p {
       color: #2b6d85;
       margin: 25px;
       font-size: 25px;
       text-align: center; }
-    #overlay_rapporter_problem .overlay_rapporter_box .overlay_rapporter_btn {
+    #helpOverlay .overlay_rapporter_box .overlay_rapporter_btn {
       background-color: #93bd59;
       position: absolute;
       width: 325px;

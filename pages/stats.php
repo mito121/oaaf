@@ -22,7 +22,14 @@
         <div class="stat">
             <div>Stat 3</div>
         </div>
+        <div class="stat">
+            <div>Stat 4</div>
+        </div>
+        <div class="stat">
+            <div>Stat 5</div>
+        </div>
     </div>
 
+    <div id="stat-carousel-dots"></div>
     <div id="stat-carousel-arrows"></div>
 </div>
