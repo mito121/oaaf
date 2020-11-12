@@ -504,6 +504,33 @@ header {
   left: 0;
 
   z-index: 10;
+
+  .overlay_rapporter_box {
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    height: 200px;
+
+    p {
+      color: #2b6d85;
+      margin: 25px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .overlay_rapporter_btn {
+      background-color: #93bd59;
+      position: absolute;
+      width: 325px;
+      height: 33px;
+      margin: 25px;
+      bottom: 0px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+  }
 }
 
 .rank-img {

@@ -4,3 +4,4 @@ includes/dbconnect.php
 nbproject/project.properties
 nbproject/project.xml
 assets/css/main.css.map
+*.map
