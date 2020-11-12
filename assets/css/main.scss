@@ -494,7 +494,9 @@ header {
   }
 }
 
-.overlay_rapporter_problem {
+#overlay_rapporter_problem {
+  display: none;
+
   position: absolute;
   background-color: rgba(68, 68, 68, 0.75);
 
