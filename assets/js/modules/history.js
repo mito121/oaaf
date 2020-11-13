@@ -61,3 +61,11 @@ new Vue({
         },
     },
 });
+
+
+// Close overlay on background click
+//document.getElementById('helpOverlay').addEventListener('click', function (e) {
+//    e.stopPropagation();
+//    document.getElementById('helpOverlay').style.display = "none";
+//    let overlayOpen = false;
+//});
