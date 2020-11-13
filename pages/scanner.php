@@ -17,7 +17,7 @@
 <div id="indtast_kode_overlay">
 
   <div class="circle">
-
+    <img src="assets/img/Indtast-qr.svg" alt="indtast cifrer manuelt" id="indtast-qr">
   </div>
 
     <div class="overlay_rapporter_box">
@@ -31,7 +31,7 @@
           <input type="text" name="qr-ciffer" maxlength="1" id="form-control" />
         </div>
 
-        <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()" >Færdig</button>
+        <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Færdig</button>
     </div>
 </div>
 

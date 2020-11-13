@@ -120,6 +120,11 @@ body {
   margin: 35px auto 35px auto;
 }
 
+#Indtast-qr {
+  width: 100px;
+  height: auto;
+}
+
 /*overlay-(eller intast kode)*/
 #indtast_kode_overlay {
   position: absolute;
