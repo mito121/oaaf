@@ -489,7 +489,7 @@ header {
   position: fixed;
   top: 0;
   transition: top 250ms ease-in-out;
-  z-index: 999;
+  z-index: 9;
 
   .back {
     background: url("../img/tilbage_pil.svg");
@@ -523,6 +523,15 @@ header {
   left: 0;
 
   z-index: 10;
+
+  .circle {
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 35px auto 35px auto;
+  }
 
   .overlay_rapporter_box {
     background-color: white;
