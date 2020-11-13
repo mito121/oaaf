@@ -372,7 +372,7 @@ header #nav-overlay {
   position: fixed;
   top: 0;
   transition: top 250ms ease-in-out;
-  z-index: 999; }
+  z-index: 9; }
   .sub-header .back {
     background: url("../img/tilbage_pil.svg");
     background-position: 50%;
@@ -396,6 +396,13 @@ header #nav-overlay {
   top: 0;
   left: 0;
   z-index: 10; }
+  #helpOverlay .circle {
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 35px auto 35px auto; }
   #helpOverlay .overlay_rapporter_box {
     background-color: white;
     position: absolute;
