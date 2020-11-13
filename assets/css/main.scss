@@ -570,28 +570,28 @@ header {
 }
 
 .rank-exp{
-    
+
     table{
         margin: 13px 0;
         background-color: #E9E9E9;
         padding: 5px;
         border-radius: 8px;
         width:100%;
-        
+
         tr{
-            
+
             th{
                 text-align:left;
                 color:$darkblue;
                 font-weight:bold;
             }
-            
+
             td{
-                
+
                 &:last-of-type{
                     text-align:right;
                 }
-                
+
                 &:first-of-type{
                     text-align:left;
                 }
@@ -762,7 +762,8 @@ a.button {
     .slick-list{
         overflow: visible;
     }
-}
+  }
+
 
 #stat-carousel-arrows{
     width: 100%;
@@ -910,11 +911,11 @@ footer {
     background-position: 50%;
 }
 
-.help-icon {
-    background-image: url(../img/hvordan.svg);
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: 50%;
+.how-toggle {
+  background-image: url(../img/hvordan.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 50%;
 }
 
 /*** iPhone and iOS Form Input Zoom Fixes ***/

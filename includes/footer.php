@@ -4,7 +4,7 @@ if ($_GET['page'] == 'scanner' || empty($_GET['page'])) {
     $footer_menu = "
       <div id=\"footer-menu\">
          <div id=\"footer-nav-toggle\" class=\"nav-toggle footer-btn\"></div>
-         <div class=\"footer-btn\"></div>
+         <div class=\"footer-btn how-toggle\" id=\"how-toggle\"></div>
       </div>";
 } else {
     $footer_menu = "";
