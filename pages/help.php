@@ -1,5 +1,5 @@
 <div class="global-wrapper">
-    <div class="sub-header">
+    <div class="sub-header" id="sub-header">
         <div class="back"></div>
         <h1>Hjælp</h1>
         <div class="spooky-ghost"></div>

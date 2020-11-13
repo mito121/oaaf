@@ -10,7 +10,7 @@ new Vue({
     },
 
     mounted() {
-        /* ## Toggle collapsibles */
+        /* ## Toggle collapsibles ## */
         var box = document.getElementsByClassName("toggle-collapse");
         var collapsible = document.getElementsByClassName("collapsible");
         var i;
