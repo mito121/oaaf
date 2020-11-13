@@ -1,6 +1,7 @@
 <?php
 /* ## Show footer nav if page is scanner ## */
-if ($_GET['page'] == 'scanner' || empty($_GET['page'])) {
+$pageName = (isset($_GET['page'])) ? $_GET['page'] : 'scanner';
+if ($pageName == 'scanner' || empty($pageName)) {
     $footer_menu = "
       <div id=\"footer-menu\">
          <div id=\"footer-nav-toggle\" class=\"nav-toggle footer-btn\"></div>
