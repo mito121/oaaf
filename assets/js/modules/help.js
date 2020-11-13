@@ -1,3 +1,27 @@
+// Toggle fixed header
+var header = document.getElementById("sub-header");
+
+// Get the offset position of the navbar
+var top = header.OffsetTop;
+var scrollPos = (document.body.getBoundingClientRect()).top;
+
+
+// Detect scroll direction
+scrollPos = (document.body.getBoundingClientRect()).top;
+
+window.addEventListener('scroll', function () {
+    // detects new state and compares it with the new one
+    if ((document.body.getBoundingClientRect()).top > scrollPos) {
+        // Up
+        header.style.top = "0";
+    } else {
+        // Down
+        header.style.top = "-50px";
+    }
+    // saves the new position for iteration.
+    scrollPos = (document.body.getBoundingClientRect()).top;
+});
+
 // Submit help overlay
 let overlayOpen = false;
 document.getElementById("helpForm").addEventListener("submit", function (e) {
