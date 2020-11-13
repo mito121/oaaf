@@ -24,11 +24,12 @@
         <p class="pop_up_text">Tast cifrene over QR-koden</p>
 
         <div class="form-group">
-          <input type="text" name="qr-ciffer" maxlength="1" id="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" id="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" id="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" id="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" id="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
+
         </div>
 
         <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Færdig</button>
