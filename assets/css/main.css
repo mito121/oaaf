@@ -95,8 +95,8 @@ a {
 .text-left {
   text-align: left; }
 
-.mt-10 {
-  margin-top: 10px !important; }
+.mt {
+  margin-top: 25px !important; }
 
 .mt-50 {
   margin-top: 50px !important;
@@ -546,9 +546,11 @@ a.button {
     #stat-carousel .stat .stat-item img {
       width: 75%; }
     #stat-carousel .stat .stat-item .stat-track {
+      opacity: 0;
       position: absolute;
-      bottom: -60px;
-      text-align: center; }
+      bottom: -65px;
+      text-align: center;
+      transition: opacity 250ms ease-in-out; }
       #stat-carousel .stat .stat-item .stat-track .stat-track-header {
         color: #2b6d85;
         font-size: 16px; }
@@ -557,6 +559,8 @@ a.button {
   #stat-carousel .slick-current .stat-item {
     transform: scale(1);
     opacity: 1; }
+    #stat-carousel .slick-current .stat-item .stat-track {
+      opacity: 1; }
   #stat-carousel .slick-list {
     overflow: visible; }
 

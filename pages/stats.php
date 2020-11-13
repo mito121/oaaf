@@ -51,7 +51,7 @@
 
     <div id="stat-carousel-arrows"></div>
 
-    <div class="row mt-10">
+    <div class="row mt">
         <div class="sub-box toggle-collapse">
             <div class="flex">
                 <p>Forklaring af rangsystem</p><div class="expand rotate"></div>
