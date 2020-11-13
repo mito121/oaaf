@@ -1,7 +1,7 @@
 <?php
 /* ## Show footer nav if page is scanner ## */
 if ($_GET['page'] == 'scanner' || empty($_GET['page'])) {
-    $footer_menu = "   
+    $footer_menu = "
       <div id=\"footer-menu\">
          <div id=\"footer-nav-toggle\" class=\"nav-toggle footer-btn\"></div>
          <div class=\"footer-btn\"></div>
@@ -29,6 +29,5 @@ if (!isset($_GET['page'])) {
 }
 ?>
 <!-- custom -->
-<script src="assets/js/main.js"></script>
 </body>
 </html>
