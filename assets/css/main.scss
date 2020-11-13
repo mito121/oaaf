@@ -655,31 +655,28 @@ a.button {
 }
 
 /* ## Stats ## */
-#stat-carousel{
-    width:100%;
-    
-    .stat{
-        
-        div{
-            background-color:#fff;
-            height:200px;
-            width:200px;
-            border-radius:50%;
-            margin:0 auto;
-            transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
-            transform: scale(.8);
-            opacity:.5;
-        }
+#stat-carousel {
+  width: 100%;
+
+  .stat {
+    div {
+      background-color: #fff;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      margin: 0 auto;
+      transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+      transform: scale(0.8);
+      opacity: 0.5;
     }
-    
-    .slick-current{
-        
-        div{
-            transform: scale(1);
-            opacity:1;
-        }
-        
+  }
+
+  .slick-current {
+    div {
+      transform: scale(1);
+      opacity: 1;
     }
+  }
 }
 
 /* ### History ### */
@@ -807,7 +804,7 @@ footer {
   background-position: 50%;
 }
 
-.help-icon {
+.how-toggle {
   background-image: url(../img/hvordan.svg);
   background-repeat: no-repeat;
   background-size: 60%;

@@ -503,7 +503,7 @@ a.button {
     margin: 0 auto;
     transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
     transform: scale(0.8);
-    opacity: .5; }
+    opacity: 0.5; }
   #stat-carousel .slick-current div {
     transform: scale(1);
     opacity: 1; }
@@ -597,7 +597,7 @@ footer {
   background-size: 60%;
   background-position: 50%; }
 
-.help-icon {
+.how-toggle {
   background-image: url(../img/hvordan.svg);
   background-repeat: no-repeat;
   background-size: 60%;
