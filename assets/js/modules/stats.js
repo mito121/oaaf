@@ -12,6 +12,13 @@ $(document).ready(function () {
         centerPadding: '5px',
         mobileFirst: true
     });
+}).on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+    if (currentSlide !== nextSlide) {
+        document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
+            // timeout required or Slick will overwrite the classes
+            setTimeout(() => next.classList.add('slick-current', 'slick-center'));
+        });
+    }
 });
 
 /* ## Toggle collapsibles ## */

@@ -29,7 +29,8 @@ require_once 'includes/protect.php';
                      <img src="https://placekitten.com/g/200/200" alt="Din rang"/>
 
                      <div>
-                        <h2>Ohøj Hannemann!</h2>
+                        
+                        <h2><a href="index.php?page=profile">Ohøj Hannemann!</a></h2>
                         <a href="index.php?page=profile">Vis profil ></a>
                      </div>
                   </div>

@@ -239,6 +239,8 @@ header #nav-overlay {
       justify-content: space-between; }
       header #nav-overlay #main-nav #nav-header h2 {
         margin-bottom: 3px; }
+        header #nav-overlay #main-nav #nav-header h2 a {
+          text-decoration: none; }
       header #nav-overlay #main-nav #nav-header div a {
         padding-left: 3px; }
       header #nav-overlay #main-nav #nav-header h2,
@@ -326,11 +328,23 @@ header #nav-overlay {
     left: -75%; }
   to {
     left: 0; } }
+@keyframes nav-slide-out {
+  from {
+    left: 0%; }
+  to {
+    left: -75%; } }
 @keyframes fade-in {
   from {
     background-color: rgba(44, 44, 44, 0); }
   to {
     background-color: rgba(44, 44, 44, 0.8); } }
+@keyframes fade-out {
+  0% {
+    background-color: rgba(44, 44, 44, 0.8); }
+  90% {
+    background-color: rgba(44, 44, 44, 0); }
+  100% {
+    display: none; } }
 /* LOG IND */
 .logo-big {
   background-color: #2b6d85;
@@ -569,7 +583,10 @@ a.button {
   display: flex;
   justify-content: space-between;
   padding: 0 3em;
-  height: 50px; }
+  height: 50px;
+  z-index: 99999; }
+  #stat-carousel-arrows .slick-arrow {
+    z-index: 99999; }
 
 .carousel-btn {
   background: url(../img/tilbage_pil.svg);
