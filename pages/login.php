@@ -2,13 +2,13 @@
 session_start();
 
 /* ### Check if user failed to sign up or log in ### */
-if ($_GET['signup'] == 'false') { // signup error
+if (isset($_GET['signup']) && $_GET['signup'] == 'false') { // signup error
    echo '<script>sessionStorage.setItem("signup", "false");</script>';
 } else {
    echo '<script>sessionStorage.setItem("signup", "true");</script>';
 }
 
-if ($_GET['login'] == 'false') { // login error
+if (isset($_GET['signup']) && $_GET['login'] == 'false') { // login error
    echo '<script>sessionStorage.setItem("logon", "false");</script>';
 } else {
    echo '<script>sessionStorage.setItem("logon", "true");</script>';
