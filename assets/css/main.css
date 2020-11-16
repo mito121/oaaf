@@ -39,6 +39,9 @@ a {
 @media only screen and (max-width: 375px) {
   .global-wrapper {
     padding: 0; } }
+.overflow-show {
+  overflow: visible !important; }
+
 .wrapper {
   padding: 0 15px; }
 
@@ -598,6 +601,76 @@ a.button {
 
 .carousel-next {
   transform: rotate(180deg); }
+
+/* ## How ## */
+#how-carousel {
+  width: 100%;
+  padding-top: 10px; }
+  #how-carousel .how .how-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+    transform: scale(0.8);
+    opacity: 0.5; }
+    #how-carousel .how .how-item img {
+      width: 75%; }
+    #how-carousel .how .how-item .how-text {
+      background-color: #fff;
+      display: block;
+      width: 100vw;
+      position: absolute;
+      bottom: -185px;
+      padding: 15px; }
+      #how-carousel .how .how-item .how-text h1 {
+        color: #2b6d85;
+        text-align: center;
+        margin: 0 0 8px 0; }
+  #how-carousel .slick-current .how-item {
+    transform: scale(1);
+    opacity: 1; }
+    #how-carousel .slick-current .how-item .how-track {
+      opacity: 1; }
+  #how-carousel .slick-list {
+    overflow: visible; }
+
+#how-carousel-arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3em;
+  height: 50px;
+  z-index: 99999; }
+  #how-carousel-arrows .slick-arrow {
+    z-index: 99999; }
+
+#how-carousel-dots ul li.slick-active button {
+  background-color: #2b6d85; }
+
+.slick-dots {
+  display: flex;
+  justify-content: space-around;
+  width: 50px;
+  list-style-type: none;
+  margin: 0 auto; }
+
+.slick-dots li button {
+  background-color: white;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin: 0 5px; }
 
 /* ### History ### */
 #history {
