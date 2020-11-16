@@ -51,7 +51,7 @@
 
             <div class="collapsible">
                 <div class="collapse-wrapper">
-                    <p>Du kan læse alt om betingelser og vilkår og brug på vores <a href="#">hjemmeside</a>.</p>
+                    <p>Du kan læse alt om betingelser og vilkår for brug på vores <a href="#">hjemmeside</a>.</p>
                 </div>
             </div>
         </div>
