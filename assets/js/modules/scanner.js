@@ -12,6 +12,7 @@ document
       let overlayOpen = false;
     } else {
       document.getElementById("indtast_kode_overlay").style.display = "block";
+      document.getElementById("field_1").focus();
       let overlayOpen = true;
     }
   });
@@ -25,3 +26,11 @@ function closeHelpOverlay() {
 $(".overlay_rapporter_box, .circle").on("click", function (e) {
    e.stopPropagation();
 });
+
+
+//AUTO MOVE CURSOR
+function jump001(field, autoMove){
+  if (field.value.length >= field.maxLength) {
+    document.getElementById(autoMove).focus();
+  }
+}

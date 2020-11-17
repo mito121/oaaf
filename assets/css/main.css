@@ -389,7 +389,7 @@ header #nav-overlay {
   position: fixed;
   top: 0;
   transition: top 250ms ease-in-out;
-  z-index: 9; }
+  z-index: 999999; }
   .sub-header .back {
     background: url("../img/tilbage_pil.svg");
     background-position: 50%;
@@ -439,6 +439,7 @@ header #nav-overlay {
     #helpOverlay .overlay_rapporter_box .overlay_rapporter_btn {
       background-color: #93bd59;
       position: absolute;
+      align-content: center;
       width: 325px;
       height: 33px;
       margin: 25px;
@@ -511,7 +512,7 @@ header #nav-overlay {
         margin-top: 20px;
         align-items: center; }
       .sub-box .collapsible form button {
-        width: auto; }
+        width: 90px; }
     .sub-box .collapsible ol {
       padding: 10px 0 13px 0;
       counter-reset: faq; }
@@ -725,7 +726,7 @@ a.button {
     max-height: 65px;
     margin-bottom: 15px;
     transition: max-height 420ms ease-in-out;
-    filter: drop-shadow(0px 2px 2px #444); }
+    filter: drop-shadow(0px 1px 1.5px #444); }
     #history .history-item .flex-b {
       width: 100%;
       align-items: center; }
