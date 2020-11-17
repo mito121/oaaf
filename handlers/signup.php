@@ -7,7 +7,7 @@ if (isset($_POST)) {
    if (!empty($_POST['newName'])) {
       $name = $conn->real_escape_string($_POST['newName']);
    } else {
-      $name = "Skipper Løgsovs";
+      $name = "Sømand";
    }
 
    $email = $conn->real_escape_string($_POST['newEmail']);

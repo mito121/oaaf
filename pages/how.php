@@ -1,8 +1,63 @@
-<?php
+<div class="global-wrapper overflow-show">
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    <div class="sub-header" id="sub-header">
+        <div class="back"></div>
+        <h1>Hvordan?</h1>
+        <div class="spooky-ghost"></div>
+    </div>
 
+
+    <div class="row" id="how-carousel">
+
+        <div class="how">
+            <div class="how-item">
+                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+
+
+                <div class="how-text">
+                    <h1>Kom godt fra start</h1>
+                    <p>Scan QR koden på pælen foran den båd du gerne vil sejle med, og tryk accepter på appem for at låse dem op.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how">
+            <div class="how-item">
+                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+
+
+                <div class="how-text">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="how">
+            <div class="how-item">
+                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+
+
+                <div class="how-text">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="how">
+            <div class="how-item">
+                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+
+
+                <div class="how-text">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="how-carousel-dots"></div>
+
+    <div id="how-carousel-arrows"></div>
+
+</div>
