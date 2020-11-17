@@ -32,7 +32,6 @@
         </div>
 <div class="centrering">
   <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Færdig</button>
-  
 </div>
 
     </div>
