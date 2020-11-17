@@ -30,8 +30,11 @@
           <input type="text" maxlength="1" id="field_5" class="form-control" />
 
         </div>
+<div class="centrering">
+  <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Færdig</button>
+  
+</div>
 
-        <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Færdig</button>
     </div>
 </div>
 
