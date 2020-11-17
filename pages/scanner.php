@@ -13,8 +13,7 @@
 
 <div id="scan-region"></div>
 
-
-<div id="indtast_kode_overlay">
+<div id="indtast_kode_overlay" onclick="closeHelpOverlay()">
 
   <div class="circle">
     <img src="assets/img/Indtast-qr.svg" alt="indtast cifrer manuelt" id="indtast-qr">

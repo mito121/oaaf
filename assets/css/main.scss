@@ -441,7 +441,7 @@ header {
       left: 0%;
    }
    to {
-      left: 
+      left:
          -75%;
    }
 }
@@ -547,6 +547,23 @@ header {
    left: 0;
 
    z-index: 10;
+
+   .circle {
+     position: relative;
+     background-color: white;
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin: 35px auto 35px auto;
+     display: flex;
+     justify-content: center;
+   }
+
+   .circle img {
+     position: relative;
+     width: 80px;
+     height: auto;
+   }
 
    .overlay_rapporter_box {
       background-color: white;

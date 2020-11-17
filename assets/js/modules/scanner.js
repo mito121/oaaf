@@ -15,8 +15,13 @@ document
       let overlayOpen = true;
     }
   });
+
 // Close overlay btn
 function closeHelpOverlay() {
   document.getElementById("indtast_kode_overlay").style.display = "none";
   let overlayOpen = false;
 }
+
+$(".overlay_rapporter_box, .circle").on("click", function (e) {
+   e.stopPropagation();
+});

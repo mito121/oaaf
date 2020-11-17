@@ -16,6 +16,11 @@ function closeHelpOverlay() {
     let overlayOpen = false;
 }
 
+//close on overlay
+$(".overlay_rapporter_box, .circle").on("click", function (e) {
+   e.stopPropagation();
+});
+
 
 /* ## Toggle collapsibles */
 var box = document.getElementsByClassName("toggle-collapse");
