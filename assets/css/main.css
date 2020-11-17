@@ -512,7 +512,7 @@ header #nav-overlay {
         margin-top: 20px;
         align-items: center; }
       .sub-box .collapsible form button {
-        width: auto; }
+        width: 90px; }
     .sub-box .collapsible ol {
       padding: 10px 0 13px 0;
       counter-reset: faq; }

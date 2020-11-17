@@ -119,7 +119,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #qr-code button {
-   margin: 50px;
+   margin-top: 50px;
   }
 }
 

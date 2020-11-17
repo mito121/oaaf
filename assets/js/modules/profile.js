@@ -39,28 +39,12 @@ new Vue({
                     var maxHeight = 50 + this.lastElementChild.offsetHeight + "px";
                     this.style.maxHeight = maxHeight;
 
-                    let that = this;
-                    let dimensions = this.getBoundingClientRect();
-
-                    console.log(that.offsetTop)
-                    console.log(that.offsetTop - 20)
                     // Scroll to selected item
-                    setTimeout(function () {
-                        $('html, body').animate({
-                            scrollTop: that.offsetTop - 85
-                        }, 250);
-                    }, 450);
-
-
 //                    setTimeout(function () {
-////                        window.scrollTo(window.scrollX, dimensions.top - 50, {behaviour: "smooth"});
-//                        window.scrollTo({
-//                            top: dimensions.top - 30,
-//                            behavior: 'smooth'
-//                        });
-//                    }, 450);
-
-
+                        $('html, body').animate({
+                            scrollTop: this.offsetTop - 85
+                        }, 500);
+//                    }, 250);
 
                 } else {
                     this.style.maxHeight = "50px";
