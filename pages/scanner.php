@@ -8,7 +8,7 @@
 <video id="qr-video"></video>
 
 <div id="qr-code">
-   <button id="indtastKodeBtn" onclick="readyeddy()">... eller indtast kode</button>
+   <button id="indtastKodeBtn">... eller indtast kode</button>
 </div>
 
 <div id="scan-region"></div>
