@@ -23,11 +23,11 @@
         <p class="pop_up_text">Tast cifrene over QR-koden</p>
 
         <div class="form-group">
-          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
-          <input type="text" name="qr-ciffer" maxlength="1" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" id="field_1" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" id="field_2" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" id="field_3" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" id="field_4" class="form-control" />
+          <input type="text" name="qr-ciffer" maxlength="1" id="field_5" class="form-control" />
 
         </div>
 

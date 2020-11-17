@@ -647,6 +647,7 @@ header {
     border-radius: 17px;
     max-height: 50px;
     padding: 0 13px;
+    margin-top: 50px;
     font-size: 17px;
     overflow: hidden;
     transition: max-height 420ms ease-in-out;
@@ -955,7 +956,7 @@ a.button {
         max-height: 65px;
         margin-bottom: 15px;
         transition: max-height 420ms ease-in-out;
-        filter: drop-shadow(0px 2px 2px #444);
+        filter: drop-shadow(0px 1px 1.5px #444);
 
         .flex-b {
             width: 100%;
