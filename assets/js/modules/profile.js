@@ -38,6 +38,13 @@ new Vue({
                 if (this.classList.contains("open")) {
                     var maxHeight = 50 + this.lastElementChild.offsetHeight + "px";
                     this.style.maxHeight = maxHeight;
+
+                    setTimeout(function () {
+                        // Scroll to selected item
+                        $('html, body').animate({
+                            scrollTop: $(this).offset().top - 80
+                        }, 250);
+                    }, 450);
                 } else {
                     this.style.maxHeight = "50px";
                 }

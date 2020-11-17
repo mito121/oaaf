@@ -517,7 +517,7 @@ header {
     position: fixed;
     top: 0;
     transition: top 250ms ease-in-out;
-    z-index: 9;
+    z-index: 999999;
 
     .back {
         background: url("../img/tilbage_pil.svg");
