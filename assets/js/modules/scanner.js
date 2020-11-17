@@ -25,3 +25,12 @@ function closeHelpOverlay() {
 $(".overlay_rapporter_box, .circle").on("click", function (e) {
    e.stopPropagation();
 });
+
+
+//AUTO MOVE CURSOR
+
+function jump001(field, autoMove){
+  if (field.value.length >= field.maxLength) {
+    document.getElementById(autoMove).focus();
+  }
+}
