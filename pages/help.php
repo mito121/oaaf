@@ -73,7 +73,12 @@
     </div>
 
     <!-- help submit overlay -->
-    <div id="helpOverlay">
+    <div id="helpOverlay" onclick="closeHelpOverlay()">
+
+      <div class="circle">
+        <img src="assets/img/flueben_groent.svg" alt="indtast cifrer manuelt">
+      </div>
+
         <div class="overlay_rapporter_box">
             <p class="pop_up_text">Tak for din indsendelse!
                 Vi fikser problemet snarest muligt.</p>
