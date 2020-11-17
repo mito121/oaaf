@@ -439,6 +439,7 @@ header #nav-overlay {
     #helpOverlay .overlay_rapporter_box .overlay_rapporter_btn {
       background-color: #93bd59;
       position: absolute;
+      align-content: center;
       width: 325px;
       height: 33px;
       margin: 25px;
