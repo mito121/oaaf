@@ -40,10 +40,28 @@ new Vue({
                     this.style.maxHeight = maxHeight;
 
                     let that = this;
-                    
+                    let dimensions = this.getBoundingClientRect();
+
+                    console.log(that.offsetTop)
+                    console.log(that.offsetTop - 20)
+                    // Scroll to selected item
                     setTimeout(function () {
-                        that.scrollIntoView({behavior: "smooth"});
+                        $('html, body').animate({
+                            scrollTop: that.offsetTop - 85
+                        }, 250);
                     }, 450);
+
+
+//                    setTimeout(function () {
+////                        window.scrollTo(window.scrollX, dimensions.top - 50, {behaviour: "smooth"});
+//                        window.scrollTo({
+//                            top: dimensions.top - 30,
+//                            behavior: 'smooth'
+//                        });
+//                    }, 450);
+
+
+
                 } else {
                     this.style.maxHeight = "50px";
                 }
