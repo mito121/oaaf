@@ -27,8 +27,6 @@ $(".overlay_rapporter_box, .circle").on("click", function (e) {
    e.stopPropagation();
 });
 
-//
-
 
 //AUTO MOVE CURSOR
 function jump001(field, autoMove){
