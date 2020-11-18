@@ -575,6 +575,13 @@ a.button {
   .wide-button:focus {
     outline: none; }
 
+.wallet-img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto 6px auto;
+  padding-left: 30px; }
+
 #wallet .row:nth-of-type(3) .sub-box .collapsible .wide-button {
   background-color: #93bd59; }
 #wallet .row:nth-of-type(4) .sub-box .collapsible .wide-button {

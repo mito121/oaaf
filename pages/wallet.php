@@ -6,7 +6,7 @@
     </div>
 
     <div class="row">
-        <img class="rank-img" src="https://placekitten.com/g/200/200" alt="Din rang"/>
+        <img class="wallet-img" src="assets/img/pung.svg" alt="Billede af en pung"/>
     </div>
 
     <div class="row">
