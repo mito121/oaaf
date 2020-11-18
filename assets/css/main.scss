@@ -540,62 +540,62 @@ header {
 }
 
 #helpOverlay {
-   display: none;
+    display: none;
 
-   position: absolute;
-   background-color: rgba(68, 68, 68, 0.75);
+    position: absolute;
+    background-color: rgba(68, 68, 68, 0.75);
 
-   width: 100%;
-   height: 100vh;
-   top: 0;
-   left: 0;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
 
-   z-index: 10;
+    z-index: 10;
 
-   .circle {
-     position: relative;
-     background-color: white;
-     width: 150px;
-     height: 150px;
-     border-radius: 50%;
-     margin: 35px auto 35px auto;
-     display: flex;
-     justify-content: center;
-   }
+    .circle {
+        position: relative;
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 35px auto 35px auto;
+        display: flex;
+        justify-content: center;
+    }
 
-   .circle img {
-     position: relative;
-     width: 80px;
-     height: auto;
-   }
+    .circle img {
+        position: relative;
+        width: 80px;
+        height: auto;
+    }
 
-   .overlay_rapporter_box {
-      background-color: white;
-      position: absolute;
-      top: 200px;
-      height: 200px;
+    .overlay_rapporter_box {
+        background-color: white;
+        position: absolute;
+        top: 200px;
+        height: 200px;
 
-      p {
-         color: #2b6d85;
-         margin: 25px;
-         font-size: 25px;
-         text-align: center;
-      }
+        p {
+            color: #2b6d85;
+            margin: 25px;
+            font-size: 25px;
+            text-align: center;
+        }
 
-      .overlay_rapporter_btn {
-         background-color: #93bd59;
-         position: absolute;
-         align-content: center;
-         width: 325px;
-         height: 33px;
-         margin: 25px;
-         bottom: 0px;
-         color: white;
-         border: none;
-         border-radius: 8px;
-         font-size: 16px;
-      }
-   }
+        .overlay_rapporter_btn {
+            background-color: #93bd59;
+            position: absolute;
+            align-content: center;
+            width: 325px;
+            height: 33px;
+            margin: 25px;
+            bottom: 0px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    }
 }
 
 .rank-img {
@@ -868,105 +868,131 @@ a.button {
 }
 
 /* ## How ## */
-#how-carousel {
-    width: 100%;
-    padding-top: 10px;
+#how{
+    position:relative;
 
-    .how {
-        .how-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-            background-color: #fff;
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
-            margin: 0 auto;
-            transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
-            transform: scale(0.8);
-            opacity: 0.5;
+    #how-carousel {
+        width: 100%;
+        height:75vh;
 
-            img {
-                width: 75%;
-            }
+        padding-top: 10px;
 
-            .how-text{
+        .how {
+            .how-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
                 background-color: #fff;
-                display: block;
-                width: 100vw;
-                position: absolute;
-                bottom: -185px;
-                padding: 15px;
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                margin: 0 auto;
+                transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+                transform: scale(0.8);
+                opacity: 0.5;
 
-                h1{
-                    color:$darkblue;
+                img {
+                    width: 75%;
+                }
+
+                .how-text{
+                    position: absolute;
+                    bottom: -28vh;
                     text-align:center;
-                    margin: 0 0 8px 0;
+
+                    h1{
+                        color:$darkblue;
+                        margin: 0 0 15px 0;
+                    }
                 }
             }
         }
-    }
 
-    .slick-current {
-        .how-item {
-            transform: scale(1);
-            opacity: 1;
-
-            .how-track {
+        .slick-current {
+            .how-item {
+                transform: scale(1);
                 opacity: 1;
+
+                .how-track {
+                    opacity: 1;
+                }
             }
         }
+
+        .slick-list{
+            height: 75vh;
+        }
+
     }
 
-    .slick-list {
-        overflow: visible;
+    #how-text-box{
+        background-color: #fff;
+        display: block;
+        width: 100vw;
+        height:165px;
+        position: absolute;
+        bottom: 6vh;
+        padding: 15px;
+        z-index:-1;
     }
-}
 
-#how-carousel-arrows {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3em;
-    height: 50px;
-    z-index: 99999;
-
-    .slick-arrow {
+    #how-carousel-arrows {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3em;
+        height: 50px;
         z-index: 99999;
-    }
-}
 
-#how-carousel-dots {
-    ul{
-
-        li.slick-active button{
-            background-color: $darkblue;
+        .slick-arrow {
+            z-index: 99999;
         }
     }
 
+    #how-carousel-dots {
+        position: relative;
+        top: -28vh;
+        ul{
+
+            li.slick-active button{
+                background-color: $darkblue;
+            }
+        }
+
+    }
+
+    .slick-dots{
+        display:flex;
+        justify-content: space-around;
+        width:50px;
+        list-style-type: none;
+        margin: 0 auto;
+    }
+
+    .slick-dots li button {
+        background-color:white;
+        text-indent: -9999px;
+        overflow: hidden;
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        outline: none;
+        border: none;
+        margin: 0 5px;
+    }
+
+
+    .wide-button{
+        width: 245px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -23px;
+    }
 }
 
-.slick-dots{
-    display:flex;
-    justify-content: space-around;
-    width:50px;
-    list-style-type: none;
-    margin: 0 auto;
-}
-
-.slick-dots li button {
-    background-color:white;
-    text-indent: -9999px;
-    overflow: hidden;
-    width: 20px;
-    height: 20px;
-    border-radius:50%;
-    outline: none;
-    border: none;
-    margin: 0 5px;
-}
 /* ### History ### */
 
 #history {

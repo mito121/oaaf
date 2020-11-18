@@ -641,74 +641,87 @@ a.button {
   transform: rotate(180deg); }
 
 /* ## How ## */
-#how-carousel {
-  width: 100%;
-  padding-top: 10px; }
-  #how-carousel .how .how-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    background-color: #fff;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    margin: 0 auto;
-    transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
-    transform: scale(0.8);
-    opacity: 0.5; }
-    #how-carousel .how .how-item img {
-      width: 75%; }
-    #how-carousel .how .how-item .how-text {
+#how {
+  position: relative; }
+  #how #how-carousel {
+    width: 100%;
+    height: 75vh;
+    padding-top: 10px; }
+    #how #how-carousel .how .how-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
       background-color: #fff;
-      display: block;
-      width: 100vw;
-      position: absolute;
-      bottom: -185px;
-      padding: 15px; }
-      #how-carousel .how .how-item .how-text h1 {
-        color: #2b6d85;
-        text-align: center;
-        margin: 0 0 8px 0; }
-  #how-carousel .slick-current .how-item {
-    transform: scale(1);
-    opacity: 1; }
-    #how-carousel .slick-current .how-item .how-track {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      margin: 0 auto;
+      transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+      transform: scale(0.8);
+      opacity: 0.5; }
+      #how #how-carousel .how .how-item img {
+        width: 75%; }
+      #how #how-carousel .how .how-item .how-text {
+        position: absolute;
+        bottom: -28vh;
+        text-align: center; }
+        #how #how-carousel .how .how-item .how-text h1 {
+          color: #2b6d85;
+          margin: 0 0 15px 0; }
+    #how #how-carousel .slick-current .how-item {
+      transform: scale(1);
       opacity: 1; }
-  #how-carousel .slick-list {
-    overflow: visible; }
-
-#how-carousel-arrows {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3em;
-  height: 50px;
-  z-index: 99999; }
-  #how-carousel-arrows .slick-arrow {
+      #how #how-carousel .slick-current .how-item .how-track {
+        opacity: 1; }
+    #how #how-carousel .slick-list {
+      height: 75vh; }
+  #how #how-text-box {
+    background-color: #fff;
+    display: block;
+    width: 100vw;
+    height: 165px;
+    position: absolute;
+    bottom: 6vh;
+    padding: 15px;
+    z-index: -1; }
+  #how #how-carousel-arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+    height: 50px;
     z-index: 99999; }
-
-#how-carousel-dots ul li.slick-active button {
-  background-color: #2b6d85; }
-
-.slick-dots {
-  display: flex;
-  justify-content: space-around;
-  width: 50px;
-  list-style-type: none;
-  margin: 0 auto; }
-
-.slick-dots li button {
-  background-color: white;
-  text-indent: -9999px;
-  overflow: hidden;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  margin: 0 5px; }
+    #how #how-carousel-arrows .slick-arrow {
+      z-index: 99999; }
+  #how #how-carousel-dots {
+    position: relative;
+    top: -28vh; }
+    #how #how-carousel-dots ul li.slick-active button {
+      background-color: #2b6d85; }
+  #how .slick-dots {
+    display: flex;
+    justify-content: space-around;
+    width: 50px;
+    list-style-type: none;
+    margin: 0 auto; }
+  #how .slick-dots li button {
+    background-color: white;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin: 0 5px; }
+  #how .wide-button {
+    width: 245px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -23px; }
 
 /* ### History ### */
 #history {

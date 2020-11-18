@@ -1,4 +1,4 @@
-<div class="global-wrapper overflow-show">
+<div class="global-wrapper" id="how">
 
     <div class="sub-header" id="sub-header">
         <div class="back"></div>
@@ -58,6 +58,8 @@
 
     <div id="how-carousel-dots"></div>
 
-    <div id="how-carousel-arrows"></div>
+    <div id="how-text-box"></div>
+
+    <button id="how-next" class="wide-button">Næste</button>
 
 </div>
