@@ -559,10 +559,6 @@ a.button {
 /* ## Wallet ## */
 .or-text {
   color: #848484; }
-  .or-text:first-of-type {
-    padding-bottom: 15px; }
-  .or-text:last-of-type {
-    padding-top: 10px; }
 
 .wide-button {
   width: 100%;
@@ -574,11 +570,22 @@ a.button {
   font-size: 16px;
   height: 33px;
   line-height: 0px;
-  background: #93bd59;
   margin-top: 5px;
   margin-bottom: 15px; }
   .wide-button:focus {
     outline: none; }
+
+#wallet .row:nth-of-type(3) .sub-box .collapsible .wide-button {
+  background-color: #93bd59; }
+#wallet .row:nth-of-type(4) .sub-box .collapsible .wide-button {
+  background-color: #93bd59; }
+#wallet .row:nth-of-type(4) .sub-box .collapsible .or-text {
+  padding-bottom: 15px; }
+#wallet .row:nth-of-type(5) .sub-box .collapsible .wide-button {
+  background-color: #2b6d85; }
+#wallet .row:nth-of-type(5) .sub-box .collapsible .or-text {
+  padding-top: 10px;
+  padding-bottom: 2px; }
 
 /* ## Stats ## */
 #stat-carousel {

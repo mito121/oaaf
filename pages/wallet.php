@@ -1,4 +1,4 @@
-<div class="global-wrapper" id="profile">
+<div class="global-wrapper" id="wallet">
     <div class="sub-header">
         <div class="back"></div>
         <h1>Pung</h1>
@@ -17,16 +17,7 @@
             </div>
 
             <div class="collapsible">
-                <form method="POST" action="handlers/updateName.php" autocomplete="off">
-                    <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
-                    <label for="newName">Nyt navn</label>
-                    <input type="text" name="newName" id="newName" placeholder="Indtast nyt navn" autocomplete="off">
-
-                    <div class="flex-b">
-                        <a href="#">Annullér</a>
-                        <button type="submit">Udfør</button>
-                    </div>
-                </form>
+                <button class="wide-button">Skift betalingsmetode</button>
             </div>
         </div>
 

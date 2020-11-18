@@ -751,14 +751,11 @@ a.button {
 }
 
 /* ## Wallet ## */
+
+
+
 .or-text {
     color: $lightblack;
-    &:first-of-type {
-        padding-bottom: 15px;
-    }
-    &:last-of-type {
-        padding-top: 10px;
-    }
 }
 
 .wide-button {
@@ -771,12 +768,54 @@ a.button {
     font-size: 16px;
     height: 33px;
     line-height: 0px;
-    background: $green;
     margin-top: 5px;
     margin-bottom: 15px;
 
     &:focus {
         outline: none;
+    }
+}
+
+#wallet{
+    .row{
+        &:nth-of-type(3){
+            .sub-box{
+                .collapsible{
+                    .wide-button{
+                        background-color: $green;
+                    }
+                }
+            }
+        }
+    }
+    .row{
+        &:nth-of-type(4){
+            .sub-box{
+                .collapsible{
+                    .wide-button{
+                        background-color: $green;
+                    }
+                    .or-text {
+                        padding-bottom:15px;
+                    }
+                }
+            }
+        }
+    }
+    .row{
+        &:nth-of-type(5){
+            .sub-box{
+                .collapsible{
+                    .wide-button{
+                        background-color: $darkblue;
+                    }
+                    .or-text {
+                        padding-top:10px;
+                        padding-bottom: 2px;
+                    }
+                }
+            }
+        }
     }
 }
 
