@@ -532,7 +532,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    margin-bottom: 35px;
     position: fixed;
     top: 0;
     transition: top 250ms ease-in-out;
@@ -542,9 +541,9 @@ header {
         background: url("../img/tilbage_pil.svg");
         background-position: 50%;
         background-repeat: no-repeat;
-        background-size: 100%;
-        height: 30px;
-        width: 30px;
+        background-size: 95%;
+        height: 33px;
+        width: 33px;
     }
 
     h1 {
@@ -972,7 +971,7 @@ a.button {
 
                 .how-text{
                     position: absolute;
-                    bottom: -28vh;
+                    /*bottom: -36vh;*/
                     text-align:center;
 
                     h1{
@@ -1063,6 +1062,61 @@ a.button {
         margin: 0 auto;
         position: relative;
         top: -23px;
+    }
+}
+
+// iPhone X
+@media screen and (max-height: 812px) {
+    #how{
+        #how-carousel-dots{
+            top: -36vh;
+        }
+        #how-text-box{
+            bottom: 17vh;
+        }
+        .how-text{
+            bottom: -25vh;
+        }
+        .wide-button{
+            top: -15vh;
+        }
+    }
+
+}
+
+// iPhone 6/7/8 Plus
+@media screen and (max-height: 736px) {
+    #how{
+        #how-carousel-dots{
+            top: -31vh;
+        }
+        #how-text-box{
+            bottom: 10vh;
+        }
+        .how-text{
+            bottom: -29vh;
+        }
+        .wide-button{
+            top: -57px;
+        }
+    }
+}
+
+// iPhone 6/7/8
+@media screen and (max-height: 667px) {
+    #how{
+        #how-carousel-dots{
+            top: -29vh;
+        }
+        #how-text-box{
+            bottom: 5vh;
+        }
+        .how-text{
+            bottom: -30vh;
+        }
+        .wide-button{
+            top: -17px;
+        }
     }
 }
 
