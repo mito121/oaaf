@@ -11,12 +11,17 @@
 
     <div class="row">
         <div class="label">Betalingsmetode</div>
-        <div class="sub-box toggle-collapse">
+        <div class="sub-box-big toggle-collapse">
             <div class="flex">
-                <p>Lol rasmus skriv noget visa</p><div class="expand rotate"></div>
+                <div>
+                    <p>VISA</p>
+                    <p>**** **** **** 1234</p>
+                </div>
+                
+                <div class="expand rotate"></div>
             </div>
 
-            <div class="collapsible">
+            <div class="collapsible mtb-15">
                 <button class="wide-button">Skift betalingsmetode</button>
             </div>
         </div>

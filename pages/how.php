@@ -11,7 +11,8 @@
 
         <div class="how">
             <div class="how-item">
-                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+                <img class="how-img" src="assets/img/info1_1.svg" alt=""/>
+                <img class="how-img" class="invisible" src="assets/img/info1_2.svg" alt=""/>
 
 
                 <div class="how-text">
@@ -23,7 +24,8 @@
 
         <div class="how">
             <div class="how-item">
-                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+                <img class="how-img" src="assets/img/info2_1.svg" alt=""/>
+                <img class="how-img" class="invisible" src="assets/img/info2_2.svg" alt=""/>
 
 
                 <div class="how-text">
@@ -34,7 +36,8 @@
 
         <div class="how">
             <div class="how-item">
-                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+                <img class="how-img" src="assets/img/info3_1.svg" alt=""/>
+                <img class="how-img" class="invisible" src="assets/img/info3_2.svg" alt=""/>
 
 
                 <div class="how-text">
@@ -45,7 +48,8 @@
 
         <div class="how">
             <div class="how-item">
-                <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
+                <img class="how-img" src="assets/img/info4_1.svg" alt=""/>
+                <img class="how-img" class="invisible" src="assets/img/info4_2.svg" alt=""/>
 
 
                 <div class="how-text">

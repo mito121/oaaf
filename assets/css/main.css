@@ -395,7 +395,6 @@ header #nav-overlay {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  margin-bottom: 35px;
   position: fixed;
   top: 0;
   transition: top 250ms ease-in-out;
@@ -404,9 +403,9 @@ header #nav-overlay {
     background: url("../img/tilbage_pil.svg");
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 30px;
-    width: 30px; }
+    background-size: 95%;
+    height: 33px;
+    width: 33px; }
   .sub-header h1 {
     color: #fff;
     font-size: 30px; }
@@ -689,7 +688,7 @@ a.button {
         width: 75%; }
       #how #how-carousel .how .how-item .how-text {
         position: absolute;
-        bottom: -28vh;
+        /*bottom: -36vh;*/
         text-align: center; }
         #how #how-carousel .how .how-item .how-text h1 {
           color: #2b6d85;
@@ -747,6 +746,36 @@ a.button {
     position: relative;
     top: -23px; }
 
+.invisible {
+  display: none; }
+
+@media screen and (max-height: 812px) {
+  #how #how-carousel-dots {
+    top: -36vh; }
+  #how #how-text-box {
+    bottom: 17vh; }
+  #how .how-text {
+    bottom: -25vh; }
+  #how .wide-button {
+    top: -15vh; } }
+@media screen and (max-height: 736px) {
+  #how #how-carousel-dots {
+    top: -31vh; }
+  #how #how-text-box {
+    bottom: 10vh; }
+  #how .how-text {
+    bottom: -29vh; }
+  #how .wide-button {
+    top: -57px; } }
+@media screen and (max-height: 667px) {
+  #how #how-carousel-dots {
+    top: -29vh; }
+  #how #how-text-box {
+    bottom: 5vh; }
+  #how .how-text {
+    bottom: -30vh; }
+  #how .wide-button {
+    top: -17px; } }
 /* ### History ### */
 #history {
   padding: 0 35px; }
