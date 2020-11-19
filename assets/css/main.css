@@ -111,6 +111,9 @@ p {
 .mt {
   margin-top: 25px !important; }
 
+.mtb-15 {
+  margin: 15px 0; }
+
 .mt-50 {
   margin-top: 50px !important;
   margin-bottom: 13px !important; }
@@ -487,7 +490,7 @@ header #nav-overlay {
   .rank-exp table tr td:first-of-type {
     text-align: left; }
 
-.sub-box {
+.sub-box, .sub-box-big {
   background-color: #fff;
   border-radius: 17px;
   max-height: 50px;
@@ -495,14 +498,14 @@ header #nav-overlay {
   font-size: 17px;
   overflow: hidden;
   transition: max-height 420ms ease-in-out; }
-  .sub-box .flex {
+  .sub-box .flex, .sub-box-big .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px; }
-    .sub-box .flex p {
+    .sub-box .flex p, .sub-box-big .flex p {
       transition: color 250ms ease-in-out; }
-  .sub-box .expand {
+  .sub-box .expand, .sub-box-big .expand {
     background-image: url("../img/arrow.svg");
     background-size: 100%;
     background-position: 50%;
@@ -510,30 +513,34 @@ header #nav-overlay {
     width: 10px;
     height: 100%;
     transition: transform 250ms ease-in-out; }
-  .sub-box .collapsible {
+  .sub-box .collapsible, .sub-box-big .collapsible {
     display: block;
     transition: max-height 420ms ease-in-out; }
-    .sub-box .collapsible .collapse-wrapper {
+    .sub-box .collapsible .collapse-wrapper, .sub-box-big .collapsible .collapse-wrapper {
       padding: 8px 0 13px 0; }
-    .sub-box .collapsible form {
+    .sub-box .collapsible form, .sub-box-big .collapsible form {
       width: auto; }
-      .sub-box .collapsible form .flex-b {
+      .sub-box .collapsible form .flex-b, .sub-box-big .collapsible form .flex-b {
         margin-top: 20px;
         align-items: center; }
-      .sub-box .collapsible form button {
+      .sub-box .collapsible form button, .sub-box-big .collapsible form button {
         width: 90px; }
-    .sub-box .collapsible ol {
+    .sub-box .collapsible ol, .sub-box-big .collapsible ol {
       padding: 10px 0 13px 0;
       counter-reset: faq; }
-      .sub-box .collapsible ol li {
+      .sub-box .collapsible ol li, .sub-box-big .collapsible ol li {
         list-style-type: none; }
-        .sub-box .collapsible ol li a {
+        .sub-box .collapsible ol li a, .sub-box-big .collapsible ol li a {
           font-size: 16px;
           color: #2b6d85;
           text-decoration: underline; }
-          .sub-box .collapsible ol li a::before {
+          .sub-box .collapsible ol li a::before, .sub-box-big .collapsible ol li a::before {
             counter-increment: faq;
             content: counter(faq) ". "; }
+
+.sub-box-big {
+  max-height: 70px;
+  padding-top: 10px; }
 
 .open .rotate {
   transform: rotate(90deg); }
@@ -576,6 +583,7 @@ a.button {
   text-align: center;
   border: none;
   color: white;
+  background-color: #93bd59;
   font-size: 16px;
   height: 33px;
   line-height: 0px;
@@ -591,14 +599,8 @@ a.button {
   margin: 0 auto 6px auto;
   padding-left: 30px; }
 
-#wallet .row:nth-of-type(3) .sub-box .collapsible .wide-button {
-  background-color: #93bd59; }
-#wallet .row:nth-of-type(4) .sub-box .collapsible .wide-button {
-  background-color: #93bd59; }
-#wallet .row:nth-of-type(4) .sub-box .collapsible .or-text {
-  padding-bottom: 15px; }
 #wallet .row:nth-of-type(5) .sub-box .collapsible .wide-button {
-  background-color: #2b6d85; }
+  background-color: #2b6d85 !important; }
 #wallet .row:nth-of-type(5) .sub-box .collapsible .or-text {
   padding-top: 10px;
   padding-bottom: 2px; }

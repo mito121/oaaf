@@ -142,6 +142,9 @@ p {
 .mt {
     margin-top: 25px !important;
 }
+.mtb-15{
+    margin: 15px 0;
+}
 .mt-50 {
     margin-top: 50px !important;
     margin-bottom: 13px !important;
@@ -658,7 +661,7 @@ header {
     }
 }
 
-.sub-box {
+.sub-box, .sub-box-big {
     background-color: #fff;
     border-radius: 17px;
     max-height: 50px;
@@ -730,6 +733,10 @@ header {
     }
 }
 
+.sub-box-big {
+    max-height: 70px;
+    padding-top: 10px; }
+
 .open .rotate {
     transform: rotate(90deg);
 }
@@ -780,6 +787,7 @@ a.button {
     text-align: center;
     border: none;
     color: white;
+    background-color: $green;
     font-size: 16px;
     height: 33px;
     line-height: 0px;
@@ -801,36 +809,11 @@ a.button {
 
 #wallet{
     .row{
-        &:nth-of-type(3){
-            .sub-box{
-                .collapsible{
-                    .wide-button{
-                        background-color: $green;
-                    }
-                }
-            }
-        }
-    }
-    .row{
-        &:nth-of-type(4){
-            .sub-box{
-                .collapsible{
-                    .wide-button{
-                        background-color: $green;
-                    }
-                    .or-text {
-                        padding-bottom:15px;
-                    }
-                }
-            }
-        }
-    }
-    .row{
         &:nth-of-type(5){
             .sub-box{
                 .collapsible{
                     .wide-button{
-                        background-color: $darkblue;
+                        background-color: $darkblue !important;
                     }
                     .or-text {
                         padding-top:10px;
