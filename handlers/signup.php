@@ -24,6 +24,7 @@ if (isset($_POST)) {
       if (mysqli_num_rows($result) > 0) {
          while ($obj = $result->fetch_object()) {
             $_SESSION['logged'] = true;
+            $_SESSION['at_sea'] = false;
             $_SESSION['id'] = $obj->id;
             $_SESSION['name'] = $obj->name;
             $_SESSION['email'] = $email;

@@ -1,7 +1,6 @@
 <?php
 /* ## Show footer nav if page is scanner ## */
-$pageName = (isset($_GET['page'])) ? $_GET['page'] : 'scanner';
-if ($pageName == 'scanner' || empty($pageName)) {
+if ($pageName == 'scanner' || 'timer' || empty($pageName)) {
     $footer_menu = "
       <div id=\"footer-menu\">
          <div id=\"footer-nav-toggle\" class=\"nav-toggle footer-btn\"></div>
@@ -23,11 +22,7 @@ if ($pageName == 'scanner' || empty($pageName)) {
 <!-- slick -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <?php
-if (!isset($_GET['page'])) {
-    echo "<script src=\"assets/js/modules/scanner.js\"></script>";
-} else {
-    echo "<script src=\"assets/js/modules/$pageName.js\"></script>";
-}
+echo "<script src=\"assets/js/modules/$pageName.js\"></script>";
 ?>
 <!-- custom -->
 <script src="assets/js/main.js"></script>

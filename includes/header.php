@@ -14,8 +14,7 @@ require_once 'includes/protect.php';
       <!-- custom -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
       <?php
-      $pageName = (isset($_GET['page'])) ? $_GET['page'] : 'scanner';
-      if ($pageName == 'scanner' || empty($pageName)) {
+      if (($_SESSION['at_sea'] !== true) && ($pageName == 'scanner' || (empty($pageName)))) {
          echo '<link rel="stylesheet" type="text/css" href="assets/css/scanner.css"/>';
       }
       ?>

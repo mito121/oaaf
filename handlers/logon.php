@@ -16,6 +16,7 @@ if (isset($_POST)) {
 
          if (password_verify($password, $hash)) { // success
             $_SESSION['logged'] = true;
+            $_SESSION['at_sea'] = false;
             $_SESSION['id'] = $obj->id;
             $_SESSION['name'] = $obj->name;
             $_SESSION['email'] = $email;

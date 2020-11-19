@@ -1,5 +1,3 @@
-
-
 <div id="qr-info">
    <img alt="QR-koden sidder på pælen" src="assets/img/paelikon.svg"/>
    <h1>Scan QR-kode</h1>
