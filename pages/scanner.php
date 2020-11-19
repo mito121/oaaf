@@ -40,7 +40,7 @@
 
 <!--overlay til båd båd valgt -->
 
-<div id="baad_valgt_overlay" onclick="closeHelpOverlay()">
+<div id="baad_valgt_overlay" >
 
   <div class="circle_1">
     <img id="baad_valgt "src="assets/img/flueben_groent.svg" alt="båden er nu valgt">
@@ -49,7 +49,8 @@
         <div class="overlay_rapporter_box">
             <p class="pop_up_text">Båd valgt! Tryk for at låse op og starte turen!</p>
         </div>
-      <div class="centrering">
+      <div class="centrering_1">
+        <a href="#">Annuller</a>
     <button type="button" class="overlay_rapporter_btn_1">Læg fra kaj!</button>
     </div>
   </div>
