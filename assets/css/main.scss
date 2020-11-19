@@ -809,6 +809,17 @@ a.button {
 
 #wallet{
     .row{
+        &:nth-of-type(4){
+            .sub-box{
+                .collapsible{
+                    .or-text {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .row{
         &:nth-of-type(5){
             .sub-box{
                 .collapsible{

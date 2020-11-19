@@ -599,6 +599,8 @@ a.button {
   margin: 0 auto 6px auto;
   padding-left: 30px; }
 
+#wallet .row:nth-of-type(4) .sub-box .collapsible .or-text {
+  padding-bottom: 15px; }
 #wallet .row:nth-of-type(5) .sub-box .collapsible .wide-button {
   background-color: #2b6d85 !important; }
 #wallet .row:nth-of-type(5) .sub-box .collapsible .or-text {
