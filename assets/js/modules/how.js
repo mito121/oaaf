@@ -1,6 +1,7 @@
 // Slick carousel
 $(document).ready(function () {
-    $('#how-carousel').slick({
+    $('#how-carousel').slick(
+        {
         dots: true,
         infinite: false,
         arrows: true,
@@ -11,7 +12,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         centerPadding: '5px',
         mobileFirst: true
-    });
+    }
+);
 
     $('#how-carousel').on('afterChange', function (event, slick, currentSlide) {
 //        console.log(slick, currentSlide);
@@ -22,3 +24,9 @@ $(document).ready(function () {
         }
     });
 });
+
+setInterval(imgChange, 5000)
+
+function imgChange(){
+
+}
