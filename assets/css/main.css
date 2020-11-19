@@ -422,7 +422,7 @@ header #nav-overlay {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 10; }
+  z-index: 9999999; }
   #helpOverlay .circle {
     position: relative;
     background-color: white;

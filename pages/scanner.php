@@ -31,11 +31,28 @@
 
         </div>
 <div class="centrering">
-  <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Færdig</button>
+  <button type="button" id="færdigMedIndtastning"class="overlay_rapporter_btn">Færdig</button>
 </div>
 
     </div>
 </div>
+
+
+<!--overlay til båd båd valgt -->
+
+<div id="baad_valgt_overlay" onclick="closeHelpOverlay()">
+
+  <div class="circle_1">
+    <img id="baad_valgt "src="assets/img/flueben_groent.svg" alt="båden er nu valgt">
+  </div>
+
+        <div class="overlay_rapporter_box">
+            <p class="pop_up_text">Båd valgt! Tryk for at låse op og starte turen!</p>
+        </div>
+      <div class="centrering">
+    <button type="button" class="overlay_rapporter_btn_1">Læg fra kaj!</button>
+    </div>
+  </div>
 
 
 <!-- https://github.com/nimiq/qr-scanner -->
