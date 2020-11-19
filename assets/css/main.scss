@@ -146,6 +146,9 @@ p {
     margin-top: 50px !important;
     margin-bottom: 13px !important;
 }
+.mtb-15 {
+    margin: 15px 0;
+}
 .required {
     color: $red;
 }
@@ -659,7 +662,7 @@ header {
     }
 }
 
-.sub-box {
+.sub-box, .sub-box-big {
     background-color: #fff;
     border-radius: 17px;
     max-height: 50px;
@@ -731,6 +734,11 @@ header {
     }
 }
 
+.sub-box-big{
+    max-height: 70px;
+    padding-top: 10px;
+}
+
 .open .rotate {
     transform: rotate(90deg);
 }
@@ -781,6 +789,7 @@ a.button {
     text-align: center;
     border: none;
     color: white;
+    background-color: $green;
     font-size: 16px;
     height: 33px;
     line-height: 0px;
@@ -831,7 +840,7 @@ a.button {
             .sub-box{
                 .collapsible{
                     .wide-button{
-                        background-color: $darkblue;
+                        background-color: $darkblue !important;
                     }
                     .or-text {
                         padding-top:10px;
@@ -842,6 +851,7 @@ a.button {
         }
     }
 }
+
 
 
 /* ## Stats ## */
