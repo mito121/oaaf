@@ -20,6 +20,7 @@ document
 // Close overlay btn
 function closeHelpOverlay() {
   document.getElementById("indtast_kode_overlay").style.display = "none";
+  document.getElementById('baad_valgt_overlay').style.display = "none"
   let overlayOpen = false;
 }
 
@@ -34,3 +35,10 @@ function jump001(field, autoMove){
     document.getElementById(autoMove).focus();
   }
 }
+
+//overlay baad valgt
+
+document.getElementById('færdigMedIndtastning').addEventListener("click", function(){
+  document.getElementById('baad_valgt_overlay').style.display = "block";
+  document.getElementById('indtast_kode_overlay').style.display = "none"
+});
