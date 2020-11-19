@@ -747,7 +747,7 @@ a.button {
     top: -23px; }
 
 .invisible {
-  display: none; }
+  display: none !important; }
 
 @media screen and (max-height: 812px) {
   #how #how-carousel-dots {
