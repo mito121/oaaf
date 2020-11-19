@@ -747,6 +747,9 @@ a.button {
     position: relative;
     top: -23px; }
 
+.invisible {
+  opacity: 0%; }
+
 /* ### History ### */
 #history {
   padding: 0 35px; }
