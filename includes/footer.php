@@ -1,6 +1,6 @@
 <?php
 /* ## Show footer nav if page is scanner ## */
-if ($pageName == 'scanner' || 'timer' || empty($pageName)) {
+if ($pageName == 'scanner' || $pageName == 'timer' || empty($pageName) && $_SESSION['at_sea'] === true) {
     $footer_menu = "
       <div id=\"footer-menu\">
          <div id=\"footer-nav-toggle\" class=\"nav-toggle footer-btn\"></div>
