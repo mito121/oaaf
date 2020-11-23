@@ -875,6 +875,38 @@ footer {
   background-size: 60%;
   background-position: 50%; }
 
+#started_time {
+  display: none; }
+
+#tid_sejlet {
+  text-align: center;
+  color: #2b6d85;
+  font-size: 20px;
+  font-weight: bold; }
+
+#trip_timer {
+  font-size: 75px;
+  color: #2b6d85;
+  text-align: center;
+  font-weight: bolder; }
+
+#nyd_turen {
+  color: #707070;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-top: 120px; }
+
+.bg_temp img {
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 0; }
+
+.fortoej_img {
+  width: 50%;
+  padding: 5%; }
+
 /*** iPhone and iOS Form Input Zoom Fixes ***/
 /* Fix Input Zoom on devices older than iPhone 5: */
 @media screen and (device-aspect-ratio: 2 / 3) {

@@ -245,10 +245,12 @@ p {
   text-align: center;
 }
 
-.overlay_rapporter_btn_1 {
+#btn_start{
+  text-decoration: none;
   background-color: #93bd59;
   position: relative;
   top: 160px;
+  width: auto;
   padding: 10px;
   height: 33px;
   margin: 25px;
@@ -256,8 +258,9 @@ p {
   border: none;
   border-radius: 8px;
   font-size: 16px;
-
 }
+
+
 
 .centrering_1 a {
   position: relative;

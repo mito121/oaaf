@@ -48,8 +48,8 @@
             <p class="pop_up_text">Båd valgt! Tryk for at låse op og starte turen!</p>
         </div>
       <div class="centrering_1">
-        <a href="#">Annuller</a>
-    <button type="button" class="overlay_rapporter_btn_1">Læg fra kaj!</button>
+        <a href="#">Annullér</a>
+        <a id="btn_start"href="index.php?page=timer">Læg fra kaj</a>
     </div>
   </div>
 

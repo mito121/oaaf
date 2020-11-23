@@ -17,7 +17,7 @@
                     <p>VISA</p>
                     <p>**** **** **** 1234</p>
                 </div>
-                
+
                 <div class="expand rotate"></div>
             </div>
 
@@ -64,4 +64,7 @@
             </div>
         </div>
     </div>
+</div>
+<div class="bg_temp">
+<img class="bg_temptation" src="assets/img/tmp_bg.svg" alt="background picture">
 </div>
