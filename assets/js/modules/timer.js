@@ -2,14 +2,27 @@
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 0;
-setInterval(setTime, 1000);
+var seconds, minutes;
 
-function setTime() {
-    ++totalSeconds;
-    secondsLabel.innerHTML = pad(totalSeconds % 60);
-    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+// Check if trip is already started - else set sessionStorage trip_started
+if (window.sessionStorage.getItem('trip_started')) {
+    totalSeconds = pad(Math.floor((+new Date() - window.sessionStorage.getItem('trip_started')) / 1000));
+    setTimeout(setTime, setInterval(setTime, 1000), 1000);
+} else {
+    window.sessionStorage.setItem('trip_started', +new Date());
+    setInterval(setTime, 1000);
 }
 
+// Count seconds/minutes & output to HTML
+function setTime() {
+    ++totalSeconds;
+    seconds = pad(totalSeconds % 60);
+    minutes = pad(parseInt(totalSeconds / 60));
+    secondsLabel.innerHTML = seconds;
+    minutesLabel.innerHTML = minutes;
+}
+
+// add '0' before number is less than 2 digits
 function pad(val) {
     var valString = val + "";
     if (valString.length < 2) {

@@ -6,9 +6,6 @@ session_start();
 // check if user has started a trip
 if (isset($_GET['page']) && $_GET['page'] === 'timer' && $_SESSION['at_sea'] !== true) {
     $_SESSION['at_sea'] = true;
-
-//    date_default_timezone_set('Europe/Denmark');
-    $_SESSION['started'] = date("Y-m-d H:i:s");
 }
 
 // redirect unlogged users from login protected pages
@@ -32,6 +29,10 @@ if ($_SESSION['at_sea'] === true) { // If user is currently at sea
     $pageName = (isset($_GET['page'])) ? $_GET['page'] : 'scanner';
 }
 
+// Reset sessionStorage 'trip_started' if user has finished a trip
+if($_GET['finished'] == 'true'){
+    echo '<script>window.sessionStorage.removeItem("trip_started");</script>';
+}
 
 // if page doesnt exist, redirect to 404
 if (file_exists($page)) {
