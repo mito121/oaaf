@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
     <p id="trip_timer">
         <label id="minutes">00</label>:<label id="seconds">00</label>
     </p>
-    <a href="handlers/finish.php">Stop tur</a>
+    <a href="handlers/finish.php" class="stop_tur">Stop tur</a>
     <p id="started"></p>
 </div>
 
@@ -21,15 +21,9 @@ if (isset($_GET['id'])) {
         </div>
 
         <div class="collapsible">
-            <div class="flex mt">
-                <div class="fortoej_img">
-                    <img src="assets/img/info4_1.svg" alt="fortøjningsbillede">
-                </div>
-                <div class="fortoej_img">
-                    <img src="assets/img/info4_2.svg" alt="fortøjningsbillede">
-                </div>
-            </div>
-            <p class="how_pop_tekst">hej med jer, nu skal jeg fortææle en sørøverhistorie </p>
+            <img class="fortoej_img" src="assets/img/saadan_fortojer_du.svg" alt="sådan fortøjer du bitch">
+            <p class="how_pop_tekst">Parker båden foran en ledig pæl og hæng rebet rundt om pælen for at fortøje båden</p>
+            <p class="how_pop_tekst">Stik bagefter låsen i låsehullet, og turen vil automatisk afslutte</p>
         </div>
     </div>
 </div>

@@ -903,6 +903,13 @@ footer {
   opacity: 0.5;
   margin-top: 120px; }
 
+.stop_tur {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 25px 0px;
+  font-weight: bold;
+  color: #2b6d85; }
+
 .bg_temp img {
   position: fixed;
   width: 100%;
@@ -910,8 +917,11 @@ footer {
   bottom: 0; }
 
 .fortoej_img {
-  width: 50%;
-  padding: 5%; }
+  width: 90%;
+  margin: 10px; }
+
+.how_pop_tekst {
+  padding: 10px; }
 
 /*** iPhone and iOS Form Input Zoom Fixes ***/
 /* Fix Input Zoom on devices older than iPhone 5: */
