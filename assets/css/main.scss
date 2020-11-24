@@ -995,7 +995,7 @@ a.button {
       bottom: 6vh;
       padding: 15px;
       z-index:-1;
-      
+
       h1{
          margin: 5px 0 10px 0;
       }
@@ -1294,8 +1294,11 @@ display: none;
 }
 
 .how_pop_tekst{
- 
+
 }
+
+
+
 /*** iPhone and iOS Form Input Zoom Fixes ***/
 /* Fix Input Zoom on devices older than iPhone 5: */
 @media screen and (device-aspect-ratio: 2/3) {

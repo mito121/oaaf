@@ -30,7 +30,7 @@
         <div class="centrering">
             <button type="button" id="færdigMedIndtastning"class="overlay_rapporter_btn">Færdig</button>
         </div>
- 
+
     </div>
 </div>
 
