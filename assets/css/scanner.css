@@ -247,11 +247,12 @@ p {
 
 #btn_start{
   text-decoration: none;
+  text-align: center;
   background-color: #93bd59;
   position: relative;
   top: 160px;
   width: auto;
-  padding: 10px;
+  padding: 7px;'
   height: 33px;
   margin: 25px;
   color: white;
