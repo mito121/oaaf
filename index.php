@@ -30,7 +30,7 @@ if ($_SESSION['at_sea'] === true) { // If user is currently at sea
 }
 
 // Reset sessionStorage 'trip_started' if user has finished a trip
-if($_GET['finished'] == 'true'){
+if(isset($_GET) && $_GET['finished'] == 'true'){
     echo '<script>window.sessionStorage.removeItem("trip_started");</script>';
 }
 

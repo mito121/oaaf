@@ -1,3 +1,7 @@
+document.getElementById("how-toggle").addEventListener("click", function () {
+    window.location.href = "index.php?page=how";
+});
+
 /* ### Timer (counter) ###*/
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
