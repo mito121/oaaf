@@ -531,7 +531,8 @@ header #nav-overlay {
   background-color: #ffffff;
   overflow: hidden; }
   .rank-img img {
-    padding-top: 35px; }
+    position: relative;
+    bottom: -35px; }
 
 .rank-label {
   color: #2b6d85;

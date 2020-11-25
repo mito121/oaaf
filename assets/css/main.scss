@@ -678,7 +678,8 @@ header {
     background-color: #ffffff;
     overflow: hidden;
     img{
-        padding-top: 35px;
+        position: relative;
+        bottom: -35px;
     }
 }
 
