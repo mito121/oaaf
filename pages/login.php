@@ -8,7 +8,7 @@ if (isset($_GET['signup']) && $_GET['signup'] == 'false') { // signup error
    echo '<script>sessionStorage.setItem("signup", "true");</script>';
 }
 
-if (isset($_GET['signup']) && $_GET['login'] == 'false') { // login error
+if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
    echo '<script>sessionStorage.setItem("logon", "false");</script>';
 } else {
    echo '<script>sessionStorage.setItem("logon", "true");</script>';
