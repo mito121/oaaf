@@ -18,7 +18,9 @@ if (strlen($_SESSION['email']) > 20) {
     </div>
 
     <div class="row">
-        <img class="rank-img" src="https://placekitten.com/g/200/200" alt="Din rang"/>
+        <div class="rank-img">
+            <img src="<?php echo $_SESSION['rank_img']; ?>" alt="Din rang"/>
+        </div>
     </div>
 
     <div class="row">

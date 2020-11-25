@@ -467,7 +467,11 @@ header #nav-overlay {
   height: 150px;
   width: 150px;
   display: block;
-  margin: 0 auto 6px auto; }
+  margin: 0 auto 6px auto;
+  background-color: #ffffff;
+  overflow: hidden; }
+  .rank-img img {
+    padding-top: 35px; }
 
 .rank-label {
   color: #2b6d85;

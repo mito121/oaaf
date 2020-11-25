@@ -285,7 +285,9 @@ form {
 
 .fb_login {
     background-color: #385898;
-    display: none; 
+    display: none;
+    background-color: #385898;
+    display: none;
 }
 
 /* HEADER */
@@ -623,6 +625,11 @@ header {
     width: 150px;
     display: block;
     margin: 0 auto 6px auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    img{
+        padding-top: 35px;
+    }
 }
 
 .rank-label {
@@ -880,15 +887,15 @@ a.button {
             font-size: 25px;
             text-align: left;
         }
-        
+
         p{
             padding:15px 0;
         }
-        
+
         form{
             width:100%;
             padding: 0 15px;
-            
+
             .form-input{
                 position:relative;
 
@@ -900,7 +907,7 @@ a.button {
                     opacity:.8;
                 }
             }
-            
+
             input[type=submit]{
                 background-color: $green;
                 border: none;

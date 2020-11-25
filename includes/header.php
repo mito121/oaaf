@@ -25,7 +25,9 @@ require_once 'includes/protect.php';
             <div id="nav-overlay" class="d-none">
                <div id="main-nav">
                   <div id="nav-header">
-                     <img src="<?php echo $_SESSION['rank_img']; ?>" alt="Din rang"/>
+                      <div class="rank-img">
+                          <img src="<?php echo $_SESSION['rank_img']; ?>" alt="Din rang"/>
+                      </div>
 
                      <div>
 
