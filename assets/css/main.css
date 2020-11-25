@@ -916,6 +916,7 @@ footer {
   color: #2b6d85; }
 
 #bodFortojet {
+  display: none;
   position: absolute;
   background-color: rgba(68, 68, 68, 0.75);
   width: 100%;
