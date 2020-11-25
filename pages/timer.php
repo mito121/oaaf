@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
     <p id="trip_timer">
         <label id="minutes">00</label>:<label id="seconds">00</label>
     </p>
-    <a href="handlers/finish.php" class="stop_tur" onclick="">Stop tur</a>
+    <a href="handlers/finish.php" class="stop_tur">Stop tur</a>
     <p id="started"></p>
 
 
