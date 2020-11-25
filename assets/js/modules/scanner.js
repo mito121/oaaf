@@ -63,8 +63,11 @@ for (i = 0; i < fields.length; i++) {
 
 
 //overlay baad valgt
-
 document.getElementById('færdigMedIndtastning').addEventListener("click", function () {
     document.getElementById('baad_valgt_overlay').style.display = "block";
-    document.getElementById('indtast_kode_overlay').style.display = "none"
+    document.getElementById('indtast_kode_overlay').style.display = "none";
+});
+
+document.getElementById('cancel_trip').addEventListener("click", function () {
+    document.getElementById('baad_valgt_overlay').style.display = "none";
 });

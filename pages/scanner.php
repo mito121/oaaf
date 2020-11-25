@@ -47,7 +47,7 @@
         <p class="pop_up_text">Båd valgt! Tryk for at låse op og starte turen!</p>
     </div>
     <div class="centrering_1">
-        <a href="#">Annullér</a>
+        <a href="#" id="cancel_trip">Annullér</a>
         <a id="btn_start"href="index.php?page=timer">Læg fra kaj</a>
     </div>
 </div>
@@ -62,14 +62,11 @@
 
     let scanned = false;
     function redir(url){
-    if(scanned === false){
-    scanner.stop();
-    if(confirm("Vil du bru' den bå' dér?")){
-    window.location.href = url;
-    }else{
-    scanner.start();
-    }
-    }
+        if(scanned === false){
+            scanner.stop();
+            console.log("NUNUNU")
+            $('#færdigMedIndtastning').click();
+        }
     }
 
     const scanner = new QrScanner(video, result => {
