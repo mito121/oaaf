@@ -221,7 +221,8 @@ form {
   background-color: #2b6d85; }
 
 .fb_login {
-  background-color: #385898; }
+  background-color: #385898;
+  display: none; }
 
 /* HEADER */
 header #nav-overlay {
