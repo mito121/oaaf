@@ -40,12 +40,36 @@ $(".back").on("click", function () {
 
 
 // transfor money overlay
-$('#xferMoney').on("click", function(e){
+$('#xferMoney').on("click", function (e) {
     $('html, body').css("overflow-y", "hidden");
     $('#xferMoneyOverlay').css("display", "block");
 });
 
-$('#cancelXfer').on("click", function(e){
+$('#cancelXfer').on("click", function (e) {
     $('html, body').css("overflow-y", "auto");
     $('#xferMoneyOverlay').css("display", "none");
+});
+
+
+// Allow only numbers in xfer amount
+function setInputFilter(textbox, inputFilter) {
+    ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function (event) {
+        textbox.addEventListener(event, function () {
+            if (inputFilter(this.value)) {
+                this.oldValue = this.value;
+                this.oldSelectionStart = this.selectionStart;
+                this.oldSelectionEnd = this.selectionEnd;
+            } else if (this.hasOwnProperty("oldValue")) {
+                this.value = this.oldValue;
+                this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+            } else {
+                this.value = "";
+            }
+        });
+    });
+}
+
+let field = document.getElementById("xferAmount");
+setInputFilter(field, function (value) {
+    return /^-?\d*$/.test(value);
 });
