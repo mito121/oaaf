@@ -53,8 +53,8 @@
             <div class="history-item">
                 <div class="flex-b toggle-history">
                     <div>
-                        <h1>August</h1>
-                        <p>Tirsdag 27/8-20</p>
+                        <h1>Juni</h1>
+                        <p>Lørdag D. 05</p>
                     </div>
 
                     <span>96,00 DKK</span>
