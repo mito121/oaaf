@@ -6,14 +6,15 @@
     </div>
 
     <div class="row">
-        <div class="label">Kvittering lol</div>
+        <div class="label">Nice</div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
-                <p>Hey du der!...</p><div class="expand rotate"></div>
+                <p>lol</p><div class="expand rotate"></div>
             </div>
 
             <div class="collapsible">
-                <p class="or-text">... Tak for hjælpen med vores usertest! Du gjorde det godt og desuden er du også meget smuk og sød! Hav en god dag!</p>
+                <button class="wide-button">Overfør til saldo</button>
+                <p class="or-text">... eller indløs et gavekort</p>
             </div>
         </div>
     </div>
