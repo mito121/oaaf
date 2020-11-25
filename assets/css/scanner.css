@@ -118,8 +118,8 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  #qr-code{
-   top: 3%;
+  #qr-code button {
+   margin-top: 50px;
   }
 }
 
