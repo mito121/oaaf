@@ -18,6 +18,9 @@ $(document).ready(function () {
    $('#how-carousel').on('afterChange', function (event, slick, currentSlide) {
       if (slick.$slides.length - 1 == currentSlide) {
          $('#how-next').html("Færdig");
+         $('#how-next').on("click", function(){
+             window.location.href = "index.php";
+         });
       } else {
          $('#how-next').html("Næste");
       }

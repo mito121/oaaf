@@ -1,3 +1,6 @@
+<?php
+$balance = $_SESSION['wallet_balance'] . ".00";
+?>
 <div class="global-wrapper" id="wallet">
     <div class="sub-header">
         <div class="back"></div>
@@ -32,7 +35,7 @@
         <div class="label"> <h2>Saldo</h2> </div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
-                <p>200.00 DKK</p><div class="expand rotate"></div>
+                <p><?php echo $balance; ?> DKK</p><div class="expand rotate"></div>
             </div>
 
             <div class="collapsible">
@@ -83,7 +86,8 @@
     <div class="overlay_box">
         <h2>Indtast beløb du ønsker at overføre:</h2>
 
-        <form>
+        <form method="POST" action="handlers/updateBalance.php">
+            <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>"/>
             <div class="form-input">
                 <input type="text" placeholder="1234" maxlength="6" id="xferAmount" name="amount"><span>DKK</span>
             </div>
