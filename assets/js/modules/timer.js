@@ -64,3 +64,7 @@ for (i = 0; i < collapsible.length; i++) {
 $(".back").on("click", function () {
     window.location.href = "index.php";
 });
+
+$('#finish_trip').on("click", function(){
+   $('#bodFortojet').css("display", "block");
+});

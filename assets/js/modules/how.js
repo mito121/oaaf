@@ -63,6 +63,3 @@ function clearIntervals() {
       clearInterval(intervals[i]);
    }
 }
-
-
-
