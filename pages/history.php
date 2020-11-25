@@ -13,7 +13,7 @@
                 <div class="flex-b">
                     <div>
                         <h1>August</h1>
-                        <p>Tirsdag 27/8-20</p>
+                        <p>Tirsdag D. 27</p>
                     </div>
 
                     <span>148,00 DKK</span>
@@ -33,7 +33,7 @@
                         </tr>
                         <tr>
                             <td>Sluttidspunkt</td>
-                            <td>13:69</td>
+                            <td>13:11</td>
                         </tr>
                         <tr>
                             <td>Startgebyr</td>
@@ -41,7 +41,7 @@
                         </tr>
                         <tr>
                             <td>Fartøjets ID</td>
-                            <td>14</td>
+                            <td>C14</td>
                         </tr>
                     </table>
 
@@ -57,7 +57,7 @@
                         <p>Tirsdag 27/8-20</p>
                     </div>
 
-                    <span>148,00 DKK</span>
+                    <span>96,00 DKK</span>
 
                     <div class="expand rotate"></div>
                 </div>
@@ -66,15 +66,15 @@
                     <table>
                         <tr>
                             <td>Varighed</td>
-                            <td>69 minutter</td>
+                            <td>43 minutter</td>
                         </tr>
                         <tr>
                             <td>Starttidspunkt</td>
-                            <td>12:46</td>
+                            <td>22:29</td>
                         </tr>
                         <tr>
                             <td>Sluttidspunkt</td>
-                            <td>13:69</td>
+                            <td>23:17</td>
                         </tr>
                         <tr>
                             <td>Startgebyr</td>
@@ -82,7 +82,7 @@
                         </tr>
                         <tr>
                             <td>Fartøjets ID</td>
-                            <td>14</td>
+                            <td>C03</td>
                         </tr>
                     </table>
 
