@@ -30,6 +30,7 @@ if (isset($_POST)) {
                 $_SESSION['email'] = $email;
                 $_SESSION['time_at_sea'] = $obj->time_at_sea;
                 $_SESSION['trips'] = $obj->trips;
+                $_SESSION['wallet_balance'] = 0;
                 $_SESSION['fb_id'] = $obj->fb_id;
 
                 $rank_id = $obj->rank_id;
