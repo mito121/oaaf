@@ -817,8 +817,9 @@ a.button {
       overflow: hidden;
       opacity: 0.5; }
       #how #how-carousel .how .how-item .how-img {
-        width: 75%;
-        height: 100%; }
+        width: 100%;
+        margin-top: 5em;
+        height: 75%; }
       #how #how-carousel .how .how-item .how-text {
         position: absolute;
         /*bottom: -36vh;*/
