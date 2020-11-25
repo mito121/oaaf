@@ -25,11 +25,11 @@ require_once 'includes/protect.php';
             <div id="nav-overlay" class="d-none">
                <div id="main-nav">
                   <div id="nav-header">
-                     <img src="https://placekitten.com/g/200/200" alt="Din rang"/>
+                     <img src="<?php echo $_SESSION['rank_img']; ?>" alt="Din rang"/>
 
                      <div>
-                        
-                        <h2><a href="index.php?page=profile">Ohøj Hannemann!</a></h2>
+
+                        <h2><a href="index.php?page=profile">Ohøj <?php echo $_SESSION['name']; ?>!</a></h2>
                         <a href="index.php?page=profile">Vis profil ></a>
                      </div>
                   </div>
