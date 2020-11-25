@@ -117,9 +117,9 @@ body {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 480px) {
-  #qr-code{
-   top: 3%;
+@media only screen and (min-width: 480px) {
+  #qr-code button {
+   margin-top: 50px;
   }
 }
 
