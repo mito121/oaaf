@@ -7,12 +7,12 @@
 
     <div class="wrapper">
         <div id="history">
-            <div class="year">2020</div>
+            <div class="year"> <h2>2020</h2> </div>
 
             <div class="history-item">
                 <div class="flex-b">
                     <div>
-                        <h1>August</h1>
+                        <h3>August</h3>
                         <p>Tirsdag D. 27</p>
                     </div>
 

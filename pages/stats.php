@@ -10,7 +10,7 @@
        <div class="rank-img">
            <img src="<?php echo $_SESSION['rank_img']; ?>" alt="Din rang"/>
        </div>
-      <p class="rank-label">Rang</p>
+      <h2 class="rank-label">Rang</h2>
       <p class="rank"><?php echo $_SESSION['rank_name']; ?></p>
    </div>
 
@@ -21,7 +21,7 @@
          <div class="stat-item">
             <img src="assets/img/antal_ture.svg" alt="Antal ture"/>
             <div class="stat-track">
-               <div class="stat-track-header">Antal ture:</div>
+               <div class="stat-track-header"> <h4>Antal ture:</h4> </div>
                <div class="stat-result">69</div>
             </div>
          </div>
@@ -31,7 +31,7 @@
          <div class="stat-item">
             <img src="assets/img/tid_sejlet.svg" alt="Antal ture"/>
             <div class="stat-track">
-               <div class="stat-track-header">Tid til søs:</div>
+               <div class="stat-track-header"> <h4>Tid til søs:</h4> </div>
                <div class="stat-result">69420 timer</div>
             </div>
          </div>
@@ -41,7 +41,7 @@
          <div class="stat-item">
             <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
             <div class="stat-track">
-               <div class="stat-track-header">Penge sparet:</div>
+               <div class="stat-track-header"> <h4>Penge sparet:</h4> </div>
                <div class="stat-result">420 kr.</div>
             </div>
          </div>
@@ -56,7 +56,7 @@
    <div class="row mt">
       <div class="sub-box toggle-collapse">
          <div class="flex">
-            <p>Forklaring af rangsystem</p><div class="expand rotate"></div>
+            <h3>Forklaring af rangsystem</h3><div class="expand rotate"></div>
          </div>
 
          <div class="collapsible">
@@ -64,33 +64,33 @@
 
             <div class="rank-exp">
                <table>
-                  <tr><th>Landkrabbe</th></tr>
-                  <tr><td>0 ture</td> <td>2.00 DKK/min.</td></tr>
+                  <tr><th> <h2>Landkrabbe</h2> </th></tr>
+                  <tr><td> <p>0 ture</p> </td> <td> <p>2.00 DKK/min.</p> </td></tr>
                </table>
 
 
                <table>
-                  <tr><th>Matros</th></tr>
-                  <tr><td>5 ture</td> <td>1.80 DKK/min.</td></tr>
+                  <tr><th><h2>Matros</h2></th></tr>
+                  <tr><td> <p>5 ture</p> </td> <td> <p>1.80 DKK/min.</p> </td></tr>
                </table>
 
 
                <table>
-                  <tr><th>Skipper</th></tr>
-                  <tr><td>10 ture</td> <td>1.50 DKK/min.</td></tr>
+                  <tr><th><h2>Skipper</h2></th></tr>
+                  <tr><td> <p>10 ture</p> </td> <td> <p>1.50 DKK/min.</p> </td></tr>
                </table>
 
 
                <table>
-                  <tr><th>Styrmand</th></tr>
-                  <tr><td>15 ture</td> <td>1.20 DKK/min.</td></tr>
+                  <tr><th><h2>Styrmand</h2></th></tr>
+                  <tr><td> <p>15 ture</p> </td> <td> <p>1.20 DKK/min.</p> </td></tr>
                </table>
 
 
                <table>
-                  <tr><th>Kaptajn</th></tr>
-                  <tr><td>20 ture</td> <td>1.00 DKK/min.</td></tr>
-                  <tr><td></td> <td>+ ingen startgebyr</td></tr>
+                  <tr><th><h2>Kaptajn</h2></th></tr>
+                  <tr><td> <p>20 ture</p> </td> <td> <p>1.00 DKK/min.</p> </td></tr>
+                  <tr><td></td> <td> <p>+ ingen startgebyr</p> </td></tr>
                </table>
             </div>
          </div>

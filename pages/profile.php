@@ -24,7 +24,7 @@ if (strlen($_SESSION['email']) > 20) {
     </div>
 
     <div class="row">
-        <div class="label">Navn</div>
+        <div class="label"> <h2>Navn</h2> </div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
                 <p><?php echo $user_name; ?></p><div class="expand rotate"></div>
@@ -33,7 +33,7 @@ if (strlen($_SESSION['email']) > 20) {
             <div class="collapsible">
                 <form method="POST" action="handlers/updateName.php" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
-                    <label for="newName">Nyt navn</label>
+                    <label for="newName"> <h4>Nyt navn</h4> </label>
                     <input type="text" name="newName" id="newName" placeholder="Indtast nyt navn" autocomplete="off">
 
                     <div class="flex-b">
@@ -47,7 +47,7 @@ if (strlen($_SESSION['email']) > 20) {
     </div>
 
     <div class="row">
-        <div class="label">Email</div>
+        <div class="label"> <h2>Email</h2> </div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
                 <p><?php echo $user_email; ?></p><div class="expand rotate"></div>
@@ -56,10 +56,10 @@ if (strlen($_SESSION['email']) > 20) {
             <div class="collapsible">
                 <form method="POST" action="handlers/updateEmail.php" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
-                    <label for="newEmail">Ny email</label>
+                    <label for="newEmail"> <h4>Ny email</h4> </label>
                     <input type="text" name="newEmail" v-model="newEmail" v-on:keyup="validateNewEmail" id="newEmail" placeholder="Indtast ny email" autocomplete="off">
 
-                    <label for="newEmailRepeat">Bekræft email</label>
+                    <label for="newEmailRepeat"> <h4>Bekræft email</h4> </label>
                     <input type="text" name="emailRepeat" v-model="newEmailRepeat" v-on:keyup="validateNewEmail" id="newEmailRepeat" placeholder="Gentag email" autocomplete="off">
 
                     <div class="flex-b">
@@ -72,7 +72,7 @@ if (strlen($_SESSION['email']) > 20) {
     </div>
 
     <div class="row">
-        <div class="label">Adgangskode</div>
+        <div class="label"> <h2>Adgangskode</h2> </div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
                 <p>Skift adgangskode</p><div class="expand rotate"></div>
@@ -81,10 +81,10 @@ if (strlen($_SESSION['email']) > 20) {
             <div class="collapsible">
                 <form method="POST" action="handlers/updatePassword.php" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
-                    <label for="newPassword">Ny adgangskode</label>
+                    <label for="newPassword"> <h4>Ny adgangskode</h4> </label>
                     <input type="text" class="password" v-model="newPassword" name="newPassword" v-on:keyup="validateNewPassword" id="newPassword" placeholder="Indtast ny adgangskode" autocomplete="off">
 
-                    <label for="newPasswordRepeat">Bekræft adgangskode</label>
+                    <label for="newPasswordRepeat"> <h4>Bekræft adgangskode</h4> </label>
                     <input type="text" class="password" v-model="newPasswordRepeat" v-on:keyup="validateNewPassword" name="passwordRepeat" id="newPasswordRepeat" placeholder="Gentag adgangskode" autocomplete="off">
 
                     <div class="flex-b">

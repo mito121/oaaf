@@ -31,7 +31,7 @@
             <div class="collapsible">
                 <form id="helpForm" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
-                    <label for="issue">Beskriv problemet</label>
+                    <label for="issue"> <h4>Beskriv problemet</h4> </label>
                     <textarea name="issue" id="issue" placeholder="Beskriv dit problem her"></textarea>
 
                     <div class="flex-b">

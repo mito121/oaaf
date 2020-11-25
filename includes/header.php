@@ -32,7 +32,7 @@ require_once 'includes/protect.php';
                      <div>
 
                         <h2><a href="index.php?page=profile">Ohøj <?php echo $_SESSION['name']; ?>!</a></h2>
-                        <a href="index.php?page=profile">Vis profil ></a>
+                        <a href="index.php?page=profile" id="underohoej">Vis profil ></a>
                      </div>
                   </div>
 

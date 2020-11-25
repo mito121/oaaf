@@ -10,7 +10,7 @@
     </div>
 
     <div class="row">
-        <div class="label">Betalingsmetode</div>
+        <div class="label"> <h2>Betalingsmetode</h2> </div>
         <div class="sub-box-big toggle-collapse">
             <div class="flex">
                 <div>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="row">
-        <div class="label">Saldo</div>
+        <div class="label"> <h2>Saldo</h2> </div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
                 <p>200.00 DKK</p><div class="expand rotate"></div>
@@ -43,7 +43,7 @@
     </div>
 
     <div class="row">
-        <div class="label">Gavekort</div>
+        <div class="label"> <h2>Gavekort</h2> </div>
         <div class="sub-box toggle-collapse">
             <div class="flex">
                 <p>Tegn / Indløs gavekort</p><div class="expand rotate"></div>
@@ -51,7 +51,7 @@
 
             <div class="collapsible">
                 <form method="POST" action="handlers/updatePassword.php" autocomplete="off">
-                    <label for="newPassword">Indløs gavekort</label>
+                    <label for="newPassword"> <h4>Indløs gavekort</h4> </label>
                     <input type="text" class="password" v-model="newPassword" name="newPassword" v-on:keyup="validateNewPassword" id="newPassword" placeholder="Indtast kode" autocomplete="off">
 
                     <div class="flex-b">
@@ -87,7 +87,7 @@
             <div class="form-input">
                 <input type="text" placeholder="1234" maxlength="6" id="xferAmount" name="amount"><span>DKK</span>
             </div>
-            
+
             <p>Penge på din saldo vil blive brugt før der trækkes fra din konto, og du vil få en notifikation inden din saldo løber tør.</p>
             <div class="cta">
                 <a href="#" id="cancelXfer">Annullér</a>
