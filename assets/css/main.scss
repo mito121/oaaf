@@ -285,7 +285,7 @@ form {
 
 .fb_login {
    background-color: #385898;
-   display: none; 
+   display: none;
 }
 
 /* HEADER */
@@ -623,6 +623,11 @@ header {
    width: 150px;
    display: block;
    margin: 0 auto 6px auto;
+   background-color: #ffffff;
+   overflow: hidden;
+   img{
+       padding-top: 35px;
+   }
 }
 
 .rank-label {
