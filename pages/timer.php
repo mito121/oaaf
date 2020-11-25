@@ -10,9 +10,37 @@ if (isset($_GET['id'])) {
     <p id="trip_timer">
         <label id="minutes">00</label>:<label id="seconds">00</label>
     </p>
-    <a href="handlers/finish.php" class="stop_tur">Stop tur</a>
+    <a href="handlers/finish.php" class="stop_tur" onclick="">Stop tur</a>
     <p id="started"></p>
+
+
+<!--overlay tak for turen -->
+
+    <div id="bodFortojet">
+      <div class="circle_2">
+        <img src="assets/img/flueben_groent.svg" alt="indtast cifrer manuelt">
+      </div>
+
+        <div class="overlay_rapporter_box_2">
+            <p class="pop_up_text_2 headline">Båd fortøjet!</p>
+
+            <div class="flexer">
+             <p class="breadfont fortojdata">Tid sejlet:</p>
+             <p class="breadfont fortojdata">25 minutter</p>
+            </div>
+
+            <div class="flexer">
+              <p class="breadfont fortojdata">Pris inkl. startgebyr:</p>
+              <p class="breadfont fortojdata">60 DKK</p>
+            </div>
+            <a href="#" class="btn"></a>
+            <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Afslut</button>
+        </div>
+    </div>
 </div>
+
+
+<!-- -->
 
 <div  id="pop_ud_how"class="row">
     <div class="sub-box toggle-collapse">
