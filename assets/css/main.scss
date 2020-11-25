@@ -14,7 +14,6 @@ $lightblack: lighten($black, 25%);
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: museo-sans, sans-serif;
    font-weight: 500;
    font-style: normal;
 
@@ -34,12 +33,11 @@ body {
     color: $black;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: $darkblue;
-}
+h1{ font-family: museo-sans, sans-serif; color: #fff; font-size: 30px; }
+h2{ font-family: museo-sans, sans-serif; color: $darkblue; font-size: 18px;}
+h3{ font-family: open-sans, sans-serif; color: $black; font-size: 20px;}
+h4{ font-family: museo-sans, sans-serif; color: $darkblue; font-size: 16px;}
+h5{ font-family: museo-sans, sans-serif; color: $darkblue; font-size: 25px;}
 
 a {
     color: $darkblue;
@@ -550,11 +548,6 @@ header {
         background-size: 95%;
         height: 33px;
         width: 33px;
-    }
-
-    h1 {
-        color: #fff;
-        font-size: 30px;
     }
 
     .spooky-ghost {

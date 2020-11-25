@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: museo-sans, sans-serif;
   font-weight: 500;
   font-style: normal; }
   *:focus {
@@ -21,11 +20,30 @@ body {
   background-color: #b7d9e1;
   color: #444; }
 
-h1,
-h2,
-h3,
+h1 {
+  font-family: museo-sans, sans-serif;
+  color: #fff;
+  font-size: 30px; }
+
+h2 {
+  font-family: museo-sans, sans-serif;
+  color: #2b6d85;
+  font-size: 18px; }
+
+h3 {
+  font-family: open-sans, sans-serif;
+  color: #444;
+  font-size: 20px; }
+
 h4 {
-  color: #2b6d85; }
+  font-family: museo-sans, sans-serif;
+  color: #2b6d85;
+  font-size: 16px; }
+
+h5 {
+  font-family: museo-sans, sans-serif;
+  color: #2b6d85;
+  font-size: 25px; }
 
 a {
   color: #2b6d85; }
@@ -414,9 +432,6 @@ header #nav-overlay {
     background-size: 95%;
     height: 33px;
     width: 33px; }
-  .sub-header h1 {
-    color: #fff;
-    font-size: 30px; }
   .sub-header .spooky-ghost {
     height: 30px;
     width: 30px; }
