@@ -37,3 +37,15 @@ for (i = 0; i < collapsible.length; i++) {
 $(".back").on("click", function () {
     window.location.href = "index.php";
 });
+
+
+// transfor money overlay
+$('#xferMoney').on("click", function(e){
+    $('html, body').css("overflow-y", "hidden");
+    $('#xferMoneyOverlay').css("display", "block");
+});
+
+$('#cancelXfer').on("click", function(e){
+    $('html, body').css("overflow-y", "auto");
+    $('#xferMoneyOverlay').css("display", "none");
+});

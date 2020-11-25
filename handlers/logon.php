@@ -35,8 +35,6 @@ if (isset($_POST)) {
                }
              }
 
-
-
             header("location: ../index.php");
          } else {
             header("location: ../pages/login.php?login=false"); // wrong password

@@ -36,7 +36,7 @@
             </div>
 
             <div class="collapsible">
-                <button class="wide-button">Overfør til saldo</button>
+                <button class="wide-button" id="xferMoney">Overfør til saldo</button>
                 <p class="or-text">... eller indløs et gavekort</p>
             </div>
         </div>
@@ -66,5 +66,34 @@
     </div>
 </div>
 <div class="bg_temp">
-<img class="bg_temptation" src="assets/img/tmp_bg.svg" alt="background picture">
+    <img class="bg_temptation" src="assets/img/tmp_bg.svg" alt="background picture">
+</div>
+
+<!-- ## Transfer money overlay ## -->
+<div>
+
+</div>
+
+<div class="overlay" id="xferMoneyOverlay">
+
+    <div class="circle">
+        <img id="baad_valgt "src="assets/img/flueben_groent.svg" alt="båden er nu valgt">
+    </div>
+
+    <div class="overlay_box">
+        <h2>Indtast beløb du ønsker at overføre:</h2>
+
+        <form>
+            <div class="form-input">
+                <input type="text" placeholder="1234" maxlength="6" id="xferAmount" name="amount"><span>DKK</span>
+            </div>
+            
+            <p>Penge på din saldo vil blive brugt før der trækkes fra din konto, og du vil få en notifikation inden din saldo løber tør.</p>
+            <div class="cta">
+                <a href="#" id="cancelXfer">Annullér</a>
+                <input type="submit" value="Overfør til saldo"/>
+            </div>
+        </form>
+    </div>
+
 </div>
