@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
    </div>
 
    <div class="overlay_rapporter_box_2">
-      <p class="pop_up_text_2 headline">Båd fortøjet!</p>
+      <p class="pop_up_text headline">Båd fortøjet!</p>
 
       <div class="flexer">
          <p class="breadfont fortojdata">Tid sejlet:</p>
