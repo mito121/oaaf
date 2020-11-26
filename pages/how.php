@@ -38,8 +38,8 @@
     <div id="how-carousel-dots"></div>
 
     <div id="how-text-box">
-       <h5>Kom godt fra start</h5>
-       <p>asdfdsaf</p>
+       <h5></h5>
+       <p></p>
     </div>
 
     <button id="how-next" class="wide-button">Næste</button>

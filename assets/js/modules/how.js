@@ -41,8 +41,8 @@ function startTutorial(currentSlide) {
    let thisSlide = currentSlide + 1;
    let i = 1;
 
-   $('#how-text-box h1').html(infoHeaders[currentSlide])
-   $('#how-text-box p').html(infoTexts[currentSlide])
+   $('#how-text-box h5').html(infoHeaders[currentSlide]);
+   $('#how-text-box p').html(infoTexts[currentSlide]);
 
    var interval = setInterval(function () {
       if (i == 1) {
