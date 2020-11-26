@@ -691,7 +691,8 @@ header {
     background-color: #ffffff;
     overflow: hidden;
     img{
-        padding-top: 35px;
+        position: relative;
+        bottom: -35px;
     }
 }
 
@@ -1104,8 +1105,9 @@ a.button {
                 opacity: 0.5;
 
                 .how-img {
-                    width: 75%;
-                    height:100%
+                    width: 100%;
+                    height:75%;
+                    margin-top: 5em;
                 }
 
                 .how-text{
