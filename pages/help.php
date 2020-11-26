@@ -42,6 +42,49 @@
             </div>
         </div>
     </div>
+    <div class="row mt">
+       <div class="sub-box toggle-collapse">
+          <div class="flex">
+             <p>Forklaring af rangsystem</p><div class="expand rotate"></div>
+          </div>
+
+          <div class="collapsible">
+             <p>Din rang vil stige, og du vil optjene rabatter, alt efter hvor mange ture du har sejlet.</p>
+
+             <div class="rank-exp">
+                <table>
+                   <tr><th> <h2>Landkrabbe</h2> </th></tr>
+                   <tr><td> <p>0 ture</p> </td> <td> <p>2.00 DKK/min.</p> </td></tr>
+                </table>
+
+
+                <table>
+                   <tr><th><h2>Matros</h2></th></tr>
+                   <tr><td> <p>5 ture</p> </td> <td> <p>1.80 DKK/min.</p> </td></tr>
+                </table>
+
+
+                <table>
+                   <tr><th><h2>Skipper</h2></th></tr>
+                   <tr><td> <p>10 ture</p> </td> <td> <p>1.50 DKK/min.</p> </td></tr>
+                </table>
+
+
+                <table>
+                   <tr><th><h2>Styrmand</h2></th></tr>
+                   <tr><td> <p>15 ture</p> </td> <td> <p>1.20 DKK/min.</p> </td></tr>
+                </table>
+
+
+                <table>
+                   <tr><th><h2>Kaptajn</h2></th></tr>
+                   <tr><td> <p>20 ture</p> </td> <td> <p>1.00 DKK/min.</p> </td></tr>
+                   <tr><td></td> <td> <p>+ ingen startgebyr</p> </td></tr>
+                </table>
+             </div>
+          </div>
+       </div>
+    </div>
 
     <div class="row">
         <div class="sub-box toggle-collapse">
