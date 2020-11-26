@@ -83,13 +83,13 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
                   <label for="newName"><h4>Navn</h4> </label>
                   <input type="text" name="newName" id="newName" placeholder="Indtast navn">
 
-                  <label for="newEmail"> <h4>Email</h4> <span class="required">*</span></label>
+                  <label for="newEmail" class="flex"> <h4>Email</h4> <span class="required">*</span></label>
                   <input type="email" name="newEmail" id="newEmail" placeholder="Indtast email" required>
 
-                  <label for="newPassword"> <h4>Adgangskode</h4> <span class="required">*</span></label>
+                  <label for="newPassword" class="flex"> <h4>Adgangskode</h4> <span class="required">*</span></label>
                   <input v-model="password" v-on:keyup="validatePw" type="password" name="newPassword" id="newPassword" placeholder="Indtast adgangskode" required>
 
-                  <label for="passwordRepeat"> <h4>Bekræft adgangskode</h4> <span class="required">*</span></label>
+                  <label for="passwordRepeat" class="flex"> <h4>Bekræft adgangskode</h4> <span class="required">*</span></label>
                   <input v-model="passwordRepeat" v-on:keyup="validatePw" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Gentag adgangskode" required>
 
                   <p v-if="validPw === false" class="pw-validator">Dine adganskoder er ikke ens!</p>
