@@ -80,16 +80,16 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
 
             <form method="POST" action="../handlers/signup.php" class="d-inline text-left">
                <div class="box">
-                  <label for="newName">Navn</label>
+                  <label for="newName"><h4>Navn</h4> </label>
                   <input type="text" name="newName" id="newName" placeholder="Indtast navn">
 
-                  <label for="newEmail">Email <span class="required">*</span></label>
+                  <label for="newEmail"> <h4>Email</h4> <span class="required">*</span></label>
                   <input type="email" name="newEmail" id="newEmail" placeholder="Indtast email" required>
 
-                  <label for="newPassword">Adgangskode <span class="required">*</span></label>
+                  <label for="newPassword"> <h4>Adgangskode</h4> <span class="required">*</span></label>
                   <input v-model="password" v-on:keyup="validatePw" type="password" name="newPassword" id="newPassword" placeholder="Indtast adgangskode" required>
 
-                  <label for="passwordRepeat">Bekræft adgangskode <span class="required">*</span></label>
+                  <label for="passwordRepeat"> <h4>Bekræft adgangskode</h4> <span class="required">*</span></label>
                   <input v-model="passwordRepeat" v-on:keyup="validatePw" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="Gentag adgangskode" required>
 
                   <p v-if="validPw === false" class="pw-validator">Dine adganskoder er ikke ens!</p>
@@ -103,7 +103,7 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
 
                   <div class="checkboxes padding-row">
                      <div class="flex checkbox-row">
-                        <input type="checkbox" name="tos" id="tos" required><label for="tos" class="line-height">Jeg har læst og accepterer vilkår for brug</label>
+                        <input type="checkbox" name="tos" id="tos" required><label for="tos" class="line-height"> <p>Jeg har læst og accepterer vilkår for brug</p> </label>
                      </div>
                   </div>
 
