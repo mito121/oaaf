@@ -141,7 +141,8 @@ a {
 
 .mt-50 {
   margin-top: 50px !important;
-  margin-bottom: 13px !important; }
+  margin-bottom: 13px !important;
+  color: #2b6d85; }
 
 .required {
   color: #ff3030; }
@@ -544,8 +545,7 @@ header #nav-overlay {
   background-color: #ffffff;
   overflow: hidden; }
   .rank-img img {
-    position: relative;
-    bottom: -35px; }
+    padding-top: 35px; }
 
 .rank {
   font-size: 20px;
@@ -830,9 +830,8 @@ a.button {
       overflow: hidden;
       opacity: 0.5; }
       #how #how-carousel .how .how-item .how-img {
-        width: 100%;
-        margin-top: 5em;
-        height: 75%; }
+        width: 75%;
+        height: 100%; }
       #how #how-carousel .how .how-item .how-text {
         position: absolute;
         /*bottom: -36vh;*/

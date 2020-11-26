@@ -37,10 +37,10 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
 
             <form method="POST" action="../handlers/logon.php" class="d-inline text-left">
                <div class="box">
-                  <label for="email">Email</label>
+                  <label for="email"> <h4>Email</h4> </label>
                   <input type="text" name="email" id="email" placeholder="Indtast email">
 
-                  <label for="password">Adgangskode</label>
+                  <label for="password"> <h4>Adgangskode</h4> </label>
                   <input type="password" name="password" id="password" placeholder="Indtast adgangskode">
 
                   <p v-if="logon === false" class="pw-validator">Forkert email eller adgangskode</p>
@@ -49,7 +49,7 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
                <div class="padding">
                   <div class="checkboxes padding-row">
                      <div class="flex checkbox-row">
-                        <input type="checkbox" name="rememberMe" id="rememberMe"><label for="rememberMe">Husk mig</label>
+                        <input type="checkbox" name="rememberMe" id="rememberMe"><label for="rememberMe"> <p>Husk mig</p></label>
                      </div>
                   </div>
 
