@@ -1095,9 +1095,10 @@ footer {
       display: flex;
       margin: 0 5px;
       justify-content: space-between; }
-    #bodFortojet .overlay_rapporter_box_2 p {
+    #bodFortojet .overlay_rapporter_box_2 .headline {
       color: #2b6d85;
       margin: 25px;
+      font-size: 25px;
       text-align: center; }
     #bodFortojet .overlay_rapporter_box_2 .fortojdata {
       margin: 7px 20px; }
