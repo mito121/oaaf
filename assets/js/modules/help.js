@@ -32,7 +32,7 @@ for (i = 0; i < box.length; i++) {
         this.classList.toggle("open");
 
         if (this.classList.contains("open")) {
-            var maxHeight = 50 + this.lastElementChild.offsetHeight + "px";
+            var maxHeight = 65 + this.lastElementChild.offsetHeight + "px";
             this.style.maxHeight = maxHeight;
         } else {
             this.style.maxHeight = "50px";
