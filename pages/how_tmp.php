@@ -15,7 +15,7 @@
 
 
                 <div class="how-text">
-                    <h1>Kom godt fra start</h1>
+                    <h5>Kom godt fra start</h5>
                     <p>Scan QR koden på pælen foran den båd du gerne vil sejle med, og tryk accepter på appem for at låse dem op.</p>
                 </div>
             </div>
