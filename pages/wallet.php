@@ -80,7 +80,7 @@ $balance = $_SESSION['wallet_balance'] . ".00";
 <div class="overlay" id="xferMoneyOverlay">
 
     <div class="circle">
-        <img id="baad_valgt "src="assets/img/flueben_groent.svg" alt="båden er nu valgt">
+        <img id="baad_valgt "src="assets/img/credit_card.svg" alt="båden er nu valgt">
     </div>
 
     <div class="overlay_box">
