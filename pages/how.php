@@ -38,7 +38,7 @@
     <div id="how-carousel-dots"></div>
 
     <div id="how-text-box">
-       <h5>Kom godt fra start</h5>
+       <h5>Teuthet</h5>
        <p>asdfdsaf</p>
     </div>
 
