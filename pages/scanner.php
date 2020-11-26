@@ -44,11 +44,11 @@
     </div>
 
     <div class="overlay_rapporter_box">
-        <p class="pop_up_text">Båd valgt! Tryk for at låse op og starte turen!</p>
+        <p class="pop_up_text">Båd valgt! Tryk på "lås op" for at starte turen!</p>
     </div>
     <div class="centrering_1">
         <a href="#" id="cancel_trip">Annullér</a>
-        <a id="btn_start"href="index.php?page=timer">Læg fra kaj</a>
+        <a id="btn_start"href="index.php?page=timer">Lås op</a>
     </div>
 </div>
 
