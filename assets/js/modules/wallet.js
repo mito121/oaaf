@@ -73,3 +73,14 @@ let field = document.getElementById("xferAmount");
 setInputFilter(field, function (value) {
     return /^-?\d*$/.test(value);
 });
+
+//confirmation: Pengene er i hus bich
+document.getElementById('overfoertTilSaldo').addEventListener("click", displayOverlayPO);
+function displayOverlayPO(){
+  event.preventDefault()
+  document.getElementById("pengeoverfoert").style.display = "block";
+  document.getElementById('xferMoneyOverlay').style.display = "none";
+
+  var inputMoney = document.getElementById('xferAmount').value;
+  document.getElementById('pengeDisplay').innerHTML = inputMoney + " DKK";
+};
