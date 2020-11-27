@@ -69,7 +69,13 @@ a {
   width: 100%;
   overflow: hidden;
   /*padding:0 50px;*/
-  margin: 75px auto 0 auto; }
+  margin: 0 auto 0 auto; }
+
+.login-header {
+  display: flex;
+  justify-content: center; }
+  .login-header img {
+    width: 75%; }
 
 @media only screen and (max-width: 375px) {
   .global-wrapper {
@@ -153,6 +159,14 @@ a {
 .pw-validator {
   color: #ff3030;
   padding: 10px 0px 0px 3px; }
+
+.nyeLogo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  top: 0px; }
+  .nyeLogo img {
+    align-self: center; }
 
 /* Teh b0x */
 .box {
@@ -340,13 +354,13 @@ header #nav-overlay {
               position: absolute;
               right: 25px; }
           header #nav-overlay #main-nav #nav-content #nav-body ul li:nth-of-type(1) a::before {
-            content: url(../img/statistik.svg);
+            content: url(../img/moenter.svg);
             position: absolute;
             width: 26px;
             top: 0.4em;
             left: 1em; }
           header #nav-overlay #main-nav #nav-content #nav-body ul li:nth-of-type(2) a::before {
-            content: url(../img/moenter.svg);
+            content: url(../img/statistik.svg);
             position: absolute;
             width: 26px;
             top: 0.55em;
@@ -1041,6 +1055,7 @@ footer {
   display: none; }
 
 #tid_sejlet {
+  margin-top: 50px;
   text-align: center;
   color: #2b6d85;
   font-size: 20px;
@@ -1105,6 +1120,50 @@ footer {
     #bodFortojet .overlay_rapporter_box_2 .fortojdata {
       margin: 7px 20px; }
     #bodFortojet .overlay_rapporter_box_2 .overlay_rapporter_btn {
+      background-color: #93bd59;
+      display: block;
+      width: 325px;
+      height: 33px;
+      margin: 25px auto;
+      bottom: 0px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px; }
+
+#pengeoverfoert {
+  display: none;
+  position: absolute;
+  background-color: rgba(68, 68, 68, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999999; }
+  #pengeoverfoert .circle_2 {
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 35px auto 35px auto;
+    display: flex;
+    justify-content: center; }
+  #pengeoverfoert .circle_2 img {
+    position: relative;
+    width: 80px;
+    height: auto; }
+  #pengeoverfoert .overlay_rapporter_box_2 {
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    width: 100%; }
+    #pengeoverfoert .overlay_rapporter_box_2 .headline {
+      color: #2b6d85;
+      margin: 25px;
+      font-size: 25px;
+      text-align: center; }
+    #pengeoverfoert .overlay_rapporter_box_2 .overlay_rapporter_btn {
       background-color: #93bd59;
       display: block;
       width: 325px;

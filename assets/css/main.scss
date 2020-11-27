@@ -66,8 +66,17 @@ a {
     width: 100%;
     overflow: hidden;
     /*padding:0 50px;*/
-    margin: 75px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
+
+.login-header{
+display: flex;
+justify-content: center;
+  img{
+    width: 75%;
+  }
+}
+
 @media only screen and (max-width: 375px) {
     .global-wrapper {
         padding: 0;
@@ -161,6 +170,20 @@ a {
     color: $red;
     padding: 10px 0px 0px 3px;
 }
+
+
+.nyeLogo{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  top: 0px;
+
+
+  img{
+    align-self: center;
+  }
+}
+
 
 /* Teh b0x */
 .box {
@@ -405,7 +428,7 @@ header {
 
                             &:nth-of-type(1) {
                                 a::before {
-                                    content: url(../img/statistik.svg);
+                                    content: url(../img/moenter.svg);
                                     position: absolute;
                                     width: 26px;
                                     top: 0.4em;
@@ -415,7 +438,7 @@ header {
 
                             &:nth-of-type(2) {
                                 a::before {
-                                    content: url(../img/moenter.svg);
+                                    content: url(../img/statistik.svg);
                                     position: absolute;
                                     width: 26px;
                                     top: 0.55em;
@@ -1433,6 +1456,7 @@ footer {
 }
 
 #tid_sejlet{
+    margin-top: 50px;
     text-align: center;
     color: $darkblue;
     font-size: 20px;
@@ -1532,6 +1556,73 @@ footer {
         }
     }
 }
+
+
+//penge overført overlay
+#pengeoverfoert {
+    display: none;
+    position: absolute;
+    background-color: rgba(68, 68, 68, 0.75);
+
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    z-index: 9999999;
+
+    .circle_2 {
+        position: relative;
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 35px auto 35px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .circle_2 img {
+        position: relative;
+        width: 80px;
+        height: auto;
+    }
+
+    .overlay_rapporter_box_2 {
+        background-color: white;
+        position: absolute;
+        top: 200px;
+        width: 100%;
+
+
+        .headline {
+            color: #2b6d85;
+            margin: 25px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+
+        .overlay_rapporter_btn {
+            background-color: #93bd59;
+            display: block;
+            width: 325px;
+            height: 33px;
+            margin: 25px auto;
+            bottom: 0px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+
 
 
 //baggrund til alle sider

@@ -8,7 +8,12 @@ if (!$_SESSION['start_time']) {
 ?>
 <div class="global-wrapper">
 
-    <p id="tid_sejlet">Tid sejlet</p>
+  <header class="login-header">
+      <img src=" assets/img/oaf-ny-logo.svg" alt="Odense aafart nye logo">
+  </header>
+
+
+   <p id="tid_sejlet">Tid sejlet</p>
 
     <p id="trip_timer">
         <label id="minutes">00</label>:<label id="seconds">00</label>
@@ -71,7 +76,7 @@ if (!$_SESSION['start_time']) {
             <input type="hidden" name="start" value="<?php echo $_SESSION['start_time']; ?>"/>
             <input type="hidden" name="stop" id="trip_finished"/>
             <input type="hidden" name="date" id="trip_date"/>
-            
+
             <input type="hidden" name="price" id="trip_price"/>
             <button type="submit" class="overlay_rapporter_btn">Afslut</button>
         </form>
