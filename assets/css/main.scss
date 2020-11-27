@@ -62,12 +62,19 @@ a {
     }
 }
 
+
+
 .global-wrapper {
     width: 100%;
     overflow: hidden;
     /*padding:0 50px;*/
-    margin: 0 auto 0 auto;
+    margin: 75px auto 0 auto;
 }
+
+#login-wrapper{
+  margin: 0 auto 0 auto;
+}
+
 
 .login-header{
 display: flex;

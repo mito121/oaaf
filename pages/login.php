@@ -31,7 +31,7 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
       <div id="loginModule">
 
          <!-- ### LOG IND ### -->
-         <div v-if="tab === 1" class="global-wrapper text-center">
+         <div v-if="tab === 1" id="login-wrapper"  class="global-wrapper text-center">
             <h1 class="mt-50">Log ind</h1>
 
             <form method="POST" action="../handlers/logon.php" class="d-inline text-left">
