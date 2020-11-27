@@ -25,12 +25,11 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
    </head>
    <body>
       <header class="login-header">
-         <!--         <div class="logo-big">
-                     <img src="https://aafart.dk/wp-content/uploads/2019/02/logo.svg" alt="">
-                  </div>-->
+          <img src="../assets/img/oaf-ny-logo.svg" alt="Odense aafart nye logo">
       </header>
 
       <div id="loginModule">
+
          <!-- ### LOG IND ### -->
          <div v-if="tab === 1" class="global-wrapper text-center">
             <h1 class="mt-50">Log ind</h1>

@@ -5,6 +5,11 @@ if (isset($_GET['id'])) {
 ?>
 <div class="global-wrapper">
 
+  <header class="login-header">
+      <img src=" assets/img/oaf-ny-logo.svg" alt="Odense aafart nye logo">
+  </header>
+
+
    <p id="tid_sejlet">Tid sejlet</p>
 
    <p id="trip_timer">
