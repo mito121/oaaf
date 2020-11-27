@@ -186,6 +186,9 @@ a {
   .padding .padding-row {
     margin-top: 16px; }
 
+.big-form {
+  width: 100% !important; }
+
 form {
   padding: 12px 0px;
   width: 275px; }

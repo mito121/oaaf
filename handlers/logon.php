@@ -25,7 +25,7 @@ if (isset($_POST)) {
                 $_SESSION['fb_id'] = $obj->fb_id;
 
                 // Get user rank info
-                $rank_id = $obj->rank_id;
+                $rank_id = $_SESSION['rank_id'] = $obj->rank_id;
 
                 $sql = "SELECT `id`, `name`, `img` FROM `oaaf_ranks` WHERE id = '$rank_id'";
                 $result = $conn->query($sql);
