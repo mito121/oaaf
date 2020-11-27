@@ -6,15 +6,15 @@ document.getElementById("how-toggle").addEventListener("click", function () {
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 0;
-var seconds, minutes;
+var seconds, minutes, unpaddedMinutes, interval;
 
 // Check if trip is already started - else set sessionStorage trip_started
 if (window.sessionStorage.getItem('trip_started')) {
     totalSeconds = pad(Math.floor((+new Date() - window.sessionStorage.getItem('trip_started')) / 1000));
-    setTimeout(setTime, setInterval(setTime, 1000), 1000);
+    setTimeout(setTime, interval = setInterval(setTime, 1000), 1000);
 } else {
     window.sessionStorage.setItem('trip_started', +new Date());
-    setInterval(setTime, 1000);
+    interval = setInterval(setTime, 1000);
 }
 
 // Count seconds/minutes & output to HTML
@@ -24,6 +24,10 @@ function setTime() {
     minutes = pad(parseInt(totalSeconds / 60));
     secondsLabel.innerHTML = seconds;
     minutesLabel.innerHTML = minutes;
+
+    // For receipt popup
+    unpaddedSeconds = totalSeconds % 60;
+    unpaddedMinutes = parseInt(totalSeconds / 60);
 }
 
 // add '0' before number is less than 2 digits
@@ -65,6 +69,46 @@ $(".back").on("click", function () {
     window.location.href = "index.php";
 });
 
-$('#finish_trip').on("click", function(){
-   $('#bodFortojet').css("display", "block");
+$('#finish_trip').on("click", function () {
+    $('#bodFortojet').css("display", "block");
+
+    clearInterval(interval);
+
+    // Output time spent at sea
+    $('#time_spent_at_sea').html(unpaddedMinutes + ":" + seconds);
+
+    // Calculate price depending on user rank
+    const rank = document.getElementById("user_rank_id").value;
+    const entryFree = 10;
+    var pricePerMin, priceTotal, paidMinutes;
+
+    if (rank == 1) {
+        pricePerMin = 2;
+    } else if (rank == 2) {
+        pricePerMin = 1.8;
+    } else if (rank == 3) {
+        pricePerMin = 1.5;
+    } else if (rank == 4) {
+        pricePerMin = 1.2;
+    } else if (rank == 5) {
+        pricePerMin = 1;
+    }
+
+    if (unpaddedSeconds > 1) { // Round up
+        priceTotal = (pricePerMin * (unpaddedMinutes + 1)) + entryFree;
+        paidMinutes = unpaddedMinutes + 1;
+    } else { // Do not round up
+        priceTotal = (pricePerMin * unpaddedMinutes) + entryFree;
+    }
+
+    $('#priceTotal').html(priceTotal + " DKK");
+
+    // Set form values
+    const today = new Date();
+    const trip_date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    const trip_finished = today.getHours() + ":" + today.getMinutes();
+    $('#trip_date').val(trip_date);
+    $('#trip_finished').val(trip_finished);
+    $('#trip_duration').val(paidMinutes);
+    $('#trip_price').val(priceTotal);
 });
