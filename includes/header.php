@@ -39,8 +39,8 @@ require_once 'includes/protect.php';
                   <div id="nav-content">
                      <div id="nav-body">
                         <ul>
+                          <li><a href="index.php?page=wallet">Pung</a></li>
                            <li><a href="index.php?page=stats">Statistik</a></li>
-                           <li><a href="index.php?page=wallet">Pung</a></li>
                            <li><a href="index.php?page=history">Historik</a></li>
                            <li><a href="index.php?page=help">Hjælp</a></li>
                            <li><a href="index.php?page=how">Hvordan</a></li>

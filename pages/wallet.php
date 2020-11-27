@@ -89,7 +89,7 @@ $balance = $_SESSION['wallet_balance'] . ".00";
         <form method="POST" action="handlers/updateBalance.php">
             <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>"/>
             <div class="form-input">
-                <input type="text" placeholder="1234" maxlength="6" id="xferAmount" name="amount"><span>DKK</span>
+                <input type="text" placeholder="1234" maxlength="6" id="xferAmount" name="amount"><span>  DKK</span>
             </div>
 
             <p>Penge på din saldo vil blive brugt før der trækkes fra din konto, og du vil få en notifikation inden din saldo løber tør.</p>
@@ -100,4 +100,19 @@ $balance = $_SESSION['wallet_balance'] . ".00";
         </form>
     </div>
 
+</div>
+
+<div id="pengeoverfoert">
+   <div class="circle_2">
+      <img src="assets/img/flueben_groent.svg" alt="indtast cifrer manuelt">
+   </div>
+
+   <div class="overlay_rapporter_box_2">
+
+      <p class="pop_up_text headline">Beløb overført!</p>
+      <p class="pop_up_text headline">"#" er nu overført til din saldo</p>
+
+      <a href="#" class="btn"></a>
+      <button type="button" class="overlay_rapporter_btn" onclick="window.location.href='handlers/finish.php'">Afslut</button>
+   </div>
 </div>
