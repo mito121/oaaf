@@ -27,8 +27,8 @@ if (mysqli_num_rows($result) > 0) {
         $dateObj = DateTime::createFromFormat('!m', $month);
         $monthName = $dateObj->format('F'); // March
 
-        $dayName = date("l", $date);
-
+        $unixTimestamp = strtotime($date);
+        $dayName = date("l", $unixTimestamp);
 
         $historyOutput .= "
             <div class=\"history-item\">
