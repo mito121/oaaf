@@ -100,3 +100,7 @@ if (strlen($_SESSION['email']) > 20) {
         <a href="handlers/logoff.php" class="logoff button">Log ud</a>
     </div>
 </div>
+
+<div class="bg_temp">
+    <img class="bg_temptation" src="assets/img/tmp_bg.svg" alt="background picture">
+</div>
