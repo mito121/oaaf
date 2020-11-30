@@ -11,8 +11,14 @@ if (isset($_POST)) {
     $stop = $conn->real_escape_string($_POST['stop']);
     $date = $conn->real_escape_string($_POST['date']);
     $price = $conn->real_escape_string($_POST['price']);
+    
+    if($_SESSION['rank_id'] == 5){
+       $entryFee = 0;
+    }else{
+       $entryFee = 10;
+    }
 
-    $sql = "INSERT INTO `oaaf_history`(`user_id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`) VALUES ('$user_id', 'C14', '$duration', '$start', '$stop', '$date', '$price')";
+    $sql = "INSERT INTO `oaaf_history`(`user_id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`) VALUES ('$user_id', 'C14', '$duration', '$start', '$stop', '$date', '$price', '$entryFee')";
     $result = $conn->query($sql);
 }
 

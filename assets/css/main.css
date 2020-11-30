@@ -78,7 +78,7 @@ a {
   display: flex;
   justify-content: center; }
   .login-header img {
-    width: 75%; }
+    width: 275px; }
 
 @media only screen and (max-width: 375px) {
   .global-wrapper {
@@ -562,7 +562,8 @@ header #nav-overlay {
   display: block;
   margin: 0 auto 6px auto;
   background-color: #ffffff;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
   .rank-img img {
     position: relative;
     bottom: -35px; }
@@ -595,7 +596,8 @@ header #nav-overlay {
   padding: 0 13px;
   font-size: 17px;
   overflow: hidden;
-  transition: max-height 420ms ease-in-out; }
+  transition: max-height 420ms ease-in-out;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
   .sub-box .flex, .sub-box-big .flex {
     display: flex;
     align-items: center;
@@ -749,7 +751,8 @@ a.button {
           right: 10px;
           top: 7px;
           color: #2b6d85;
-          opacity: .8; }
+          opacity: .8;
+          font-family: 'open-sans'; }
       .overlay .overlay_box form input[type=submit] {
         background-color: #93bd59;
         border: none;
@@ -959,7 +962,7 @@ a.button {
     max-height: 65px;
     margin-bottom: 15px;
     transition: max-height 420ms ease-in-out;
-    filter: drop-shadow(0px 1px 1.5px #444); }
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
     #history .history-item .flex-b {
       width: 100%;
       align-items: center; }
@@ -1036,7 +1039,8 @@ footer {
   height: 55px;
   width: 55px;
   border-radius: 50%;
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
 
 @media only screen and (max-width: 320px) {
   .footer-btn {
@@ -1069,13 +1073,6 @@ footer {
   color: #2b6d85;
   text-align: center;
   font-weight: bolder; }
-
-#nyd_turen {
-  color: #707070;
-  text-align: center;
-  font-weight: bold;
-  opacity: 0.5;
-  margin-top: 120px; }
 
 .stop_tur {
   display: flex;
