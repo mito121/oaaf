@@ -6,7 +6,7 @@ if (!$_SESSION['start_time']) {
    $_SESSION['start_time'] = $start_time;
 }
 ?>
-<div class="global-wrapper">
+<div class="global-wrapper slim">
 
    <header class="login-header">
       <img src=" assets/img/oaf-ny-logo.svg" alt="Odense aafart nye logo">
@@ -21,8 +21,8 @@ if (!$_SESSION['start_time']) {
    <a href="#" id="finish_trip" class="stop_tur">Stop tur</a>
    <p id="started"></p>
 
-   <div  id="pop_ud_how"class="row">
-      <div class="sub-box toggle-collapse">
+   <div id="pop_ud_how" class="row">
+      <div class="sub-box mb-5-em toggle-collapse">
          <div class="flex">
             <p>Hvordan fortøjer jeg?</p><div class="expand rotate"></div>
          </div>

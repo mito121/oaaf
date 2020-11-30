@@ -20,6 +20,12 @@ if (mysqli_num_rows($result) > 0) {
       $date = $obj->date;
       $price = $obj->price;
       $entry_fee = $obj->entry_fee;
+      
+      if($duration > 1){
+         $duration = $duration . " minutter";
+      }else{
+         $duration = $duration . " minut";
+      }
 
       $year = substr($date, 0, 4);
       $month = substr($date, 5, 2);
@@ -67,7 +73,7 @@ if (mysqli_num_rows($result) > 0) {
                     <table>
                         <tr>
                             <td>Varighed</td>
-                            <td>$duration minutter</td>
+                            <td>$duration</td>
                         </tr>
                         <tr>
                             <td>Starttidspunkt</td>
