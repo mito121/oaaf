@@ -6,7 +6,7 @@ document.getElementById("how-toggle").addEventListener("click", function () {
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 0;
-var seconds, minutes, unpaddedMinutes, interval;
+var seconds, minutes, unpaddedSeconds, unpaddedMinutes, interval;
 
 // Check if trip is already started - else set sessionStorage trip_started
 if (window.sessionStorage.getItem('trip_started')) {
@@ -40,6 +40,58 @@ function pad(val) {
    }
 }
 
+
+/* ## Finish trip ## */
+$('#finish_trip').on("click", function () {
+   $('#bodFortojet').css("display", "block");
+
+   clearInterval(interval);
+
+   // Output time spent at sea
+   if(totalSeconds === 0){
+      $('#time_spent_at_sea').html("0:00");
+   }else{
+      $('#time_spent_at_sea').html(unpaddedMinutes + ":" + seconds);
+   }
+
+   // Calculate price depending on user rank
+   const rank = document.getElementById("user_rank_id").value;
+   let entryFee = 10;
+   var pricePerMin, priceTotal, paidMinutes;
+
+   if (rank == 1) {
+      pricePerMin = 2;
+   } else if (rank == 2) {
+      pricePerMin = 1.8;
+   } else if (rank == 3) {
+      pricePerMin = 1.5;
+   } else if (rank == 4) {
+      pricePerMin = 1.2;
+   } else if (rank == 5) {
+      pricePerMin = 1;
+      entryFee = 0;
+   }
+
+   if (unpaddedSeconds >= 1 && unpaddedSeconds !== undefined) { // Round up
+      priceTotal = (pricePerMin * (unpaddedMinutes + 1)) + entryFee;
+      paidMinutes = unpaddedMinutes + 1;
+   } else { // Do not round up
+      priceTotal = pricePerMin + entryFee;
+      paidMinutes = 1;
+   }
+
+   $('#priceTotal').html(priceTotal + " DKK");
+
+   // Set form values
+   const today = new Date();
+   const trip_date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+   const trip_finished = `${today.getHours()}`.padStart(2, '0') + ":" + `${today.getMinutes()}`.padStart(2, '0');
+   $('#trip_date').val(trip_date);
+   $('#trip_finished').val(trip_finished);
+   $('#trip_duration').val(paidMinutes);
+   $('#trip_price').val(priceTotal);
+});
+
 /* ## Toggle collapsibles */
 var box = document.getElementsByClassName("toggle-collapse");
 var collapsible = document.getElementsByClassName("collapsible");
@@ -67,49 +119,4 @@ for (i = 0; i < collapsible.length; i++) {
 // Go back from sub page
 $(".back").on("click", function () {
    window.location.href = "index.php";
-});
-
-$('#finish_trip').on("click", function () {
-   $('#bodFortojet').css("display", "block");
-
-   clearInterval(interval);
-
-   // Output time spent at sea
-   $('#time_spent_at_sea').html(unpaddedMinutes + ":" + seconds);
-
-   // Calculate price depending on user rank
-   const rank = document.getElementById("user_rank_id").value;
-   let entryFee = 10;
-   var pricePerMin, priceTotal, paidMinutes;
-
-   if (rank == 1) {
-      pricePerMin = 2;
-   } else if (rank == 2) {
-      pricePerMin = 1.8;
-   } else if (rank == 3) {
-      pricePerMin = 1.5;
-   } else if (rank == 4) {
-      pricePerMin = 1.2;
-   } else if (rank == 5) {
-      pricePerMin = 1;
-      entryFee = 0;
-   }
-
-   if (unpaddedSeconds >= 1) { // Round up
-      priceTotal = (pricePerMin * (unpaddedMinutes + 1)) + entryFee;
-      paidMinutes = unpaddedMinutes + 1;
-   } else { // Do not round up
-      priceTotal = (pricePerMin * unpaddedMinutes) + entryFee;
-   }
-
-   $('#priceTotal').html(priceTotal + " DKK");
-
-   // Set form values
-   const today = new Date();
-   const trip_date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-   const trip_finished = today.getHours() + ":" + today.getMinutes();
-   $('#trip_date').val(trip_date);
-   $('#trip_finished').val(trip_finished);
-   $('#trip_duration').val(paidMinutes);
-   $('#trip_price').val(priceTotal);
 });

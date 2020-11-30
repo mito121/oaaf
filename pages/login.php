@@ -74,7 +74,7 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') { // login error
          </div>
 
          <!-- ### NY BRUGER ### -->
-         <div v-else class="global-wrapper text-center">
+         <div v-else class="global-wrapper slim text-center">
             <h1 class="mt-50">Ny bruger</h1>
 
             <form method="POST" action="../handlers/signup.php" class="d-inline text-left">

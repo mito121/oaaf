@@ -54,7 +54,7 @@ if (!$_SESSION['start_time']) {
 
       <div class="flexer">
          <p class="breadfont fortojdata">Tid sejlet:</p>
-         <p class="breadfont fortojdata" id="time_spent_at_sea">25 minutter</p>
+         <p class="breadfont fortojdata" id="time_spent_at_sea"></p>
       </div>
 
       <div class="flexer">

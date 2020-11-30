@@ -1,5 +1,10 @@
 // Slick carousel
 $(document).ready(function () {
+   
+   const redir = function(){
+      window.location.href = "index.php";
+   }
+   
    $('#how-carousel').slick(
            {
               dots: true,
@@ -18,11 +23,12 @@ $(document).ready(function () {
    $('#how-carousel').on('afterChange', function (event, slick, currentSlide) {
       if (slick.$slides.length - 1 == currentSlide) {
          $('#how-next').html("Færdig");
-         $('#how-next').on("click", function(){
-             window.location.href = "index.php";
-         });
+         // Enable redirect when finished
+         $('#how-next').on("click", redir);
       } else {
          $('#how-next').html("Næste");
+         // Disable redirect when not finished
+         $('#how-next').off("click", redir);
       }
 
       clearIntervals();

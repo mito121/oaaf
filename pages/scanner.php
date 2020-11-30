@@ -44,7 +44,7 @@
     </div>
 
     <div class="overlay_rapporter_box">
-        <p class="pop_up_text">Båd valgt! Tryk på "lås op" for at starte turen!</p>
+        <p class="pop_up_text">Båd valgt! Tryk på "Lås op" for at starte turen.</p>
     </div>
     <div class="centrering_1">
         <a href="#" id="cancel_trip">Annullér</a>

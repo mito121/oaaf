@@ -40,33 +40,21 @@ body {
    z-index: 4;
 }
 
-@media only screen and (max-width: 375px) {
-   #qr-info {
-      top: 3%;
-   }
-}
-
-@media only screen and (max-width: 414px) {
-   #qr-info {
-      top: 3%;
-   }
-}
-
-#qr-info img {
-   width: 33%;
-   margin-bottom: 12px;
-}
-
 @media only screen and (max-width: 320px) {
    #qr-info img {
       width: 35%;
    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 375px) {
    #qr-info {
-      top: 3%;
+      top: 10%;
    }
+}
+
+#qr-info img {
+   width: 33%;
+   margin-bottom: 12px;
 }
 
 #qr-info h1 {
@@ -242,7 +230,6 @@ p {
    width: 120px;
    padding: 7px;
    height: 33px;
-   margin: 25px;
    color: white;
    border: none;
    border-radius: 8px;
