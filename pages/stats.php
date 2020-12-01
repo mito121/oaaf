@@ -1,15 +1,16 @@
 <?php
 require_once 'includes/dbconnect.php';
 
-// Get user stats
+/* ### Get user stats ### */
 $user_id = $_SESSION['id'];
-$sql = "SELECT COUNT(id) AS count, SUM(duration) AS time_at_sea FROM `oaaf_history` WHERE user_id = '$user_id'";
+$sql = "SELECT COUNT(id) AS count, SUM(duration) AS time_at_sea, SUM(trip_discount) AS discount FROM `oaaf_history` WHERE user_id = '$user_id'";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
     while ($obj = $result->fetch_object()) {
         $trip_count = $obj->count;
         $time_at_sea = $obj->time_at_sea;
+        $money_saved = $obj->discount;
     }
 }
 ?>
@@ -57,7 +58,7 @@ if (mysqli_num_rows($result) > 0) {
                 <img src="assets/img/penge_sparet.svg" alt="Antal ture"/>
                 <div class="stat-track">
                     <div class="stat-track-header"> <h4>Penge sparet:</h4> </div>
-                    <div class="stat-result">420 kr.</div>
+                    <div class="stat-result"><?php echo $money_saved; ?> kr.</div>
                 </div>
             </div>
         </div>

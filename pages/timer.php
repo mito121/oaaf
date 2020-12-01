@@ -61,6 +61,7 @@ if (!$_SESSION['start_time']) {
          <p class="breadfont fortojdata">Pris inkl. startgebyr:</p>
          <p class="breadfont fortojdata" id="priceTotal"></p>
       </div>
+
       <a href="#" class="btn"></a>
       <form class="big-form" method="POST" action="handlers/finish.php">
          <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>"/>
@@ -71,6 +72,8 @@ if (!$_SESSION['start_time']) {
          <input type="hidden" name="stop" id="trip_finished"/>
          <input type="hidden" name="date" id="trip_date"/>
 
+         <input type="hidden" name="price_per_min" id="price_per_min"/>
+         <input type="hidden" name="trip_discount" id="trip_discount"/>
          <input type="hidden" name="price" id="trip_price"/>
          <button type="submit" class="overlay_rapporter_btn">Afslut</button>
       </form>
