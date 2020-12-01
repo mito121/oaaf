@@ -50,3 +50,14 @@ for (i = 0; i < collapsible.length; i++) {
 $(".back").on("click", function () {
     window.location.href = "index.php";
 });
+
+
+
+
+//submit form
+
+let form = document.getElementById('helpForm');
+
+document.getElementById("refresh").addEventListener("click", function(){
+helpForm.submit();
+});
