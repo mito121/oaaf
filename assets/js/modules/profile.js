@@ -31,8 +31,6 @@ new Vue({
                     }
                 }
 
-
-//                console.log(this.childNodes[2].getElementsByTagName("form")[0].lastChild.childNodes[0]);
                 this.classList.toggle("open");
 
                 if (this.classList.contains("open")) {
@@ -41,17 +39,15 @@ new Vue({
 
                     // Scroll to selected item
 //                    setTimeout(function () {
-                        $('html, body').animate({
-                            scrollTop: this.offsetTop - 85
-                        }, 500);
+                    $('html, body').animate({
+                        scrollTop: this.offsetTop - 85
+                    }, 500);
 //                    }, 250);
 
                 } else {
                     this.style.maxHeight = "50px";
                 }
             });
-
-
         }
 
         for (i = 0; i < collapsible.length; i++) {
@@ -65,16 +61,23 @@ new Vue({
             window.location.href = "index.php";
         });
 
+
+        /* ## Check if user tried to change password and failed ## */
+        if (window.sessionStorage.getItem('pw_change') == 'false') {
+            $("#currentPw").css("border-color", "red");
+            $('#changePassword').click();
+            $('#currentPw').focus();
+        } else if (window.sessionStorage.getItem('pw_change') == 'true') {
+            
+        } else {
+            $("#currentPw").css("border-color", "transparent");
+        }
     },
 
     methods: {
         /* ## Validate new email ## */
         validateNewEmail() {
-            if (
-                    this.newEmail !== "" &&
-                    this.newEmailRepeat !== "" &&
-                    this.newEmail !== this.newEmailRepeat
-                    ) {
+            if (this.newEmail !== "" && this.newEmailRepeat !== "" && this.newEmail !== this.newEmailRepeat) {
                 $("#newEmailRepeat").css("border-color", "red");
             } else {
                 $("#newEmailRepeat").css("border-color", "transparent");
@@ -82,11 +85,7 @@ new Vue({
         },
 
         validateNewPassword() {
-            if (
-                    this.newPassword !== "" &&
-                    this.newPasswordRepeat !== "" &&
-                    this.newPassword !== this.newPasswordRepeat
-                    ) {
+            if (this.newPassword !== "" && this.newPasswordRepeat !== "" && this.newPassword !== this.newPasswordRepeat) {
                 $("#newPasswordRepeat").css("border-color", "red");
             } else {
                 $("#newPasswordRepeat").css("border-color", "transparent");

@@ -1,8 +1,6 @@
 <?php
 require_once 'includes/dbconnect.php';
 
-
-
 // Get user history
 $user_id = $_SESSION['id'];
 $historyOutput;
@@ -61,7 +59,7 @@ if (mysqli_num_rows($result) > 0) {
                 <div class=\"flex-b\">
                     <div>
                         <h3>$monthName</h3>
-                        <p>$dayName D. $day</p>
+                        <p>$dayName d. $day</p>
                     </div>
 
                     <span>$price,00 DKK</span>

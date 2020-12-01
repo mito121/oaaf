@@ -1,4 +1,5 @@
 <?php
+// If user name or email is too long -> display dots
 if (strlen($_SESSION['name']) > 20) {
     $user_name = substr($_SESSION['name'], 0, 20) . '...';
 } else {
@@ -8,6 +9,20 @@ if (strlen($_SESSION['email']) > 20) {
     $user_email = substr($_SESSION['email'], 0, 20) . '...';
 } else {
     $user_email = $_SESSION['email'];
+}
+
+//die(password_hash('are12341', PASSWORD_DEFAULT));
+// If user failed, trying to change password
+if (isset($_GET) && $_GET['pw_change'] == 'false') {
+    echo "<script>window.sessionStorage.setItem('pw_change', 'false');</script>";
+} elseif (isset($_GET) && $_GET['pw_change'] == 'true') {
+    echo "<script>window.sessionStorage.setItem('pw_change', 'true');</script>";
+} else {
+    echo "<script>
+            if(window.sessionStorage.getItem('pw_change')){
+                window.sessionStorage.removeItem('pw_change');
+            }
+        </script>";
 }
 ?>
 <div class="global-wrapper" id="profile">
@@ -73,7 +88,7 @@ if (strlen($_SESSION['email']) > 20) {
 
     <div class="row">
         <div class="label"> <h2>Adgangskode</h2> </div>
-        <div class="sub-box toggle-collapse">
+        <div class="sub-box toggle-collapse" id="changePassword">
             <div class="flex">
                 <p>Skift adgangskode</p><div class="expand rotate"></div>
             </div>
@@ -81,6 +96,9 @@ if (strlen($_SESSION['email']) > 20) {
             <div class="collapsible">
                 <form method="POST" action="handlers/updatePassword.php" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
+                    <label for="newPassword"> <h4>Nuværende adgangskode</h4> </label>
+                    <input type="text" class="password" name="currentPw" id="currentPw" placeholder="Indtast ny adgangskode" autocomplete="off">
+
                     <label for="newPassword"> <h4>Ny adgangskode</h4> </label>
                     <input type="text" class="password" v-model="newPassword" name="newPassword" v-on:keyup="validateNewPassword" id="newPassword" placeholder="Indtast ny adgangskode" autocomplete="off">
 
