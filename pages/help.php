@@ -109,7 +109,7 @@
             <div class="collapsible">
                 <div class="collapse-wrapper flex-b">
                     <a href="#">Annullér</a>
-                    <a href="#" class="warning button">Slet profil</a>
+                    <a href="#" id="delete-toggle" class="warning button">Slet profil</a>
                 </div>
             </div>
         </div>
@@ -133,4 +133,20 @@
 
 <div class="bg_temp">
 <img class="bg_temptation" src="assets/img/tmp_bg.svg" alt="background picture">
+</div>
+
+
+
+
+<div id="slet_profil_overlay" >
+
+    <div class="overlay_rapporter_box">
+        <p class="pop_up_text">Du er ved at slette din Profil</p>
+        <p  id="margintop" class="pop_up_text">Er du sikker?</p>
+
+    <div id="flex-box-slet">
+      <a id="no-delete" href="#">Annullér</a>
+      <button href="#">Ja, slet min profil</a>
+    </div>
+      </div>
 </div>

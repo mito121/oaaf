@@ -22,6 +22,19 @@ $(".overlay_rapporter_box, .circle").on("click", function (e) {
 });
 
 
+//open delete profile overlay
+  document.getElementById('delete-toggle').addEventListener("click", function() {
+  document.getElementById('slet_profil_overlay').style.display="block";
+});
+
+document.getElementById('no-delete').addEventListener("click", function () {
+    document.getElementById('slet_profil_overlay').style.display = "none";
+});
+
+
+
+
+
 /* ## Toggle collapsibles */
 var box = document.getElementsByClassName("toggle-collapse");
 var collapsible = document.getElementsByClassName("collapsible");
@@ -55,9 +68,7 @@ $(".back").on("click", function () {
 
 
 //submit form
-
 let form = document.getElementById('helpForm');
-
 document.getElementById("refresh").addEventListener("click", function(){
 helpForm.submit();
 });
