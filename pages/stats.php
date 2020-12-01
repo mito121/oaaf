@@ -102,12 +102,11 @@ if (mysqli_num_rows($result) > 0) {
                     </table>
 
 
-                    <table>
-                        <tr><th><h2>Kaptajn</h2></th></tr>
-                        <tr><td> <p>20 ture</p> </td> <td> <p>1.00 DKK/min.</p> </td></tr>
-                        <tr><td></td> <td> <p>+ ingen startgebyr</p> </td></tr>
-                    </table>
-                </div>
+               <table>
+                  <tr><th><h2>Kaptajn</h2></th></tr>
+                  <tr><td> <p>20 ture</p> </td> <td> <p>1.00 DKK/min.</p> </td></tr>
+                  <tr><td></td> <td> <p>+ intet startgebyr</p> </td></tr>
+               </table>
             </div>
         </div>
     </div>

@@ -29,14 +29,14 @@
                 <p>Rapportér et problem</p><div class="expand rotate"></div>
             </div>
             <div class="collapsible">
-                <form id="helpForm" autocomplete="off">
+                <form action="handlers/reportProblem.php" method="post" id="helpForm" autocomplete="off">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
                     <label for="issue"> <h4>Beskriv problemet</h4> </label>
-                    <textarea name="issue" id="issue" placeholder="Beskriv dit problem her"></textarea>
+                    <textarea required name="issue" id="issue" placeholder="Beskriv dit problem her"></textarea>
 
                     <div class="flex-b">
                         <a href="#">Annullér</a>
-                        <button type="submit">Indsend</button>
+                        <button onclick="" type="submit">Indsend</button>
                     </div>
                 </form>
             </div>
@@ -126,7 +126,7 @@
             <p class="pop_up_text">Tak for din indsendelse!
                 Vi fikser problemet snarest muligt.</p>
             <a href="#" class="btn"></a>
-            <button type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Tilbage</button>
+            <button  id="refresh" type="button" class="overlay_rapporter_btn" onclick="closeHelpOverlay()">Tilbage</button>
         </div>
     </div>
 </div>
