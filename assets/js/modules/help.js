@@ -72,3 +72,7 @@ let form = document.getElementById('helpForm');
 document.getElementById("refresh").addEventListener("click", function(){
 helpForm.submit();
 });
+
+$('#delete_profile').on("click", function(){
+  window.location.replace("handlers/deleteProfile.php");
+});

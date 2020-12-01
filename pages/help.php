@@ -36,7 +36,7 @@
 
                     <div class="flex-b">
                         <a href="#">Annullér</a>
-                        <button onclick="" type="submit">Indsend</button>
+                        <button type="submit">Indsend</button>
                     </div>
                 </form>
             </div>
@@ -146,7 +146,7 @@
 
     <div id="flex-box-slet">
       <a id="no-delete" href="#">Annullér</a>
-      <button href="#">Ja, slet min profil</a>
+      <button id="delete_profile" href="#">Ja, slet min profil</a>
     </div>
       </div>
 </div>
