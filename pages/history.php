@@ -1,13 +1,11 @@
 <?php
 require_once 'includes/dbconnect.php';
 
-
-
 // Get user history
 $user_id = $_SESSION['id'];
 $historyOutput;
 
-$sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY id DESC";
+$sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY id DESC";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -20,6 +18,7 @@ if (mysqli_num_rows($result) > 0) {
       $date = $obj->date;
       $price = $obj->price;
       $entry_fee = $obj->entry_fee;
+      $price_per_min = $obj->price_per_min;
       
       if($duration > 1){
          $duration = $duration . " minutter";
@@ -61,7 +60,7 @@ if (mysqli_num_rows($result) > 0) {
                 <div class=\"flex-b\">
                     <div>
                         <h3>$monthName</h3>
-                        <p>$dayName D. $day</p>
+                        <p>$dayName d. $day</p>
                     </div>
 
                     <span>$price,00 DKK</span>
@@ -86,6 +85,10 @@ if (mysqli_num_rows($result) > 0) {
                         <tr>
                             <td>Startgebyr</td>
                             <td>$entry_fee DKK</td>
+                        </tr>
+                        <tr>
+                            <td>Minutpris</td>
+                            <td>$price_per_min DKK</td>
                         </tr>
                         <tr>
                             <td>Fartøjets ID</td>
