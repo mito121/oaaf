@@ -16,9 +16,9 @@ if (mysqli_num_rows($result) > 0) {
       $start_time = $obj->start_time;
       $stop_time = $obj->stop_time;
       $date = $obj->date;
-      $price = $obj->price;
+      $price = str_replace(".",",",$obj->price);
       $entry_fee = $obj->entry_fee;
-      $price_per_min = $obj->price_per_min;
+      $price_per_min = str_replace(".",",",$obj->price_per_min);
       
       if($duration > 1){
          $duration = $duration . " minutter";
@@ -63,7 +63,7 @@ if (mysqli_num_rows($result) > 0) {
                         <p>$dayName d. $day</p>
                     </div>
 
-                    <span>$price,00 DKK</span>
+                    <span>$price DKK</span>
 
                     <div class=\"expand rotate\"></div>
                 </div>

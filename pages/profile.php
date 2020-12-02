@@ -44,10 +44,12 @@ if ($_SESSION['at_sea'] === true) { // If user is currently at sea
         <div class="spooky-ghost"></div>
     </div>
 
-    <div class="row">
+    <div class="row text-center">
         <div class="rank-img">
             <img src="<?php echo $_SESSION['rank_img']; ?>" alt="Din rang"/>
         </div>
+        <h2 class="rank-label">Rang</h2>
+        <p class="rank"><?php echo $_SESSION['rank_name']; ?></p>
     </div>
 
     <div class="row">

@@ -83,7 +83,7 @@ $('#finish_trip').on("click", function () {
     fullPrice = paidMinutes * 2 + 10;
     discount = fullPrice - priceTotal;
 
-    $('#priceTotal').html(priceTotal + " DKK");
+    $('#priceTotal').html(priceTotal.toFixed(2).toString().replace(".", ",") + " DKK");
 
     // Set form values
     const today = new Date();
