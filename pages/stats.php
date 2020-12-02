@@ -14,9 +14,9 @@ if (mysqli_num_rows($result) > 0) {
 
         if ($time_at_sea == 1) {
             $time_at_sea = $obj->time_at_sea . " min.";
-        } else if($time_at_sea >= 2){
+        } else if ($time_at_sea >= 2) {
             $time_at_sea = $obj->time_at_sea . " min.";
-        }else{
+        } else {
             $time_at_sea = "0 min.";
         }
 
@@ -130,3 +130,4 @@ if (mysqli_num_rows($result) > 0) {
     <div class="bg_temp">
         <img class="bg_temptation" src="assets/img/tmp_bg.svg" alt="background picture">
     </div>
+</div>
