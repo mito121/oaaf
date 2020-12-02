@@ -24,6 +24,18 @@ if (isset($_GET) && $_GET['pw_change'] == 'false') {
             }
         </script>";
 }
+
+
+// Only show log off if user is not currently at sea
+if ($_SESSION['at_sea'] === true) { // If user is currently at sea
+    $logOff = "";
+} else { // If user is NOT currently at sea
+    $logOff = "
+                <div class=\"row logoff-row\">
+                    <a href=\"handlers/logoff.php\" class=\"logoff button\">Log ud</a>
+                </div>
+            ";
+}
 ?>
 <div class="global-wrapper" id="profile">
     <div class="sub-header">
@@ -114,9 +126,7 @@ if (isset($_GET) && $_GET['pw_change'] == 'false') {
         </div>
     </div>
 
-    <div class="row logoff-row">
-        <a href="handlers/logoff.php" class="logoff button">Log ud</a>
-    </div>
+    <?php echo $logOff; ?>
 </div>
 
 <div class="bg_temp">

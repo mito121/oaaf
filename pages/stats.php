@@ -13,11 +13,11 @@ if (mysqli_num_rows($result) > 0) {
         $money_saved = $obj->discount;
 
         if ($time_at_sea == 1) {
-            $time_at_sea = $obj->time_at_sea . " minut";
+            $time_at_sea = $obj->time_at_sea . " min.";
         } else if($time_at_sea >= 2){
-            $time_at_sea = $obj->time_at_sea . " minutter";
+            $time_at_sea = $obj->time_at_sea . " min.";
         }else{
-            $time_at_sea = "0 minutter";
+            $time_at_sea = "0 min.";
         }
 
         if ($obj->discount) {

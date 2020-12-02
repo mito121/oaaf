@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 500;
-  font-family: museo-sans;
   font-style: normal; }
   *:focus {
     outline: none; }
@@ -883,16 +882,13 @@ a.button {
   transform: rotate(180deg); }
 
 /* ## How ## */
-#how {
+#how, #welcome {
   position: relative; }
-  #how #how-carousel {
+  #how #how-carousel, #how #welcome-carousel, #welcome #how-carousel, #welcome #welcome-carousel {
     width: 100%;
     height: 75vh;
-    padding-top: 10px;
-    /*        .slick-list{
-                height: 75vh;
-            }*/ }
-    #how #how-carousel .how .how-item {
+    padding-top: 10px; }
+    #how #how-carousel .how .how-item, #how #how-carousel .how .welcome-item, #how #how-carousel .welcome .how-item, #how #how-carousel .welcome .welcome-item, #how #welcome-carousel .how .how-item, #how #welcome-carousel .how .welcome-item, #how #welcome-carousel .welcome .how-item, #how #welcome-carousel .welcome .welcome-item, #welcome #how-carousel .how .how-item, #welcome #how-carousel .how .welcome-item, #welcome #how-carousel .welcome .how-item, #welcome #how-carousel .welcome .welcome-item, #welcome #welcome-carousel .how .how-item, #welcome #welcome-carousel .how .welcome-item, #welcome #welcome-carousel .welcome .how-item, #welcome #welcome-carousel .welcome .welcome-item {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -907,23 +903,23 @@ a.button {
       transform: scale(0.8);
       overflow: hidden;
       opacity: 0.5; }
-      #how #how-carousel .how .how-item .how-img {
+      #how #how-carousel .how .how-item .how-img, #how #how-carousel .how .how-item .welcome-img, #how #how-carousel .how .welcome-item .how-img, #how #how-carousel .how .welcome-item .welcome-img, #how #how-carousel .welcome .how-item .how-img, #how #how-carousel .welcome .how-item .welcome-img, #how #how-carousel .welcome .welcome-item .how-img, #how #how-carousel .welcome .welcome-item .welcome-img, #how #welcome-carousel .how .how-item .how-img, #how #welcome-carousel .how .how-item .welcome-img, #how #welcome-carousel .how .welcome-item .how-img, #how #welcome-carousel .how .welcome-item .welcome-img, #how #welcome-carousel .welcome .how-item .how-img, #how #welcome-carousel .welcome .how-item .welcome-img, #how #welcome-carousel .welcome .welcome-item .how-img, #how #welcome-carousel .welcome .welcome-item .welcome-img, #welcome #how-carousel .how .how-item .how-img, #welcome #how-carousel .how .how-item .welcome-img, #welcome #how-carousel .how .welcome-item .how-img, #welcome #how-carousel .how .welcome-item .welcome-img, #welcome #how-carousel .welcome .how-item .how-img, #welcome #how-carousel .welcome .how-item .welcome-img, #welcome #how-carousel .welcome .welcome-item .how-img, #welcome #how-carousel .welcome .welcome-item .welcome-img, #welcome #welcome-carousel .how .how-item .how-img, #welcome #welcome-carousel .how .how-item .welcome-img, #welcome #welcome-carousel .how .welcome-item .how-img, #welcome #welcome-carousel .how .welcome-item .welcome-img, #welcome #welcome-carousel .welcome .how-item .how-img, #welcome #welcome-carousel .welcome .how-item .welcome-img, #welcome #welcome-carousel .welcome .welcome-item .how-img, #welcome #welcome-carousel .welcome .welcome-item .welcome-img {
         width: 100%;
         height: 75%;
         margin-top: 5em; }
-      #how #how-carousel .how .how-item .how-text {
+      #how #how-carousel .how .how-item .how-text, #how #how-carousel .how .how-item .welcome-text, #how #how-carousel .how .welcome-item .how-text, #how #how-carousel .how .welcome-item .welcome-text, #how #how-carousel .welcome .how-item .how-text, #how #how-carousel .welcome .how-item .welcome-text, #how #how-carousel .welcome .welcome-item .how-text, #how #how-carousel .welcome .welcome-item .welcome-text, #how #welcome-carousel .how .how-item .how-text, #how #welcome-carousel .how .how-item .welcome-text, #how #welcome-carousel .how .welcome-item .how-text, #how #welcome-carousel .how .welcome-item .welcome-text, #how #welcome-carousel .welcome .how-item .how-text, #how #welcome-carousel .welcome .how-item .welcome-text, #how #welcome-carousel .welcome .welcome-item .how-text, #how #welcome-carousel .welcome .welcome-item .welcome-text, #welcome #how-carousel .how .how-item .how-text, #welcome #how-carousel .how .how-item .welcome-text, #welcome #how-carousel .how .welcome-item .how-text, #welcome #how-carousel .how .welcome-item .welcome-text, #welcome #how-carousel .welcome .how-item .how-text, #welcome #how-carousel .welcome .how-item .welcome-text, #welcome #how-carousel .welcome .welcome-item .how-text, #welcome #how-carousel .welcome .welcome-item .welcome-text, #welcome #welcome-carousel .how .how-item .how-text, #welcome #welcome-carousel .how .how-item .welcome-text, #welcome #welcome-carousel .how .welcome-item .how-text, #welcome #welcome-carousel .how .welcome-item .welcome-text, #welcome #welcome-carousel .welcome .how-item .how-text, #welcome #welcome-carousel .welcome .how-item .welcome-text, #welcome #welcome-carousel .welcome .welcome-item .how-text, #welcome #welcome-carousel .welcome .welcome-item .welcome-text {
         position: absolute;
         /*bottom: -36vh;*/
         text-align: center; }
-        #how #how-carousel .how .how-item .how-text h1 {
+        #how #how-carousel .how .how-item .how-text h1, #how #how-carousel .how .how-item .welcome-text h1, #how #how-carousel .how .welcome-item .how-text h1, #how #how-carousel .how .welcome-item .welcome-text h1, #how #how-carousel .welcome .how-item .how-text h1, #how #how-carousel .welcome .how-item .welcome-text h1, #how #how-carousel .welcome .welcome-item .how-text h1, #how #how-carousel .welcome .welcome-item .welcome-text h1, #how #welcome-carousel .how .how-item .how-text h1, #how #welcome-carousel .how .how-item .welcome-text h1, #how #welcome-carousel .how .welcome-item .how-text h1, #how #welcome-carousel .how .welcome-item .welcome-text h1, #how #welcome-carousel .welcome .how-item .how-text h1, #how #welcome-carousel .welcome .how-item .welcome-text h1, #how #welcome-carousel .welcome .welcome-item .how-text h1, #how #welcome-carousel .welcome .welcome-item .welcome-text h1, #welcome #how-carousel .how .how-item .how-text h1, #welcome #how-carousel .how .how-item .welcome-text h1, #welcome #how-carousel .how .welcome-item .how-text h1, #welcome #how-carousel .how .welcome-item .welcome-text h1, #welcome #how-carousel .welcome .how-item .how-text h1, #welcome #how-carousel .welcome .how-item .welcome-text h1, #welcome #how-carousel .welcome .welcome-item .how-text h1, #welcome #how-carousel .welcome .welcome-item .welcome-text h1, #welcome #welcome-carousel .how .how-item .how-text h1, #welcome #welcome-carousel .how .how-item .welcome-text h1, #welcome #welcome-carousel .how .welcome-item .how-text h1, #welcome #welcome-carousel .how .welcome-item .welcome-text h1, #welcome #welcome-carousel .welcome .how-item .how-text h1, #welcome #welcome-carousel .welcome .how-item .welcome-text h1, #welcome #welcome-carousel .welcome .welcome-item .how-text h1, #welcome #welcome-carousel .welcome .welcome-item .welcome-text h1 {
           color: #2b6d85;
           margin: 0 0 15px 0; }
-    #how #how-carousel .slick-current .how-item {
+    #how #how-carousel .slick-current .how-item, #how #how-carousel .slick-current .welcome-item, #how #welcome-carousel .slick-current .how-item, #how #welcome-carousel .slick-current .welcome-item, #welcome #how-carousel .slick-current .how-item, #welcome #how-carousel .slick-current .welcome-item, #welcome #welcome-carousel .slick-current .how-item, #welcome #welcome-carousel .slick-current .welcome-item {
       transform: scale(1);
       opacity: 1; }
-      #how #how-carousel .slick-current .how-item .how-track {
+      #how #how-carousel .slick-current .how-item .how-track, #how #how-carousel .slick-current .how-item .welcome-track, #how #how-carousel .slick-current .welcome-item .how-track, #how #how-carousel .slick-current .welcome-item .welcome-track, #how #welcome-carousel .slick-current .how-item .how-track, #how #welcome-carousel .slick-current .how-item .welcome-track, #how #welcome-carousel .slick-current .welcome-item .how-track, #how #welcome-carousel .slick-current .welcome-item .welcome-track, #welcome #how-carousel .slick-current .how-item .how-track, #welcome #how-carousel .slick-current .how-item .welcome-track, #welcome #how-carousel .slick-current .welcome-item .how-track, #welcome #how-carousel .slick-current .welcome-item .welcome-track, #welcome #welcome-carousel .slick-current .how-item .how-track, #welcome #welcome-carousel .slick-current .how-item .welcome-track, #welcome #welcome-carousel .slick-current .welcome-item .how-track, #welcome #welcome-carousel .slick-current .welcome-item .welcome-track {
         opacity: 1; }
-  #how #how-text-box {
+  #how #how-text-box, #how #welcome-text-box, #welcome #how-text-box, #welcome #welcome-text-box {
     text-align: center;
     background-color: #fff;
     display: block;
@@ -933,29 +929,31 @@ a.button {
     bottom: 6vh;
     padding: 15px;
     z-index: -1; }
-    #how #how-text-box h1 {
+    #how #how-text-box h1, #how #welcome-text-box h1, #welcome #how-text-box h1, #welcome #welcome-text-box h1 {
       margin: 5px 0 10px 0; }
-  #how #how-carousel-arrows {
+    #how #how-text-box p, #how #welcome-text-box p, #welcome #how-text-box p, #welcome #welcome-text-box p {
+      margin-top: 8px; }
+  #how #how-carousel-arrows, #how #welcome-carousel-arrows, #welcome #how-carousel-arrows, #welcome #welcome-carousel-arrows {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 3em;
     height: 50px;
     z-index: 99999; }
-    #how #how-carousel-arrows .slick-arrow {
+    #how #how-carousel-arrows .slick-arrow, #how #welcome-carousel-arrows .slick-arrow, #welcome #how-carousel-arrows .slick-arrow, #welcome #welcome-carousel-arrows .slick-arrow {
       z-index: 99999; }
-  #how #how-carousel-dots {
+  #how #how-carousel-dots, #how #welcome-carousel-dots, #welcome #how-carousel-dots, #welcome #welcome-carousel-dots {
     position: relative;
     top: -28vh; }
-    #how #how-carousel-dots ul li.slick-active button {
+    #how #how-carousel-dots ul li.slick-active button, #how #welcome-carousel-dots ul li.slick-active button, #welcome #how-carousel-dots ul li.slick-active button, #welcome #welcome-carousel-dots ul li.slick-active button {
       background-color: #2b6d85; }
-  #how .slick-dots {
+  #how .slick-dots, #welcome .slick-dots {
     display: flex;
     justify-content: space-around;
     width: 50px;
     list-style-type: none;
     margin: 0 auto; }
-  #how .slick-dots li button {
+  #how .slick-dots li button, #welcome .slick-dots li button {
     background-color: white;
     text-indent: -9999px;
     overflow: hidden;
@@ -965,7 +963,7 @@ a.button {
     outline: none;
     border: none;
     margin: 0 5px; }
-  #how .wide-button {
+  #how .wide-button, #welcome .wide-button {
     width: 245px;
     display: block;
     margin: 0 auto;
@@ -976,31 +974,31 @@ a.button {
   display: none !important; }
 
 @media screen and (max-height: 812px) {
-  #how #how-carousel-dots {
+  #how #how-carousel-dots, #how #welcome-carousel-dots, #welcome #how-carousel-dots, #welcome #welcome-carousel-dots {
     top: -36vh; }
-  #how #how-text-box {
+  #how #how-text-box, #how #welcome-text-box, #welcome #how-text-box, #welcome #welcome-text-box {
     bottom: 17vh; }
-  #how .how-text {
+  #how .how-text, #how .welcome-text, #welcome .how-text, #welcome .welcome-text {
     bottom: -25vh; }
-  #how .wide-button {
+  #how .wide-button, #welcome .wide-button {
     top: -15vh; } }
 @media screen and (max-height: 736px) {
-  #how #how-carousel-dots {
+  #how #how-carousel-dots, #how #welcome-carousel-dots, #welcome #how-carousel-dots, #welcome #welcome-carousel-dots {
     top: -31vh; }
-  #how #how-text-box {
+  #how #how-text-box, #how #welcome-text-box, #welcome #how-text-box, #welcome #welcome-text-box {
     bottom: 10vh; }
-  #how .how-text {
+  #how .how-text, #how .welcome-text, #welcome .how-text, #welcome .welcome-text {
     bottom: -29vh; }
-  #how .wide-button {
+  #how .wide-button, #welcome .wide-button {
     top: -57px; } }
 @media screen and (max-height: 667px) {
-  #how #how-carousel-dots {
+  #how #how-carousel-dots, #how #welcome-carousel-dots, #welcome #how-carousel-dots, #welcome #welcome-carousel-dots {
     top: -29vh; }
-  #how #how-text-box {
+  #how #how-text-box, #how #welcome-text-box, #welcome #how-text-box, #welcome #welcome-text-box {
     bottom: 5vh; }
-  #how .how-text {
+  #how .how-text, #how .welcome-text, #welcome .how-text, #welcome .welcome-text {
     bottom: -30vh; }
-  #how .wide-button {
+  #how .wide-button, #welcome .wide-button {
     top: -17px; } }
 /* ### History ### */
 #history {
