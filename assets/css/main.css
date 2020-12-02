@@ -611,12 +611,8 @@ header #nav-overlay {
   width: 150px;
   display: block;
   margin: 0 auto 6px auto;
-  background-color: #ffffff;
   overflow: hidden;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
-  .rank-img img {
-    position: relative;
-    bottom: -35px; }
 
 .rank {
   font-size: 20px;
