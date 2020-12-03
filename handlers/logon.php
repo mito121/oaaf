@@ -7,7 +7,7 @@ if (isset($_POST)) {
     $email = $conn->real_escape_string($_POST['email']);
     $password = $conn->real_escape_string($_POST['password']);
 
-    $sql = "SELECT `id`, `password`, `name`, `rank_id`, `time_at_sea`, `trips`, `fb_id` FROM `oaaf_users` WHERE email = '$email'";
+    $sql = "SELECT `id`, `password`, `name`, `rank_id`, `fb_id` FROM `oaaf_users` WHERE email = '$email'";
     $result = $conn->query($sql);
 
     if (mysqli_num_rows($result) > 0) {

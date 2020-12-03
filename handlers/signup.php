@@ -18,7 +18,7 @@ if (isset($_POST)) {
     $result = $conn->query($sql);
 
     if ($result === true) {
-        $sql = "SELECT `id`, `password`, `name`, `time_at_sea`, `rank_id`, `trips`, `fb_id` FROM `oaaf_users` WHERE email = '$email'";
+        $sql = "SELECT `id`, `password`, `name`, `rank_id`, `fb_id` FROM `oaaf_users` WHERE email = '$email'";
         $result = $conn->query($sql);
 
         if (mysqli_num_rows($result) > 0) {
