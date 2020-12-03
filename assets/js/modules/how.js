@@ -59,6 +59,10 @@ function startTutorial(currentSlide) {
     let thisSlide = currentSlide + 1;
     let i = 1;
 
+    // Start with the first image
+    how_images[currentSlide].src = "assets/img/info" + thisSlide + "_" + i + ".svg";
+
+    // Set text box values
     $('#how-text-box h5').html(infoHeaders[currentSlide]);
     $('#how-text-box p').html(infoTexts[currentSlide]);
 
@@ -70,7 +74,7 @@ function startTutorial(currentSlide) {
             i = 1;
             how_images[currentSlide].src = "assets/img/info" + thisSlide + "_" + i + ".svg";
         }
-    }, 3500);
+    }, 3300);
 
     intervals.push(interval);
 }
