@@ -210,7 +210,8 @@ form {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 13px 10px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    font-family: 'museo-sans'; }
   form input[type="text"],
   form input[type="password"],
   form input[type="email"] {

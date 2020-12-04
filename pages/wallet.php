@@ -46,7 +46,7 @@ $balance = $_SESSION['wallet_balance'];
 
    <div class="row">
       <div class="label"> <h2>Gavekort</h2> </div>
-      <div class="sub-box toggle-collapse">
+      <div class="sub-box toggle-collapse has-annuller">
          <div class="flex">
             <p>Tegn / Indløs gavekort</p><div class="expand rotate"></div>
          </div>
@@ -57,7 +57,7 @@ $balance = $_SESSION['wallet_balance'];
                <input type="text" class="password" v-model="newPassword" name="newPassword" v-on:keyup="validateNewPassword" id="newPassword" placeholder="Indtast kode" autocomplete="off">
 
                <div class="flex-b">
-                  <a href="#">Annullér</a>
+                  <a href="#" class="annuller-btn">Annullér</a>
                   <button type="submit">Udfør</button>
                </div>
             </form>
