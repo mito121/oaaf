@@ -86,7 +86,7 @@ $balance = $_SESSION['wallet_balance'];
       <h2>Indtast beløb du ønsker at overføre:</h2>
 
       <form id="myForm" method="POST" action="handlers/updateBalance.php">
-         <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>"/>
+         <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>"/>
          <div class="form-input">
             <input type="text" placeholder="1234" maxlength="6" id="xferAmount" name="amount"><span>  DKK</span>
          </div>

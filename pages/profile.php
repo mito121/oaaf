@@ -61,7 +61,7 @@ if ($_SESSION['at_sea'] === true) { // If user is currently at sea
 
          <div class="collapsible">
             <form method="POST" action="handlers/updateName.php" autocomplete="off">
-               <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
+               <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']; ?>"/>
                <label for="newName"> <h4>Nyt navn</h4> </label>
                <input type="text" name="newName" id="newName" placeholder="Indtast nyt navn" autocomplete="off">
 
@@ -84,7 +84,7 @@ if ($_SESSION['at_sea'] === true) { // If user is currently at sea
 
          <div class="collapsible">
             <form method="POST" action="handlers/updateEmail.php" autocomplete="off">
-               <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
+               <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']; ?>"/>
                <label for="newEmail"> <h4>Ny email</h4> </label>
                <input type="text" name="newEmail" v-model="newEmail" v-on:keyup="validateNewEmail" id="newEmail" placeholder="Indtast ny email" autocomplete="off">
 
@@ -109,7 +109,7 @@ if ($_SESSION['at_sea'] === true) { // If user is currently at sea
 
          <div class="collapsible">
             <form method="POST" action="handlers/updatePassword.php" autocomplete="off">
-               <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
+               <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']; ?>"/>
                <label for="newPassword"> <h4>Nuværende adgangskode</h4> </label>
                <input type="text" class="password" name="currentPw" id="currentPw" placeholder="Indtast ny adgangskode" autocomplete="off">
 

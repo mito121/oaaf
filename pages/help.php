@@ -53,7 +53,7 @@ if (mysqli_num_rows($result) > 0) {
          </div>
          <div class="collapsible">
             <form action="handlers/reportProblem.php" method="post" id="helpForm" autocomplete="off">
-               <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>"/>
+               <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']; ?>"/>
                <label for="issue"> <h4>Beskriv problemet</h4> </label>
                <textarea required name="issue" id="issue" placeholder="Beskriv dit problem her"></textarea>
 

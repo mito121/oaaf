@@ -4,7 +4,7 @@ require_once 'includes/dbconnect.php';
 $ranksOutput = "";
 
 /* ### Get user stats ### */
-$user_id = $_SESSION['id'];
+$user_id = $_SESSION['user_id'];
 $sql = "SELECT COUNT(id) AS count, SUM(duration) AS time_at_sea, SUM(trip_discount) AS discount FROM `oaaf_history` WHERE user_id = '$user_id'";
 $result = $conn->query($sql);
 

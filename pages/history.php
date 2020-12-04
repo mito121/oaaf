@@ -2,7 +2,7 @@
 require_once 'includes/dbconnect.php';
 
 // Get user history
-$user_id = $_SESSION['id'];
+$user_id = $_SESSION['user_id'];
 $historyOutput;
 
 $sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY id DESC";

@@ -64,7 +64,7 @@ if (!$_SESSION['start_time']) {
 
       <a href="#" class="btn"></a>
       <form class="big-form" method="POST" action="handlers/finish.php">
-         <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>"/>
+         <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>"/>
          <input type="hidden" id="user_rank_id" value="<?php echo $_SESSION['rank_id']; ?>"/>
 
          <input type="hidden" name="duration" id="trip_duration" value=""/>

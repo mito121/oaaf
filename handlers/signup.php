@@ -25,7 +25,7 @@ if (isset($_POST)) {
             while ($obj = $result->fetch_object()) {
                 $_SESSION['logged'] = true;
                 $_SESSION['at_sea'] = false;
-                $_SESSION['id'] = $obj->id;
+                $_SESSION['user_id'] = $obj->id;
                 $_SESSION['name'] = $obj->name;
                 $_SESSION['email'] = $email;
                 $_SESSION['time_at_sea'] = $obj->time_at_sea;
