@@ -17,32 +17,34 @@ if (mysqli_num_rows($result) > 0) {
       $start_time = $obj->start_time;
       $stop_time = $obj->stop_time;
       $date = $obj->date;
-      $price = str_replace(".",",",$obj->price);
+      $price = str_replace(".", ",", $obj->price);
       $entry_fee = $obj->entry_fee;
-      $price_per_min = str_replace(".",",",$obj->price_per_min);
-      
+      $price_per_min = str_replace(".", ",", $obj->price_per_min);
+
       // Plural vs singular
-      if($duration > 1){
+      if ($duration > 1) {
          $duration = $duration . " minutter";
-      }else{
+      } else {
          $duration = $duration . " minut";
       }
 
       $year = substr($date, 0, 4);
       $month = substr($date, 5, 2);
       $day = substr($date, 8, 2);
-      
+
       // Check if Year header should be insterted
-      if(false !== $key = array_search($year, $yearHeadings)){ // year is not new - dont add heading
+      if (false !== $key = array_search($year, $yearHeadings)) { // year is not new - dont add heading
          $thisHeading = "";
-      }else { // year is new - add heading
+      } else { // year is new - add heading
          $yearHeadings[] = $year;
-         $thisHeading = "<div class=\"year\"> <h2>".end($yearHeadings)."</h2> </div>";
+         $thisHeading = "<div class=\"year\"> <h2>" . end($yearHeadings) . "</h2> </div>";
       }
 
+      // Get month name
       $dateObj = DateTime::createFromFormat('!m', $month);
       $monthName = $dateObj->format('F');
 
+      // Get day name
       $unixTimestamp = strtotime($date);
       $dayName = date("l", $unixTimestamp);
 
