@@ -3,7 +3,8 @@ require_once 'includes/dbconnect.php';
 
 // Get user history
 $user_id = $_SESSION['user_id'];
-$historyOutput;
+$historyOutput = "";
+$yearHeadings = array();
 
 $sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY id DESC";
 $result = $conn->query($sql);
@@ -20,6 +21,7 @@ if (mysqli_num_rows($result) > 0) {
       $entry_fee = $obj->entry_fee;
       $price_per_min = str_replace(".",",",$obj->price_per_min);
       
+      // Plural vs singular
       if($duration > 1){
          $duration = $duration . " minutter";
       }else{
@@ -29,6 +31,14 @@ if (mysqli_num_rows($result) > 0) {
       $year = substr($date, 0, 4);
       $month = substr($date, 5, 2);
       $day = substr($date, 8, 2);
+      
+      // Check if Year header should be insterted
+      if(false !== $key = array_search($year, $yearHeadings)){ // year is not new - dont add heading
+         $thisHeading = "";
+      }else { // year is new - add heading
+         $yearHeadings[] = $year;
+         $thisHeading = "<div class=\"year\"> <h2>".end($yearHeadings)."</h2> </div>";
+      }
 
       $dateObj = DateTime::createFromFormat('!m', $month);
       $monthName = $dateObj->format('F');
@@ -56,6 +66,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
       $historyOutput .= "
+         $thisHeading
             <div class=\"history-item\">
                 <div class=\"flex-b\">
                     <div>
@@ -113,7 +124,6 @@ if (mysqli_num_rows($result) > 0) {
 
    <div class="wrapper">
       <div id="history">
-         <div class="year"> <h2>2020</h2> </div>
          <?php echo $historyOutput; ?>
       </div>
    </div>

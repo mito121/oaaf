@@ -997,7 +997,7 @@ a.button {
   padding: 0 35px; }
   #history .year {
     color: #2b6d85;
-    padding: 25px 0 10px 15px; }
+    padding: 25px 0 10px 0; }
   #history .history-item {
     background-color: #fff;
     overflow: hidden;
