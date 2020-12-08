@@ -74,7 +74,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
    <div class="row" id="stat-carousel">
-
       <div class="stat">
          <div class="stat-item">
             <img src="assets/img/antal_ture.svg" alt="Antal ture"/>
@@ -104,7 +103,6 @@ if (mysqli_num_rows($result) > 0) {
             </div>
          </div>
       </div>
-
    </div>
 
    <div id="stat-carousel-dots"></div>

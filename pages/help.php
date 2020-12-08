@@ -33,6 +33,8 @@ if (mysqli_num_rows($result) > 0) {
       <h1>Hjælp</h1>
       <div class="spooky-ghost"></div>
    </div>
+
+
    <div class="row">
       <div class="sub-box toggle-collapse">
          <div class="flex">
@@ -49,8 +51,8 @@ if (mysqli_num_rows($result) > 0) {
             </ol>
          </div>
       </div>
-
    </div>
+
 
    <div class="row">
       <div class="sub-box toggle-collapse has-annuller">
@@ -71,6 +73,8 @@ if (mysqli_num_rows($result) > 0) {
          </div>
       </div>
    </div>
+
+
    <div class="row mt">
       <div class="sub-box toggle-collapse">
          <div class="flex">
@@ -140,14 +144,13 @@ if (mysqli_num_rows($result) > 0) {
 
 
 <div id="slet_profil_overlay" >
-
    <div class="overlay_rapporter_box">
       <p class="pop_up_text">Du er ved at slette din Profil</p>
       <p  id="margintop" class="pop_up_text">Er du sikker?</p>
 
       <div id="flex-box-slet">
          <a id="no-delete" href="#">Annullér</a>
-         <button id="delete_profile" href="#">Ja, slet min profil</a>
+         <button id="delete_profile" href="#">Ja, slet min profil</button>
       </div>
    </div>
 </div>
