@@ -2,20 +2,26 @@
 require_once 'includes/dbconnect.php';
 
 /* ### Get ranks (for rank explanation) ### */
-$ranksOutput = "";
-$sql = "SELECT `name`, `req_trips`, `price_per_min` FROM `oaaf_ranks` ORDER BY id ASC";
+$sql = "SELECT `id`, `name`, `req_trips`, `price_per_min` FROM `oaaf_ranks` ORDER BY id ASC";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
    while ($obj = $result->fetch_object()) {
+      $r_id = $obj->id;
       $r_name = $obj->name;
       $r_trips = $obj->req_trips;
       $r_ppm = $obj->price_per_min;
 
+      $entry_fee = "";
+
+      if ($r_id == 5) {
+         $entry_fee = "<p>+ intet startgebyr</p>";
+      }
+
       $ranksOutput .= "
                         <table>
                            <tr><th> <h2>$r_name</h2> </th></tr>
-                           <tr><td> <p>$r_trips ture</p> </td> <td> <p>$r_ppm DKK/min.</p> </td></tr>
+                           <tr><td> <p>$r_trips ture</p> </td> <td> <p>$r_ppm DKK/min.</p> $entry_fee</td></tr>
                         </table>
                      ";
    }
