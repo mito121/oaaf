@@ -65,6 +65,11 @@ a {
   font-weight: 500;
   font-style: normal; }
 
+ul.rules {
+  display: inline-block;
+  font-family: 'museo-sans', 'sans-serif';
+  text-align: left; }
+
 .global-wrapper {
   width: 100%;
   overflow: hidden;

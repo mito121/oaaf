@@ -11,37 +11,37 @@
 
         <div class="welcome">
             <div class="welcome-item">
-                <img class="welcome-img" src="assets/img/info1_1.svg" alt=""/>
+                <img class="welcome-img" src="assets/img/welcome0_1.svg" alt=""/>
             </div>
         </div>
 
         <div class="welcome">
             <div class="welcome-item">
-                <img class="welcome-img" src="assets/img/info3_1.svg" alt=""/>
+                <img class="welcome-img" src="assets/img/welcome1_1.svg" alt=""/>
             </div>
         </div>
 
         <div class="welcome">
             <div class="welcome-item">
-                <img class="welcome-img" src="assets/img/info4_1.svg" alt=""/>
+                <img class="welcome-img" src="assets/img/welcome2_1.svg" alt=""/>
             </div>
         </div>
 
         <div class="welcome">
             <div class="welcome-item">
-                <img class="welcome-img" src="assets/img/info2_1.svg" alt=""/>
+                <img class="welcome-img" src="assets/img/welcome3_1.svg" alt=""/>
             </div>
         </div>
 
         <div class="welcome">
             <div class="welcome-item">
-                <img class="welcome-img" src="assets/img/info3_1.svg" alt=""/>
+                <img class="welcome-img" src="assets/img/welcome4_1.svg" alt=""/>
             </div>
         </div>
 
         <div class="welcome">
             <div class="welcome-item">
-                <img class="welcome-img" src="assets/img/info4_1.svg" alt=""/>
+                <img class="welcome-img" src="assets/img/welcome5_1.svg" alt=""/>
             </div>
         </div>
 
@@ -51,7 +51,7 @@
 
     <div id="welcome-text-box">
         <h5></h5>
-        <p></p>
+        <div></div>
     </div>
 
     <button id="welcome-next" class="wide-button">Næste</button>
