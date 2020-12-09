@@ -6,7 +6,7 @@ $user_id = $_SESSION['user_id'];
 $historyOutput = "";
 $yearHeadings = array();
 
-$sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY id ASC";
+$sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY DATE(date) DESC, id DESC";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
