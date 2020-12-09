@@ -42,11 +42,7 @@ new Vue({
         },
 
         validatePw() {
-            if (
-                    this.password !== "" &&
-                    this.passwordRepeat !== "" &&
-                    this.password !== this.passwordRepeat
-                    ) {
+            if (this.password !== "" && this.passwordRepeat !== "" && this.password !== this.passwordRepeat) {
                 this.validPw = false;
             } else {
                 this.validPw = true;
@@ -54,11 +50,7 @@ new Vue({
         },
 
         validateNewEmail() {
-            if (
-                    this.newEmail !== "" &&
-                    this.newEmailRepeat !== "" &&
-                    this.newEmail !== this.newEmailRepeat
-                    ) {
+            if (this.newEmail !== "" && this.newEmailRepeat !== "" && this.newEmail !== this.newEmailRepeat) {
                 this.newEmailMatch = false;
             } else {
                 this.newEmailMatch = true;

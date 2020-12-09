@@ -37,11 +37,7 @@ new Vue({
     methods: {
         /* ## Validate new email ## */
         validateNewEmail() {
-            if (
-                    this.newEmail !== "" &&
-                    this.newEmailRepeat !== "" &&
-                    this.newEmail !== this.newEmailRepeat
-                    ) {
+            if (this.newEmail !== "" && this.newEmailRepeat !== "" && this.newEmail !== this.newEmailRepeat) {
                 $("#newEmailRepeat").css("border-color", "red");
             } else {
                 $("#newEmailRepeat").css("border-color", "transparent");
@@ -49,11 +45,7 @@ new Vue({
         },
 
         validateNewPassword() {
-            if (
-                    this.newPassword !== "" &&
-                    this.newPasswordRepeat !== "" &&
-                    this.newPassword !== this.newPasswordRepeat
-                    ) {
+            if (this.newPassword !== "" && this.newPasswordRepeat !== "" && this.newPassword !== this.newPasswordRepeat) {
                 $("#newPasswordRepeat").css("border-color", "red");
             } else {
                 $("#newPasswordRepeat").css("border-color", "transparent");
