@@ -6,13 +6,13 @@ $user_id = $_SESSION['user_id'];
 $historyOutput = "";
 $yearHeadings = array();
 
-$sql = "SELECT `id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY DATE(date) DESC, id DESC";
+$sql = "SELECT `id`, `boat_id`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min` FROM `oaaf_history` WHERE user_id = '$user_id' ORDER BY DATE(date) DESC, id DESC";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
    while ($obj = mysqli_fetch_object($result)) {
       $id = $obj->id;
-      $boat_name = $obj->boat_name;
+      $boat_id = $obj->boat_id;
       $duration = $obj->duration;
       $start_time = $obj->start_time;
       $stop_time = $obj->stop_time;
@@ -105,7 +105,7 @@ if (mysqli_num_rows($result) > 0) {
                         </tr>
                         <tr>
                             <td>Fartøjets ID</td>
-                            <td>$boat_name</td>
+                            <td>$boat_id</td>
                         </tr>
                     </table>
 

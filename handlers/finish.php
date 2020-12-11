@@ -12,7 +12,7 @@ if (isset($_POST)) {
     $date = $conn->real_escape_string($_POST['date']);
     $price = $conn->real_escape_string($_POST['price']);
     $price_per_min = $conn->real_escape_string($_POST['price_per_min']);
-    $discount = $conn->real_escape_string($_POST['trip_discount']);
+    $discount = round($conn->real_escape_string($_POST['trip_discount']), 2);
 
     if ($_SESSION['rank_id'] == 5) {
         $entryFee = 0;
@@ -20,7 +20,7 @@ if (isset($_POST)) {
         $entryFee = 10;
     }
 
-    $sql = "INSERT INTO `oaaf_history`(`user_id`, `boat_name`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min`, `trip_discount`) VALUES ('$user_id', 'C14', '$duration', '$start', '$stop', '$date', '$price', '$entryFee', '$price_per_min', '$discount')";
+    $sql = "INSERT INTO `oaaf_history`(`user_id`, `boat_id`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min`, `trip_discount`) VALUES ('$user_id', '14', '$duration', '$start', '$stop', '$date', '$price', '$entryFee', '$price_per_min', '$discount')";
     $result = $conn->query($sql);
 
     

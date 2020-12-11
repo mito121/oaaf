@@ -23,9 +23,9 @@ if (mysqli_num_rows($result) > 0) {
       }
 
       if ($obj->discount) {
-         $money_saved = $obj->discount;
+         $money_saved = str_replace(".", ",", $obj->discount);
       } else {
-         $money_saved = 0;
+         $money_saved = "0,00";
       }
    }
 }
