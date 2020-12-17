@@ -33,8 +33,6 @@ document.getElementById('no-delete').addEventListener("click", function () {
 
 
 
-
-
 /* ## Toggle collapsibles */
 var box = document.getElementsByClassName("toggle-collapse");
 var collapsible = document.getElementsByClassName("collapsible");

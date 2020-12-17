@@ -398,7 +398,8 @@ header #nav-overlay {
       header #nav-overlay #main-nav #nav-content #nav-footer {
         width: 100%;
         padding-bottom: 20px;
-        padding-left: 10px; }
+        text-align: center;
+        font-family: 'museo-sans', 'open-sans'; }
 
 .login-header {
   padding-top: 25px; }

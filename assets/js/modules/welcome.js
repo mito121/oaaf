@@ -60,7 +60,7 @@ var infoTexts =
 
 
 function startTutorial(currentSlide) {
-   var welcome_images = document.getElementsByClassName('welcome-img');
+   let welcome_images = document.getElementsByClassName('welcome-img');
    let thisSlide = currentSlide;
    let i = 1;
 
