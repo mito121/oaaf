@@ -55,7 +55,7 @@
 
 <!-- https://github.com/nimiq/qr-scanner -->
 <script type="module">
-    import QrScanner from './assets/js/qr-scanner.min.js'; 
+    import QrScanner from './assets/js/qr-scanner.min.js';
     QrScanner.WORKER_PATH = './assets/js/qr-scanner-worker.min.js';
 
     const video = document.getElementById('qr-video');
@@ -64,7 +64,6 @@
     function redir(url){
         if(scanned === false){
             scanner.stop();
-            console.log("NUNUNU")
             $('#færdigMedIndtastning').click();
         }
     }
@@ -77,5 +76,5 @@
     scanner.start().then(() => {
     //                console.log("started");
     //                document.getElementById("scan-area").appendChild(scanner.$canvas);
-    });
+    }, error => {console.log("Du skal lige huske at tilslutte & give adgang til at bruge dit kamera :-)")});
 </script>
