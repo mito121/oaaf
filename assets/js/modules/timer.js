@@ -87,7 +87,7 @@ $('#finish_trip').on("click", function () {
 
     // Set form values
     const today = new Date();
-    const trip_date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    const trip_date = today.getFullYear() + '-' + (today.getMonth() + 1).toString().padStart(2, "0") + '-' + today.getDate().toString().padStart(2, "0");
     const trip_finished = `${today.getHours()}`.padStart(2, '0') + ":" + `${today.getMinutes()}`.padStart(2, '0');
     $('#trip_date').val(trip_date);
     $('#trip_finished').val(trip_finished);
