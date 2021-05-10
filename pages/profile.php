@@ -13,9 +13,17 @@ if (strlen($_SESSION['email']) > 20) {
 
 //die(password_hash('are12341', PASSWORD_DEFAULT));
 // If user failed, trying to change password
-if (isset($_GET) && $_GET['pw_change'] == 'false') {
+
+if (isset($_GET['pw_change'])) {
+    $pw_change = $_GET['pw_change'];
+} else{
+    $pw_change = '';
+}
+
+
+if (isset($_GET) && $pw_change == 'false') {
    echo "<script>window.sessionStorage.setItem('pw_change', 'false');</script>";
-} elseif (isset($_GET) && $_GET['pw_change'] == 'true') {
+} elseif (isset($_GET) && $pw_change == 'true') {
    echo "<script>window.sessionStorage.setItem('pw_change', 'true');</script>";
 } else {
    echo "<script>

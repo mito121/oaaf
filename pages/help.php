@@ -92,6 +92,14 @@ if (mysqli_num_rows($result) > 0) {
    </div>
 
    <div class="row">
+      <div id="how_navigate" class="sub-box has-annuller" onclick="how_navigate()" >
+         <div class="flex">
+            <p>Guide til brug</p><div class="expand rotate"></div>
+         </div>
+      </div>
+   </div>
+
+   <div class="row">
       <div class="sub-box toggle-collapse">
          <div class="flex">
             <p>Vilkår for brug</p><div class="expand rotate"></div>
@@ -119,6 +127,7 @@ if (mysqli_num_rows($result) > 0) {
          </div>
       </div>
    </div>
+
 
    <!-- help submit overlay -->
    <div id="helpOverlay" onclick="closeHelpOverlay()">

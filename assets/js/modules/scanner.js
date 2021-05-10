@@ -1,5 +1,5 @@
 document.getElementById("how-toggle").addEventListener("click", function () {
-    window.location.href = "index.php?page=how";
+    window.location.href = "index.php?page=help";
 });
 
 let overlayOpen = false;

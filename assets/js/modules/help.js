@@ -1,3 +1,12 @@
+
+
+//navigate to how-page!
+function how_navigate(){
+  window.location.href = "index.php?page=how";
+  console.log("hej man");
+}
+
+
 // Submit help overlay
 let overlayOpen = false;
 document.getElementById("helpForm").addEventListener("submit", function (e) {

@@ -43,7 +43,6 @@ require_once 'includes/protect.php';
                                     <li><a href="index.php?page=stats">Statistik</a></li>
                                     <li><a href="index.php?page=history">Historik</a></li>
                                     <li><a href="index.php?page=help">Hjælp</a></li>
-                                    <li><a href="index.php?page=how">Hvordan</a></li>
                                 </ul>
                             </div>
 

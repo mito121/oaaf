@@ -23,7 +23,7 @@ if (isset($_POST)) {
     $sql = "INSERT INTO `oaaf_history`(`user_id`, `boat_id`, `duration`, `start_time`, `stop_time`, `date`, `price`, `entry_fee`, `price_per_min`, `trip_discount`) VALUES ('$user_id', '14', '$duration', '$start', '$stop', '$date', '$price', '$entryFee', '$price_per_min', '$discount')";
     $result = $conn->query($sql);
 
-    
+
     // Increase user rank if needed
     $sql = "SELECT COUNT(id) AS trip_count FROM `oaaf_history` WHERE user_id = '$user_id'";
     $result = $conn->query($sql);
@@ -32,7 +32,7 @@ if (isset($_POST)) {
         while ($obj = $result->fetch_object()) {
             $trip_count = $obj->trip_count;
         }
-        
+
         // Set new rank
         if ($trip_count >= 0 && $trip_count <= 4) {
             $new_rank = 1;
